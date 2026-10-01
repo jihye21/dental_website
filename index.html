@@ -47,6 +47,88 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
+        /* table */
+        .table-scroll {
+            width: 100%;
+            overflow-x: auto;
+            overflow-y: hidden;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: thin;
+            scrollbar-color: #94a3b8 #f1f5f9;
+        }
+
+        .table-scroll table {
+            width: 100%;
+            min-width: 720px;
+            border-collapse: collapse;
+        }
+
+        .table-scroll th,
+        .table-scroll td {
+            white-space: nowrap;
+            word-break: keep-all;
+        }
+
+        /* Mobile */
+        @media (max-width: 640px) {
+
+            .table-scroll {
+                margin-left: 0;
+                margin-right: 0;
+                border: 1px solid #e2e8f0;
+            }
+
+            .table-scroll table {
+                min-width: 720px;
+            }
+
+            .table-scroll th,
+            .table-scroll td {
+                padding: 11px 12px;
+                font-size: 11px;
+            }
+        }
+
+        /* Korean typography / mobile wrapping */
+        h1,
+        h2,
+        h3,
+        h4,
+        p,
+        span,
+        a,
+        button {
+            word-break: keep-all;
+            overflow-wrap: break-word;
+        }
+
+        /* Korean headings */
+        h1,
+        h2,
+        h3 {
+            line-height: 1.35;
+        }
+
+        /* Mobile typography */
+        @media (max-width: 640px) {
+
+            h1 {
+                line-height: 1.35;
+            }
+
+            h2 {
+                line-height: 1.4;
+            }
+
+            h3 {
+                line-height: 1.45;
+            }
+
+            p {
+                line-height: 1.75;
+            }
+        }
+
         body {
             font-family: 'Pretendard', 'Inter', sans-serif;
             background-color: #F8FAFC;
@@ -649,7 +731,7 @@
                                 Philosophy
                             </span>
                             <h2 class="text-2xl sm:text-3xl font-extrabold text-navy-900 tracking-tight leading-snug">
-                                원장님의 진료 철학을 <br>
+                                원장님의 진료 철학을
                                 완벽하게 이해하는 보철 파트너
                             </h2>
                             <p class="text-sm text-steel-600 leading-relaxed font-normal">
@@ -1007,7 +1089,7 @@
                             </span>
                             <h2
                                 class="mt-3 text-2xl sm:text-3xl font-extrabold text-navy-900 tracking-tight leading-snug">
-                                케이스의 목적에 따라<br>
+                                케이스의 목적에 따라
                                 소재와 제작 방식을 설계합니다.
                             </h2>
                             <p class="mt-5 text-sm text-steel-600 leading-relaxed">
@@ -1083,25 +1165,25 @@
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <!-- ================= TAB NAVIGATION ================= -->
                     <div class="flex flex-wrap gap-2 border-b border-silver-200 pb-4 mb-12" id="product-tabs">
-                        <button onclick="switchProductTab('tab-zirconia', this)"
+                        <button type="button" onclick="switchProductTab('tab-zirconia', this)"
                             class="tab-btn active px-5 py-3 border border-navy-900 bg-navy-900 text-white font-bold text-xs uppercase tracking-wider transition-all">
                             지르코니아
                             <span class="hidden sm:inline"> / Zirconia</span>
                         </button>
-                        <button onclick="switchProductTab('tab-implant', this)"
+                        <button type="button" onclick="switchProductTab('tab-implant', this)"
                             class="tab-btn px-5 py-3 border border-silver-300 bg-white font-bold text-xs uppercase tracking-wider text-navy-900 hover:bg-slate-50 transition-all">
 
                             임플란트
                             <span class="hidden sm:inline"> / Implant</span>
 
                         </button>
-                        <button onclick="switchProductTab('tab-laminate', this)"
+                        <button type="button" onclick="switchProductTab('tab-laminate', this)"
                             class="tab-btn px-5 py-3 border border-silver-300 bg-white font-bold text-xs uppercase tracking-wider text-navy-900 hover:bg-slate-50 transition-all">
 
                             심미 보철
                             <span class="hidden sm:inline"> / Esthetic</span>
                         </button>
-                        <button onclick="switchProductTab('tab-aligner', this)"
+                        <button type="button" onclick="switchProductTab('tab-aligner', this)"
                             class="tab-btn px-5 py-3 border border-silver-300 bg-white font-bold text-xs uppercase tracking-wider text-navy-900 hover:bg-slate-50 transition-all">
 
                             투명교정
@@ -1118,7 +1200,7 @@
                                     01 / Zirconia
                                 </span>
                                 <h3 class="mt-3 text-2xl font-extrabold text-navy-900 tracking-tight">
-                                    멀티레이어<br>
+                                    멀티레이어
                                     지르코니아 시리즈
                                 </h3>
                                 <p class="mt-5 text-sm text-steel-600 leading-relaxed">
@@ -1153,73 +1235,75 @@
                                         </div>
                                     </div>
 
-                                    <div class="overflow-x-auto">
-                                        <table class="w-full text-xs text-left">
-                                            <thead class="bg-navy-900 text-white uppercase font-mono">
-                                                <tr>
-                                                    <th class="p-4 border-r border-navy-800">
-                                                        세부 항목
-                                                    </th>
-                                                    <th class="p-4 border-r border-navy-800">
-                                                        사용 소재
-                                                    </th>
-                                                    <th class="p-4 border-r border-navy-800">
-                                                        주요 특징
-                                                    </th>
-                                                    <th class="p-4">
-                                                        제작 기준
-                                                    </th>
-                                                </tr>
-                                            </thead>
+                                    <div>
+                                        <div class="table-scroll">
+                                            <table class="w-full text-xs text-left">
+                                                <thead class="bg-navy-900 text-white uppercase font-mono">
+                                                    <tr>
+                                                        <th class="p-4 border-r border-navy-800">
+                                                            세부 항목
+                                                        </th>
+                                                        <th class="p-4 border-r border-navy-800">
+                                                            사용 소재
+                                                        </th>
+                                                        <th class="p-4 border-r border-navy-800">
+                                                            주요 특징
+                                                        </th>
+                                                        <th class="p-4">
+                                                            제작 기준
+                                                        </th>
+                                                    </tr>
+                                                </thead>
 
-                                            <tbody class="divide-y divide-silver-200 text-steel-800">
-                                                <tr class="hover:bg-slate-50">
-                                                    <td class="p-4 font-bold text-navy-900 whitespace-nowrap">
-                                                        Ultra-Trans Zirconia
-                                                    </td>
-                                                    <td class="p-4">
-                                                        Multi-Layer Zirconia
-                                                    </td>
+                                                <tbody class="divide-y divide-silver-200 text-steel-800">
+                                                    <tr class="hover:bg-slate-50">
+                                                        <td class="p-4 font-bold text-navy-900 whitespace-nowrap">
+                                                            Ultra-Trans Zirconia
+                                                        </td>
+                                                        <td class="p-4">
+                                                            Multi-Layer Zirconia
+                                                        </td>
 
-                                                    <td class="p-4">
-                                                        전치부 심미 케이스
-                                                    </td>
-                                                    <td class="p-4 font-mono">
-                                                        3 ~ 4 Days
-                                                    </td>
-                                                </tr>
+                                                        <td class="p-4">
+                                                            전치부 심미 케이스
+                                                        </td>
+                                                        <td class="p-4 font-mono">
+                                                            3 ~ 4 Days
+                                                        </td>
+                                                    </tr>
 
-                                                <tr class="hover:bg-slate-50">
-                                                    <td class="p-4 font-bold text-navy-900 whitespace-nowrap">
-                                                        High-Strength Monolithic
-                                                    </td>
-                                                    <td class="p-4">
-                                                        High-Strength Zirconia
-                                                    </td>
-                                                    <td class="p-4">
-                                                        구치부 및 기능성 케이스
-                                                    </td>
-                                                    <td class="p-4 font-mono">
-                                                        3 Days
-                                                    </td>
-                                                </tr>
+                                                    <tr class="hover:bg-slate-50">
+                                                        <td class="p-4 font-bold text-navy-900 whitespace-nowrap">
+                                                            High-Strength Monolithic
+                                                        </td>
+                                                        <td class="p-4">
+                                                            High-Strength Zirconia
+                                                        </td>
+                                                        <td class="p-4">
+                                                            구치부 및 기능성 케이스
+                                                        </td>
+                                                        <td class="p-4 font-mono">
+                                                            3 Days
+                                                        </td>
+                                                    </tr>
 
-                                                <tr class="hover:bg-slate-50">
-                                                    <td class="p-4 font-bold text-navy-900 whitespace-nowrap">
-                                                        Layered Zirconia
-                                                    </td>
-                                                    <td class="p-4">
-                                                        Zirconia Framework + Ceramic
-                                                    </td>
-                                                    <td class="p-4">
-                                                        개별 색조 및 형태 표현
-                                                    </td>
-                                                    <td class="p-4 font-mono">
-                                                        4 ~ 5 Days
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                                    <tr class="hover:bg-slate-50">
+                                                        <td class="p-4 font-bold text-navy-900 whitespace-nowrap">
+                                                            Layered Zirconia
+                                                        </td>
+                                                        <td class="p-4">
+                                                            Zirconia Framework + Ceramic
+                                                        </td>
+                                                        <td class="p-4">
+                                                            개별 색조 및 형태 표현
+                                                        </td>
+                                                        <td class="p-4 font-mono">
+                                                            4 ~ 5 Days
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1245,7 +1329,7 @@
                                     02 / Implant
                                 </span>
                                 <h3 class="mt-3 text-2xl font-extrabold text-navy-900 tracking-tight">
-                                    맞춤형<br>
+                                    맞춤형
                                     임플란트 보철 시스템
                                 </h3>
                                 <p class="mt-5 text-sm text-steel-600 leading-relaxed">
@@ -1363,72 +1447,74 @@
                                         </div>
                                     </div>
 
-                                    <div class="overflow-x-auto border-t border-silver-200">
-                                        <table class="w-full text-xs text-left">
-                                            <thead class="bg-navy-900 text-white font-mono uppercase">
-                                                <tr>
-                                                    <th class="p-4">
-                                                        세부 항목
-                                                    </th>
-                                                    <th class="p-4">
-                                                        적용 소재
-                                                    </th>
-                                                    <th class="p-4">
-                                                        적용 케이스
-                                                    </th>
-                                                    <th class="p-4">
-                                                        제작 기준
-                                                    </th>
-                                                </tr>
-                                            </thead>
+                                    <div class="border-t border-silver-200">
+                                        <div class="table-scroll">
+                                            <table class="w-full text-xs text-left">
+                                                <thead class="bg-navy-900 text-white font-mono uppercase">
+                                                    <tr>
+                                                        <th class="p-4">
+                                                            세부 항목
+                                                        </th>
+                                                        <th class="p-4">
+                                                            적용 소재
+                                                        </th>
+                                                        <th class="p-4">
+                                                            적용 케이스
+                                                        </th>
+                                                        <th class="p-4">
+                                                            제작 기준
+                                                        </th>
+                                                    </tr>
+                                                </thead>
 
-                                            <tbody class="divide-y divide-silver-200">
-                                                <tr class="hover:bg-slate-50">
-                                                    <td class="p-4 font-bold text-navy-900">
-                                                        Custom Titanium Abutment
-                                                    </td>
-                                                    <td class="p-4">
-                                                        Medical Grade Titanium
-                                                    </td>
-                                                    <td class="p-4">
-                                                        Custom Emergence Profile
-                                                    </td>
-                                                    <td class="p-4 font-mono">
-                                                        4 Days
-                                                    </td>
-                                                </tr>
+                                                <tbody class="divide-y divide-silver-200">
+                                                    <tr class="hover:bg-slate-50">
+                                                        <td class="p-4 font-bold text-navy-900">
+                                                            Custom Titanium Abutment
+                                                        </td>
+                                                        <td class="p-4">
+                                                            Medical Grade Titanium
+                                                        </td>
+                                                        <td class="p-4">
+                                                            Custom Emergence Profile
+                                                        </td>
+                                                        <td class="p-4 font-mono">
+                                                            4 Days
+                                                        </td>
+                                                    </tr>
 
-                                                <tr class="hover:bg-slate-50">
-                                                    <td class="p-4 font-bold text-navy-900">
-                                                        Zirconia Hybrid Abutment
-                                                    </td>
-                                                    <td class="p-4">
-                                                        Ti-Base + Zirconia
-                                                    </td>
-                                                    <td class="p-4">
-                                                        심미성 요구 케이스
-                                                    </td>
-                                                    <td class="p-4 font-mono">
-                                                        4 ~ 5 Days
-                                                    </td>
-                                                </tr>
+                                                    <tr class="hover:bg-slate-50">
+                                                        <td class="p-4 font-bold text-navy-900">
+                                                            Zirconia Hybrid Abutment
+                                                        </td>
+                                                        <td class="p-4">
+                                                            Ti-Base + Zirconia
+                                                        </td>
+                                                        <td class="p-4">
+                                                            심미성 요구 케이스
+                                                        </td>
+                                                        <td class="p-4 font-mono">
+                                                            4 ~ 5 Days
+                                                        </td>
+                                                    </tr>
 
-                                                <tr class="hover:bg-slate-50">
-                                                    <td class="p-4 font-bold text-navy-900">
-                                                        Screw-Retained Bridge
-                                                    </td>
-                                                    <td class="p-4">
-                                                        Titanium + Zirconia
-                                                    </td>
-                                                    <td class="p-4">
-                                                        다수 임플란트 케이스
-                                                    </td>
-                                                    <td class="p-4 font-mono">
-                                                        6 ~ 7 Days
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                                    <tr class="hover:bg-slate-50">
+                                                        <td class="p-4 font-bold text-navy-900">
+                                                            Screw-Retained Bridge
+                                                        </td>
+                                                        <td class="p-4">
+                                                            Titanium + Zirconia
+                                                        </td>
+                                                        <td class="p-4">
+                                                            다수 임플란트 케이스
+                                                        </td>
+                                                        <td class="p-4 font-mono">
+                                                            6 ~ 7 Days
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1445,7 +1531,6 @@
                                 </span>
                                 <h3 class="mt-3 text-2xl font-extrabold text-navy-900 tracking-tight leading-tight">
                                     정밀 심미 보철
-                                    <br>
                                     & 라미네이트
                                 </h3>
                                 <p class="mt-5 text-sm text-steel-600 leading-relaxed">
@@ -1737,7 +1822,7 @@
                             04 / Digital Orthodontics
                         </span>
                         <h3 class="mt-3 text-2xl font-extrabold text-navy-900 tracking-tight">
-                            디지털<br>
+                            디지털
                             투명교정 시스템
                         </h3>
                         <p class="mt-5 text-sm text-steel-600 leading-relaxed">
@@ -1818,42 +1903,44 @@
                             </div>
 
                             <!-- Table -->
-                            <div class="overflow-x-auto">
-                                <table class="w-full text-xs text-left">
-                                    <thead class="bg-navy-900 text-white uppercase font-mono">
-                                        <tr>
-                                            <th class="p-4">
-                                                구분
-                                            </th>
-                                            <th class="p-4">
-                                                장치 소재
-                                            </th>
-                                            <th class="p-4">
-                                                제작 방식
-                                            </th>
-                                            <th class="p-4">
-                                                제작 기준
-                                            </th>
-                                        </tr>
-                                    </thead>
+                            <div>
+                                <div class="table-scroll">
+                                    <table class="w-full text-xs text-left">
+                                        <thead class="bg-navy-900 text-white uppercase font-mono">
+                                            <tr>
+                                                <th class="p-4">
+                                                    구분
+                                                </th>
+                                                <th class="p-4">
+                                                    장치 소재
+                                                </th>
+                                                <th class="p-4">
+                                                    제작 방식
+                                                </th>
+                                                <th class="p-4">
+                                                    제작 기준
+                                                </th>
+                                            </tr>
+                                        </thead>
 
-                                    <tbody class="divide-y divide-silver-200">
-                                        <tr class="hover:bg-slate-50">
-                                            <td class="p-4 font-bold text-navy-900">
-                                                Digital Clear Aligner
-                                            </td>
-                                            <td class="p-4">
-                                                Multi-Layer Thermoforming Sheet
-                                            </td>
-                                            <td class="p-4">
-                                                3D Printed Model + Thermoforming
-                                            </td>
-                                            <td class="p-4 font-mono">
-                                                3 ~ 4 Days
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                        <tbody class="divide-y divide-silver-200">
+                                            <tr class="hover:bg-slate-50">
+                                                <td class="p-4 font-bold text-navy-900">
+                                                    Digital Clear Aligner
+                                                </td>
+                                                <td class="p-4">
+                                                    Multi-Layer Thermoforming Sheet
+                                                </td>
+                                                <td class="p-4">
+                                                    3D Printed Model + Thermoforming
+                                                </td>
+                                                <td class="p-4 font-mono">
+                                                    3 ~ 4 Days
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1867,7 +1954,7 @@
                         Quality Control
                     </span>
                     <h2 class="mt-3 text-2xl sm:text-3xl font-extrabold text-navy-900">
-                        제작 결과보다 중요한 것은<br>
+                        제작 결과보다 중요한 것은
                         일관된 품질 관리입니다.
                     </h2>
                     <p class="mt-4 text-sm text-steel-600 leading-relaxed">
@@ -2269,7 +2356,6 @@
                             </span>
                             <h2 class="text-2xl sm:text-3xl font-extrabold text-navy-900 tracking-tight">
                                 스캔 데이터 제출 전
-                                <br>
                                 확인 사항
                             </h2>
                             <p class="mt-5 text-sm text-steel-600 leading-relaxed">
@@ -2497,7 +2583,6 @@
                                 </span>
                                 <p class="mt-2 text-sm font-bold text-navy-900 leading-relaxed">
                                     서울특별시 강남구 테헤란로 210
-                                    <br>
                                     아티잔 타워 8층
                                 </p>
                             </div>
@@ -2662,9 +2747,11 @@
         // Product Tab Switcher
         function switchProductTab(tabId, clickedButton) {
 
-            // 모든 버튼 초기화
-            const tabs = document.querySelectorAll('#product-tabs .tab-btn');
+            const tabs = document.querySelectorAll(
+                '#product-tabs .tab-btn'
+            );
 
+            // 모든 버튼 초기화
             tabs.forEach(tab => {
                 tab.classList.remove(
                     'active',
@@ -2681,22 +2768,24 @@
             });
 
 
-            // 클릭한 버튼 활성화
+            // 현재 버튼 활성화
             if (clickedButton) {
+                clickedButton.classList.remove(
+                    'bg-white',
+                    'text-navy-900',
+                    'border-silver-300'
+                );
+
                 clickedButton.classList.add(
                     'active',
                     'bg-navy-900',
                     'text-white',
                     'border-navy-900'
                 );
-                clickedButton.classList.remove(
-                    'bg-white',
-                    'text-navy-900',
-                    'border-silver-300'
-                );
             }
 
-            // 모든 콘텐츠 숨기기
+
+            // 모든 콘텐츠 숨김
             const contents = document.querySelectorAll(
                 '.product-tab-content'
             );
