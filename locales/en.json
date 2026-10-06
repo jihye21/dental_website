@@ -1,6 +1,253 @@
 {
-  "01_title": "Digital Dental Laboratory Studio",
-  "iso_cert": "ISO 13485 Medical Device Quality Management Certified Lab",
-  "contact_label": "Order & Consultation:",
-  "phone_number": "+82-2-555-8920"
+  "top-line": {
+    "title": "Digital Dental Laboratory Studio",
+    "iso_cert": "ISO 13485 Certified Medical Device Dental Lab",
+    "contact_label": "Order & Consultation:",
+    "phone_number": "+82-2-555-8920"
+  },
+  "nav-bar": {
+    "nav-home": "Home", 
+    "nav-about": "About Us", 
+    "nav-products": "Products & Services", 
+    "nav-workflow": "Digital Workflow", 
+    "nav-contact": "Contact & Location"
+  },
+  
+  "home": {
+    "hero": {
+      "badge": "Precision Prosthetics Driven by Digital Data",
+      "title_tech": "Integrating Advanced Digital Technology",
+      "title_craft": "With the Delicate Touch of a Master Artisan.",
+      "description": "Artisan Dental Studio combines advanced CAD/CAM technology with skilled, meticulous hand-finishing <br class='hidden lg:inline'>to craft premium high-end prosthetics optimized for every clinical environment.",
+      "btn_directions": "Find Our Studio",
+      "btn_products": "View Products & Services"
+    },
+    "brand_trust": {
+      "process_title": "Prosthetic Fabrication Process",
+      "process_desc": "Based on Precise Digital Data",
+      "materials_title": "Reliable Prosthetic Fabrication",
+      "materials_desc": "Using Proven Global Materials",
+      "inspection_title": "Ensuring Superior Quality",
+      "inspection_desc": "Through Multi-Stage Precision Inspection",
+      "communication_desc": "Fast, Efficient, and Seamless",
+      "communication_title": "Accurate Communication"
+    },
+    "competencies": {
+      "section_title": "3 Core Competencies of Artisan Dental Studio",
+      "section_desc": "We seamlessly bridge the precision of digital technology and the delicate skill of human touch into a single fabrication process.",
+     
+      "cadcam_title": "State-of-the-Art Digital CAD/CAM Systems",
+      "cadcam_desc": "Utilizing 3Shape and Exocad-based digital workflows, we precisely analyze intraoral scan data and fabricate accurate prosthetic anatomical forms using high-speed milling equipment.",
+      
+      "handmade_title": "Artisanal Handmade Finish by Skilled Technicians",
+      "handmade_desc": "Delicate surface textures, natural proximal contouring, and individualized shade matching—details difficult to achieve through machine processing alone—are perfected by the hands of our experienced technicians.",
+      
+      "quality_title": "Rigorous Quality Control & Authentic Materials",
+      "quality_desc": "We exclusively use proven, genuine certified global materials and deliver only high-quality, flawless prosthetics to clinics through an exhaustive pre-shipping precision inspection process."
+    },
+    "products_preview": {
+      "section_title": "Premium Specialized Prosthetics",
+      "section_desc": "We offer a wide range of custom prosthetic fabrication services tailored to specific clinical objectives and individual cases.",
+      "btn_view_all": "View All Products & Detailed Specifications",
+      "duration_label": "Turnaround Time",
+      
+      "zirconia_title": "Zirconia Prosthetics",
+      "zirconia_desc": "Anterior and posterior zirconia restorations utilizing highly translucent multi-layer blocks to deliver both exceptional strength and natural esthetics.",
+      "zirconia_duration": "3-4 Days",
+      
+      "implant_title": "Custom Implant Prosthetics",
+      "implant_desc": "Single and full-arch implant restorations including custom milled abutments and screw-retained type prosthetic frameworks.",
+      "implant_duration": "4-5 Days",
+      
+      "laminate_title": "Minimal-Prep Laminate Veneers",
+      "laminate_desc": "Ultra-thin ceramic veneers engineered to capture natural tooth anatomy, optical properties, and seamless shade harmony for advanced esthetic restorations.",
+      "laminate_duration": "4 Days",
+     
+      "aligner_title": "Digital Clear Aligners",
+      "aligner_desc": "Designing step-by-step tooth movement sequences via digital setup software to fabricate customized, high-precision clear aligner systems.",
+      "aligner_duration": "3 Days"
+    }
+  },
+  
+  "about": {
+    "hero": {
+      "title": "About Our Studio & Equipment Systems",
+      "desc": "Through a digital workflow and a precision manufacturing framework built on clinical data, we achieve consistent, high-fidelity prosthetic outcomes that honor each clinician’s treatment philosophy."
+    },
+    "philosophy": {
+      "title": "A Prosthetic Partner That Perfectly Understands Your Clinical Philosophy",
+      "desc_highlight": "Dental prosthetics are not just simple artificial structures, but high-precision medical devices that must function inside a patient's oral cavity for years.",
+      "desc_main": "Artisan Dental Studio databases each clinic's unique preparation margin styles, occlusal adjustment preferences, and proximal contact tightness trends. This targeted synchronization minimizes chair time and guarantees consistently predictable prosthetic outcomes."
+    },
+    "trust": {
+      "dedicated_title": "1:1 Dedicated Clinic Technician System",
+      "dedicated_desc": "By assigning a dedicated CAD designer and technician to each partner clinic, we ensure continuous feedback integration and precise error corrections.",
+      
+      "microscope_title": "3-Stage Microscope Margin QA",
+      "microscope_desc": "We perform meticulous magnification inspections post-design, immediately after milling, and after the final buildup finish to eliminate quality deviations throughout fabrication.",
+      
+      "material_title": "Verified Genuine Material Management",
+      "material_desc": "We systematically track manufacturers and product data for all materials used, prioritizing components that meet strict regulatory approval and validation standards.",
+      
+      "archiving_title": "Digital Data Archiving",
+      "archiving_desc": "Patient CAD models and manufacturing data are securely archived, allowing us to respond swiftly and accurately to remakes or modification requests."
+    },
+    "equipment": {
+      "section_title": "Advanced Digital Equipment & Systems",
+      "section_desc": "By seamlessly integrating digital manufacturing stages from CAD design to CAM, milling, and 3D printing,",
+      "section_desc_management": "we strictly manage both technical precision and workflow consistency.",
+      
+      "cad_desc": "Based on digital intraoral scan data, we engineer accurate prosthetic anatomy and occlusal relationships, accommodating complex cases such as full-arch restorations and customized abutments.",
+      
+      "milling_title": "vhf & Roland 5-Axis Simultaneous Milling",
+      "milling_desc": "Utilizing 5-axis dry and wet milling systems, we offer high-precision processing for diverse materials including zirconia, titanium, and hybrid ceramics.",
+      
+      "printing_desc": "Leveraging SLA/DLP-based digital printing systems, we support various therapeutic protocols including surgical guides, denture bases, and temporary restorations."
+    },
+    "workflow": {
+      "data_title": "Intraoral Scan & Clinical Data Verification",
+      "design_title": "Prosthetic Architecture & Occlusal Design",
+      "production_title": "Precision Milling, Printing & Artisanal Buildup",
+      "inspection_title": "Final Morphology, Margin & Occlusion Quality Check"
+    }
+  },
+  
+  "products": {
+    "hero": {
+      "title": "Core Products & Detailed Specifications",
+      "desc": "From digital design and material selection to precision milling and final inspection, we apply distinct fabrication protocols optimized for each restoration type."
+    },
+    "intro": {
+      "title": "Engineering Material Choice and Fabrication Methods Tailored to Case Objectives.",
+      "desc": "Rather than just mass-producing dental restorations, Artisan Dental Studio comprehensively reviews the unique manufacturing parameters of every case based on the intraoral scan data and clinical insights provided by the clinician."
+    },
+    "tabs": {
+      "zirconia": "Zirconia",
+      "zirconia_sub": "",
+      "implant": "임플란트",
+      "implant_sub": "",
+      "esthetic": "심미 보철", 
+      "esthetic_sub": "",
+      "aligner": "투명교정",
+      "aligner_sub": ""
+    },
+ "table_headers": {
+    "item": "Item Details",
+    "material": "Materials Used",
+    "material_applied": "Applied Materials",
+    "feature": "Key Features",
+    "criteria": "Turnaround Standards",
+    "case_applied": "Indications / Applicable Cases",
+    "category": "Category",
+    "method": "Fabrication Method"
+  },
+  "tab_zirconia": {
+    "title": "Multi-layered Zirconia Series",
+    "desc": "We select and apply the ideal zirconia materials and manufacturing protocols customized for each case, carefully balancing the high esthetic demands of the anterior zone and the functional requirements of the posterior zone.",
+    
+    "anterior_title": "Anterior Esthetic Cases",
+    "anterior_duration": "3 ~ 4 Days",
+    "posterior_title": "Posterior & Functional Cases",
+    "posterior_duration": "3 Days",
+    "shade_title": "Customized Characterization & Morphology",
+    "shade_duration": "4 ~ 5 Days",
+    
+    "quality_note": "Zirconia restorations are prescribed after a comprehensive review of the anatomical location, occlusal conditions, required translucency, and intrinsic material properties."
+  },
+  "tab_implant": {
+    "title": "Customized Implant Prosthetic Systems",
+    "desc": "We orchestrate our digital implant designs by synthesising intraoral implant scan data, emergence profiles, restorative space availability, and occlusal architectures.",
+    
+    "workflow_analysis": "Verifying implant positions and surrounding soft tissue topographies.",
+    "workflow_design": "Engineering physiological emergence profiles and precise prosthetic morphology.",
+    "workflow_verification": "Performing final validations on interfacial fit and prosthetic architecture.",
+    
+    "aesthetic_case": "High Esthetic Demand Cases",
+    "multi_case": "Multi-Unit & Full-Arch Implant Cases"
+  },
+  "tab_esthetic": {
+    "title": "Precision Esthetic Restorations & Laminate Veneers",
+    "desc": "We craft esthetic restorations that harmonize seamlessly with natural dentition through a granular analysis of tooth macro/micro-morphology, surface textures, translucency, and multi-chromatic shades.",
+    
+    "qa_title": "Esthetic Restoration Quality Control",
+    "qa_desc": "We perform step-by-step inspections verifying prosthetic geometry, color accuracy, and surface luster based on the morphological and optical properties of natural teeth.",
+    
+    "precision_title": "Anatomical Morphology & Natural Shade Reproduction",
+    "precision_desc": "Rather than simply fabricating monochromatic, hyper-white restorations, we design each case with deliberate consideration of adjacent tooth contours, macro/micro-textures, internal translucency, and individual shade gradients."
+  },
+  "tab_aligner": {
+    "title": "Digital Clear Aligner Systems",
+    "desc": "Based on digital dentition datasets, we model sequential tooth movements through staging software and seamlessly link 3D printed models with automated thermoforming processes to fabricate high-precision clear aligner systems."
+  },
+  "quality_system": {
+    "section_title": "Consistent Quality Management Matters More Than Just Final Output.",
+    "section_desc": "From the initial digital design to precision milling, fit adaptation, external anatomy, and final glaze, we verify every single stage of the fabrication workflow.",
+    
+    "qa_cad_match": "Superimposing the CAD design over raw intraoral scan data to verify macro-morphology and main contact points.",
+    "qa_post_milling": "Inspecting post-milling or post-printing structural integrity and critical geometric features.",
+    "qa_case_review": "Evaluating case-specific criteria including margin fidelity, proximal relations, and occlusal adaptations.",
+    "qa_final_finish": "Reviewing final anatomy and surface finishing characteristics before advancing to clinical packaging and dispatch."
+  },
+  "material_standard": {
+    "title": "Traceable Fabrication Systems from Material Selection to Final Delivery",
+    "desc": "We verify all batch materials and processing methods applied to each case, maintaining a strict digital database to preserve workflow consistency and protocol standards."
+  },
+ },
+ 
+  "workflow": {
+    "hero": {
+      "title": "Digital Workflow & Scan Guidelines",
+      "desc": "From intraoral scan data receipt to CAD architecture, precision manufacturing, and final inspection, every stage is governed by a consistent digital protocol."
+    },
+    "intro": {
+      "title_start": "From Scan Data Receipt",
+      "title_end": "To Final Delivery",
+      "desc": "We integrate design and manufacturing parameters based on digital impression data, maintaining prosthetic consistency through rigorous, stage-by-stage QC intervention checkpoints."
+    },
+    "process_steps": {
+      "receipt_title": "Scan Data Receipt",
+      "receipt_desc": "We receive STL and PLY data captured from intraoral scanners such as iTero, TRIOS, and Medit, performing a primary validation of file integrity and scan boundary adequacy.",
+      "design_title": "High-Precision CAD Design",
+      "design_desc": "We analyze preparation margins, proximal boundaries, occlusal relationships, and antagonist space availability to engineer a custom 3D CAD design tailored to case specifics.",
+      "milling_title": "5-Axis Milling & Hand-Finishing",
+      "milling_desc": "Restorations undergo precision milling based on CAD datasets, followed by material-specific sintering, fine surface texturing, staining, and glazing post-processing sequences.",
+      "delivery_title": "Final Quality Check & Dispatch",
+      "delivery_desc": "We run final evaluations on margin fidelity, seating fit, occlusion, and morphology, advancing the restoration through customized clinical packaging and case-by-case delivery protocols."
+    },
+    "guideline": {
+      "section_title": "Pre-Submission Scan Checklists",
+      "section_desc": "To ensure absolute prosthetic accuracy, please verify scan data quality and critical clinical parameters prior to submission.",
+      "margin_title": "Ensuring Margin Clarity",
+      "margin_desc": "Minimize moisture, saliva, or hemorrhaging around the preparation margin to ensure that the finish line boundary is sharply captured.",
+      "bite_title": "Verifying Bite Registration Data",
+      "bite_desc": "Confirm that maxillo-mandibular occlusal data is accurately aligned via a 3D viewer, checking for mesh overlaps or potential premature contacts.",
+      "scanbody_title": "Validating Scanbody Seating",
+      "scanbody_desc": "Ensure the scanbody is completely and accurately seated; please attach clinical photographs or complementary diagnostic data if required."
+    },
+   },
+   
+    "contact": {
+      "hero": {
+        "title_ko": "Contact & Location",
+        "subtitle": "Location of Artisan Dental Studio"
+      },
+      "location": {
+        "section_title": "Studio Location & Visitor Guide",
+        "studio_name": "Artisan Dental Studio",
+        "address": "8F, Artisan Tower, 210 Teheran-ro, Gangnam-gu, Seoul, Republic of Korea",
+        "telephone": "+82-2-555-8920"
+      },
+      "hours": {
+        "weekday_label": "Weekdays",
+        "saturday_label": "Saturdays",
+        "sunday_holiday_label": "Sundays / Public Holidays",
+        "closed_label": "Closed"
+      }
+    },
+    
+    "footer": {
+      "corporate_info": "Company: Artisan Dental Studio | CEO: Kim Artisan",
+      "registration_info": "Business Registration No: 220-88-12345 | Dental Laboratory License No: No. 2025-Gangnam-0412",
+      "address_info": "Address: 8F, Artisan Tower, 210 Teheran-ro, Gangnam-gu, Seoul, Republic of Korea"
+    }
 }
