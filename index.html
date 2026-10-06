@@ -190,18 +190,27 @@
             <!-- left -->
             <div class="flex items-center space-x-4 text-xs font-semibold tracking-tight text-slate-800">
                 <span class="flex items-center gap-1.5 text-blue-700">
-                    <i class="fa-solid fa-tooth"></i> 디지털 치과기공 전문 스튜디오
+                    <i class="fa-solid fa-tooth"></i> 
+                    <span data-i18n="01_title">디지털 치과기공 전문 스튜디오</span>
                 </span>
                 <span class="hidden md:inline text-slate-300">|</span>
-                <span class="hidden md:inline text-slate-500 font-normal">ISO 13485 의료기기 품질경영인증 기공소</span>
+                <span class="hidden md:inline text-slate-500 font-normal" data-i18n="iso_cert">ISO 13485 의료기기 품질경영인증 기공소</span>
             </div>
 
             <!-- right -->
             <div class="flex items-center space-x-4 text-xs">
                 <span class="text-slate-600 font-medium">
-                    <i class="fa-solid fa-phone text-blue-600 mr-1"></i> 기공 의뢰 및 상담: <strong
-                        class="text-slate-900 font-bold">02-555-8920</strong>
+                    <i class="fa-solid fa-phone text-blue-600 mr-1"></i> 
+                        <span data-i18n="contact_label">기공 의뢰 및 상담:</span> 
+                        <strong class="text-slate-900 font-bold" data-i18n="phone_number">02-555-8920</strong>
                 </span>
+
+                <span class="text-slate-300">|</span>
+                <div class="flex items-center space-x-1 font-semibold">
+                    <button onclick="switchLanguage('ko')" class="hover:text-blue-700 transition-colors">KO</button>
+                    <span class="text-slate-300">/</span>
+                    <button onclick="switchLanguage('en')" class="hover:text-blue-700 transition-colors">EN</button>
+                </div>
                 <!--
                 <span class="hidden sm:inline text-slate-300">|</span>
                 <a href="javascript:void(0)" onclick="navigateTo('contact')" class="text-slate-600 hover:text-blue-700 transition-colors hidden sm:inline flex items-center gap-1">
@@ -2819,6 +2828,48 @@
         document.getElementById('mobile-menu-btn').addEventListener('click', function () {
             document.getElementById('mobile-menu').classList.toggle('hidden');
         });
+        
+        //언어 변경
+        // 기본 언어 설정
+        const defaultLang = localStorage.getItem('lang') || 
+                            (navigator.language.startsWith('en') ? 'en' : 'ko');
+
+        let currentTranslations = {};
+
+        // JSON 로드
+        async function loadTranslations(lang) {
+            try {
+                const response = await fetch(`./locales/${lang}.json`);
+                if (!response.ok) throw new Error(`언어 파일을 찾을 수 없습니다: ${lang}`);
+                currentTranslations = await response.json();
+                localStorage.setItem('lang', lang);
+                applyTranslations();
+            } catch (error) {
+                console.error('다국어 로드 실패:', error);
+            }
+        }
+
+        // HTML 번역 적용 함수
+        function applyTranslations() {
+            const elements = document.querySelectorAll('[data-i18n]');
+            elements.forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (currentTranslations[key]) {
+                    el.textContent = currentTranslations[key];
+                }
+            });
+        }
+
+        // 언어 전환
+        function switchLanguage(lang) {
+            loadTranslations(lang);
+        }
+
+        // 페이지 초기 로드 시 실행
+        document.addEventListener('DOMContentLoaded', () => {
+            loadTranslations(defaultLang);
+        });
+
     </script>
 </body>
 
