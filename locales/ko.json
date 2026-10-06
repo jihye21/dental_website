@@ -1,6 +1,262 @@
 {
-  "01_title": "디지털 치과기공 전문 스튜디오",
-  "iso_cert": "ISO 13485 의료기기 품질경영인증 기공소",
-  "contact_label": "기공 의뢰 및 상담:",
-  "phone_number": "02-555-8920"
-}
+	"top-line": {
+	  "title": "디지털 치과기공 전문 스튜디오",
+	  "iso_cert": "ISO 13485 의료기기 품질경영인증 기공소",
+	  "contact_label": "기공 의뢰 및 상담:",
+	  "phone_number": "02-555-8920"
+  },
+  "nav-bar": {
+	  "nav-home": "홈", 
+	  "nav-about": "기공소 소개", 
+	  "nav-products": "주요 기공 품목", 
+	  "nav-workflow": "디지털 워크플로우", 
+	  "nav-contact": "오시는 길"
+	},
+	
+	"home": {
+		"hero": {
+      "badge": "디지털 데이터 기반의 정밀 보철 제작",
+      "title_tech": "정밀한 디지털 기술과",
+      "title_craft": "장인의 섬세한 손길을 더합니다.",
+      "description": "아티잔 덴탈 스튜디오는 디지털 CAD/CAM 기술과 숙련된 기공 정밀한 핸드 피니싱을 결합하여, <br class='hidden lg:inline'>임상 환경에 최적화된 하이엔드 보철을 제작합니다.",
+      "btn_directions": "오시는 길",
+      "btn_products": "보철물 제작 품목 보기"
+    },
+    "brand_trust": {
+      "process_title": "보철 제작 프로세스",
+      "process_desc": "정밀한 디지털 데이터 기반",
+      "materials_title": "안정적인 보철 제작",
+      "materials_desc": "검증된 글로벌 소재를 통한",
+      "inspection_title": "품질을 확인합니다",
+      "inspection_desc": "출고 전 단계별 정밀 검수로",
+      "communication_desc": "치과와 기공소 간 빠르고"
+      "communication_title": "정확한 커뮤니케이션",
+    },
+		"competencies": {
+      "section_title": "아티잔 덴탈 스튜디오의 3대 핵심 경쟁력",
+      "section_desc": "디지털 기술의 정밀함과 사람의 섬세한 기술을 하나의 제작 프로세스로 연결합니다.",
+     
+      "cadcam_title": "최신 디지털 CAD/CAM 시스템",
+      "cadcam_desc": "3Shape 및 Exocad 기반의 디지털 워크플로우를 활용하여 구강 스캔 데이터를 정밀하게 분석하고, 고속 밀링 장비를 통해 보철 형태를 가공합니다.",
+      
+      "handmade_title": "숙련된 기공사의 핸드메이드 마감",
+      "handmade_desc": "기계 가공만으로 완성하기 어려운 미세한 표면 질감과 자연치 인접면 컨투어링, 개별 쉐이드 표현을 숙련된 테크니션의 손으로 완성합니다.",
+      
+      "quality_title": "철저한 품질 관리 및 정품 재료",
+      "quality_desc": "검증된 글로벌 정품 소재를 사용하고, 출고 전 정밀 검수 과정을 거쳐 완성도 높은 보철물만 치과에 공급합니다."
+    },
+	  "products_preview": {
+      "section_title": "주요 전문 보철 품목",
+      "section_desc": "임상 목적과 케이스에 맞춘 다양한 보철 제작 서비스를 제공합니다.",
+      "btn_view_all": "전체 품목 및 규격 상세 보기",
+      "duration_label": "제작 기간",
+      
+      "zirconia_title": "지르코니아 보철",
+      "zirconia_desc": "고투명 멀티레이어 블록을 활용하여 강도와 심미성을 함께 고려한 전비추 및 구치부 지르코니아.",
+      "zirconia_duration": "3-4일",
+      
+      "implant_title": "임플란트 맞춤 보철",
+      "implant_desc": "Custom Abutment 밀링 및 Screw-Retained 타입의 단일·전악 임플란트 보철물",
+      "implant_duration": "4-5일",
+      
+      "laminate_title": "최소 삭제 라미네이트",
+      "laminate_desc": "초박막 세라믹을 활용하여 자연스러운 형태와 색감을 고려한 심미 보철을 제작합니다.",
+      "laminate_duration": "4일",
+     
+      "aligner_title": "디지털 투명교정",
+      "aligner_desc": "디지털 Setup을 기반으로 단계별 치아 이동을 설계하고 맞춤형 투명교정 장치를 제작합니다.",
+      "aligner_duration": "3일"
+    }
+   },
+   
+   "about": {
+    "hero": {
+      "title": "기공소 소개 및 설비 시스템",
+      "desc": "임상 데이터를 기반으로 한 디지털 워크플로우와 정밀 제조 시스템을 통해 치과의 진료 철학에 맞는 일관된 보철 결과를 구현합니다."
+    },
+   "philosophy": {
+      "title": "원장님의 진료 철학을 완벽하게 이해하는 보철 파트",
+      "desc_highlight": "치과기공물은 단순한 인공 구조물이 아니라 환자의 구강 내에서 수년 이상 기능해야 하는 정밀 의료 기기입니다.",
+      "desc_main": "아티잔 덴탈 스튜디오는 각 치과마다 상이한 프렙 마진 스타일, 교합 조정 선호도, 콘택 타이트니스 취향을 데이터베이스화하여 체어타임(Chair Time)을 단축시키고 일관된 보철 결과를 구현합니다."
+    },
+    "trust": {
+      "dedicated_title": "1:1 치과 전담 기공사제",
+      "dedicated_desc": "파트너 치과별 전담 CAD 디자이너 및 테크니션을 배치하여 지속적인 피드백 반영과 오차 교정을 수행합니다.",
+      
+      "microscope_title": "3단계 현미경 마진 QA",
+      "microscope_desc": "디자인 완료 후, 밀링 직후, 최종 빌드업 마감 후 단계별 확대 검수를 실시하여 제작 과정의 품질 편차를 관리합니다.",
+      
+      "material_title": "검증된 정품 소재 관리",
+      "material_desc": "사용 소재의 제조사와 제품 정보를 체계적으로 관리하고, 승인 및 검증 기준에 맞는 소재를 우선 적용합니다.",
+      
+      "archiving_title": "디지털 데이터 아카이빙",
+      "archiving_desc": "환자별 CAD 디자인 및 제작 데이터를 안전하게 보관하여 재제작이나 수정 요청에 신속하게 대응할 수 있도록 관리합니다."
+    },
+    "equipment": {
+      "section_title": "보유 디지털 장비 및 시스템",
+      "section_desc": "CAD 디자인부터 CAM, 밀링, 3D 프린팅까지 디지털 제작 공정을 연결하여",
+      "section_desc_management": "정밀성과 작업 일관성을 동시에 관리합니다.",
+      
+      "cad_desc": "디지털 스캔 데이터를 기반으로 보철물의 형태와 교합 관계를 설계하고, 풀아치 및 맞춤형 어버트먼트 작업에 대응합니다.",
+      
+      "milling_title": "vhf & Roland 5축 동시 밀링",
+      "milling_desc": "5축 건·습식 밀링 시스템을 활용하여 지르코니아, 티타늄, 하이브리드 세라믹 등 다양한 소재의 정밀 가공에 대응합니다.",
+      
+      "printing_desc": "SLA/DLP 기반의 디지털 출력 시스템을 활용하여 서지컬 가이드, 덴쳐 베이스, 임시 보철물 등 다양한 제작 프로토콜에 대응합니다."
+    },
+   "workflow": {
+      "data_title": "구강 스캔 및 임상 데이터 확인",
+      
+      "design_title": "보철 디자인 및 교합 설계",
+      
+      "production_title": "밀링 · 프린팅 · 빌드업 제작",
+      
+      "inspection_title": "최종 형태 · 마진 · 교합 검수"
+    }
+	 },
+	 
+	 "products": {
+    "hero": {
+      "title": "주요 기공 품목 및 상세 규격",
+      "desc": "디지털 디자인부터 소재 선택, 정밀 가공, 최종 검수까지 각 보철의 특성에 맞는 제작 프로토콜을 적용합니다."
+    },
+    "intro": {
+      "title": "케이스의 목적에 따라 소재와 제작 방식을 설계합니다.",
+      "desc": "아티잔 덴탈 스튜디오는 단순히 보철물을 제작하는 것이 아니라 치과에서 전달되는 스캔 데이터와 임상 정보를 기반으로 케이스별 제작 조건을 검토합니다."
+    },
+    "tabs": {
+      "zirconia": "지르코니아",
+      "zirconia_sub": " / Zirconia",
+      "implant": "임플란트",
+      "implant_sub": " / Implant",
+      "esthetic": "심미 보철", 
+      "esthetic_sub": " / Esthetic",
+      "aligner": "투명교정",
+      "aligner_sub": " / Aligner"
+    },
+    "table_headers": {
+      "item": "세부 항목",
+      "material": "사용 소재",
+      "material_applied": "적용 소재",
+      "feature": "주요 특징",
+      "criteria": "제작 기준",
+      "case_applied": "적용 케이스",
+      "category": "구분",
+      "method": "제작 방식"
+    },
+	 "tab_zirconia": {
+      "title": "멀티레이어 지르코니아 시리즈",
+      "desc": "전치부의 심미성과 구치부의 기능적 요구를 고려하여 케이스에 맞는 지르코니아 소재와 제작 방식을 적용합니다.",
+      
+      "anterior_title": "전치부 심미 케이스",
+      "anterior_duration": "3 ~ 4 Days",
+      "posterior_title": "구치부 및 기능성 케이스",
+      "posterior_duration": "3 Days",
+      "shade_title": "개별 색조 및 형태 표현",
+      "shade_duration": "4 ~ 5 Days",
+      
+      "quality_note": "지르코니아는 케이스의 위치, 교합 조건, 요구되는 심미성 및 소재 특성을 종합적으로 검토하여 선택합니다."
+    },
+	 "tab_implant": {
+      "title": "맞춤형 임플란트 보철 시스템",
+      "desc": "Implant Scan Data와 emergence profile, 보철 공간 및 교합 정보를 종합적으로 확인하여 케이스에 맞는 임플란트 보철 디자인을 진행합니다.",
+      
+      "workflow_analysis": "Implant position과 주변 조직 정보를 확인합니다.",
+      "workflow_design": "emergence profile 및 보철 형태를 설계합니다.",
+      "workflow_verification": "접합부와 보철 형태를 최종 확인합니다.",
+      
+      "aesthetic_case": "심미성 요구 케이스",
+      "multi_case": "다수 임플란트 케이스"
+    },
+	"tab_esthetic": {
+    "title": "정밀 심미 보철 & 라미네이트",
+    "desc": "치아의 형태와 표면 텍스처, 투명도 및 색조를 세밀하게 분석하여 자연치와 조화를 이루는 심미 보철을 제작합니다.",
+    
+    "qa_title": "심미 보철 품질 관리",
+    "qa_desc": "자연치의 형태와 광학적 특성을 기준으로 보철물의 형태, 색조 및 표면 마감을 단계별로 검수합니다.",
+    
+    "precision_title": "자연스러운 형태와 색조의 재현",
+    "precision_desc": "단순히 밝은 색상의 보철물을 제작하는 것이 아니라 인접치의 형태와 표면 질감, 투명도 및 색조를 함께 고려하여 디자인합니다."
+  },
+	"tab_aligner": {
+    "title": "디지털 투명 교정 시스템",
+    "desc": "디지털 치열 데이터를 기반으로 단계별 셋업을 설계하고 3D 프린팅 모델과 thermoforming 공정을 연결하여 투명교정 장치 제작을 진행합니다."
+  },
+	"quality_system": {
+    "section_title": "제작 결과보다 중요한 것은 일관된 품질 관리입니다.",
+    "section_desc": "하나의 보철물이 완성되기까지 디자인, 가공, 적합도, 형태와 최종 마감 상태를 단계별로 확인합니다.",
+    
+    "qa_cad_match": "CAD 디자인과 스캔 데이터를 비교하여 형태 및 주요 접촉점을 확인합니다.",
+    "qa_post_milling": "밀링 또는 프린팅 후 제작 상태와 주요 형상을 확인합니다.",
+    "qa_case_review": "마진, 인접면, 접촉 관계 등 케이스별 주요 항목을 검토합니다.",
+    "qa_final_finish": "최종 형태와 표면 마감 상태를 확인한 후 출고 준비를 진행합니다."
+  },
+  "material_standard": {
+    "title": "소재 선택부터 최종 보철까지 기록 가능한 제작 시스템",
+    "desc": "케이스에 적용되는 소재 and 제작 방식을 확인하고 디지털 데이터를 기반으로 일관된 작업 프로토콜을 유지합니다."
+  },
+ },
+ 
+  "workflow": {
+    "hero": {
+      "title": "디지털 워크플로우 & 스캔 가이드",
+      "desc": "구강 스캔 데이터 접수부터 CAD 설계, 정밀 가공, 최종 검수까지 일관된 디지털 프로토콜을 기반으로 관리합니다."
+    },
+    "intro": {
+      "title_start": "스캔 데이터 접수부터",
+      "title_end": "최종 납품까지",
+      "desc": "디지털 인상 데이터를 기반으로 디자인과 제작 데이터를 연계하고, 각 공정별 QC 포인트를 적용하여 최종 보철물의 일관성을 관리합니다."
+    },
+	  "process_steps": {
+      "receipt_title": "스캔 데이터 접수",
+      "receipt_desc": "iTero, TRIOS, Medit 등 구강 스캐너에서 추출된 STL / PLY 데이터를 접수하고 파일 상태 및 스캔 범위를 1차 확인합니다.",
+      
+      "design_title": "CAD 정밀 디자인",
+      "design_desc": "마진라인, 인접면, 교합 관계와 대합치 공간을 분석하고 케이스 특성에 맞는 3D CAD 디자인을 진행합니다.",
+      
+      "milling_title": "5축 밀링 & 핸드 피니싱",
+      "milling_desc": "CAD 데이터를 기반으로 정밀 밀링을 진행하고 소재별 소결 및 표면 마감, 스테인, 글레이징 등의 후가공을 진행합니다.",
+      
+      "delivery_title": "최종 검수 & 출고",
+      "delivery_desc": "마진, 적합도, 교합 및 외형을 최종 확인하고 케이스별 포장 및 출고 프로세스를 거쳐 치과로 전달합니다."
+    },
+    "guideline": {
+      "section_title": "스캔 데이터 제출 전 확인 사항",
+      "section_desc": "정확한 보철 디자인을 위해 스캔 데이터의 상태와 주요 임상 정보를 사전에 확인해 주세요.",
+      
+      "margin_title": "Margin 명확성 확보",
+      "margin_desc": "프렙 마진 주변의 수분이나 출혈을 최소화하고 경계가 명확하게 표현되었는지 확인합니다.",
+     
+      "bite_title": "Bite Registration 데이터 확인",
+      "bite_desc": "상·하악 교합 데이터가 정확하게 정렬되었는지 3D 뷰어에서 오버랩 및 조기 접촉 여부를 확인합니다.",
+      
+      "scanbody_title": "Scanbody 체결 상태 확인",
+      "scanbody_desc": "Scanbody가 정확하게 체결되었는지 확인하고 필요 시 임상 이미지 및 추가 데이터를 함께 전달합니다."
+    },
+   },
+   
+   "contact": {
+    "hero": {
+      "title_ko": "오시는 길",
+      "subtitle": "아티잔 덴탈 스튜디오의 위치"
+    },
+    "location": {
+      "section_title": "기공소 위치 및 방문 안내",
+      "studio_name": "아티잔 덴탈 스튜디오",
+      "address": "서울특별시 강남구 테헤란로 210 아티잔 타워 8층",
+      "telephone": "02-555-8920"
+    },
+    "hours": {
+      "weekday_label": "평일",
+      "saturday_label": "토요일",
+      "sunday_holiday_label": "일요일 / 공휴일",
+      "closed_label": "휴무"
+    },
+	 },
+	 
+	 "footer": {
+      "corporate_info": "상호: 아티잔 덴탈 스튜디오 (Artisan Dental Studio) | 대표: 김아티잔",
+      "registration_info": "사업자등록번호: 220-88-12345 | 치과기공소 등록번호: 제 2025-강남-0412호",
+      "address_info": "주소: 서울특별시 강남구 테헤란로 210 아티잔 타워 8층"
+    }
+ }
