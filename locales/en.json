@@ -18,7 +18,12 @@
       "badge": "Precision Prosthetics Driven by Digital Data",
       "title_tech": "Integrating Advanced Digital Technology",
       "title_craft": "With the Delicate Touch of a Master Artisan.",
-      "description": "Artisan Dental Studio combines advanced CAD/CAM technology with skilled, meticulous hand-finishing <br class='hidden lg:inline'>to craft premium high-end prosthetics optimized for every clinical environment.",
+      "description": {
+        "tech_combination": "Artisan Dental Studio combines advanced CAD/CAM technology with skilled,",
+        "hand_finishing": "meticulous hand-finishing",
+        "product_quality": "to craft premium high-end prosthetics optimized for every clinical environment.",
+        "action_suffix": ""
+      },
       "btn_directions": "Find Our Studio",
       "btn_products": "View Products & Services"
     },

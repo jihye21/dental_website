@@ -18,7 +18,12 @@
       "badge": "디지털 데이터 기반의 정밀 보철 제작",
       "title_tech": "정밀한 디지털 기술과",
       "title_craft": "장인의 섬세한 손길을 더합니다.",
-      "description": "아티잔 덴탈 스튜디오는 디지털 CAD/CAM 기술과 숙련된 기공사의 <br class='hidden sm:block'>정밀한 핸드 피니싱을 결합하여, <strong class='text-silver-200 font-semibold'>임상 환경에 최적화된 하이엔드 보철물</strong>을 제작합니다.",
+      "description": {
+        "tech_combination": "아티잔 덴탈 스튜디오는 디지털 CAD/CAM 기술과 숙련된 기공사의",
+        "hand_finishing": "정밀한 핸드 피니싱을 결합하여,",
+        "product_quality": "임상 환경에 최적화된 하이엔드 보철물",
+        "action_suffix": "을 제작합니다."
+      },
       "btn_directions": "오시는 길",
       "btn_products": "보철물 제작 품목 보기"
     },
