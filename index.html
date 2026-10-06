@@ -191,18 +191,18 @@
             <div class="flex items-center space-x-4 text-xs font-semibold tracking-tight text-slate-800">
                 <span class="flex items-center gap-1.5 text-blue-700">
                     <i class="fa-solid fa-tooth"></i> 
-                    <span data-i18n="01_title">디지털 치과기공 전문 스튜디오</span>
+                    <span data-i18n="top-line.title">디지털 치과기공 전문 스튜디오</span>
                 </span>
                 <span class="hidden md:inline text-slate-300">|</span>
-                <span class="hidden md:inline text-slate-500 font-normal" data-i18n="iso_cert">ISO 13485 의료기기 품질경영인증 기공소</span>
+                <span class="hidden md:inline text-slate-500 font-normal" data-i18n="top-line.iso_cert">ISO 13485 의료기기 품질경영인증 기공소</span>
             </div>
 
             <!-- right -->
             <div class="flex items-center space-x-4 text-xs">
                 <span class="text-slate-600 font-medium">
                     <i class="fa-solid fa-phone text-blue-600 mr-1"></i> 
-                        <span data-i18n="contact_label">기공 의뢰 및 상담:</span> 
-                        <strong class="text-slate-900 font-bold" data-i18n="phone_number">02-555-8920</strong>
+                        <span data-i18n="top-line.contact_label">기공 의뢰 및 상담:</span> 
+                        <strong class="text-slate-900 font-bold" data-i18n="top-line.phone_number">02-555-8920</strong>
                 </span>
 
                 <span class="text-slate-300">|</span>
@@ -316,7 +316,7 @@
 
                             <!-- 메인 타이틀 -->
                             <h1 class="text-3xl sm:text-4xl lg:text-[3.4rem] font-bold tracking-tight text-white">
-                                <span class="block leading-[1.0]">
+                                <span class="block leading-[1.0]" data-i18n="home.hero.title_tech">
                                     정밀한 디지털 기술과
                                 </span>
                                 <span class="block leading-[1.0] text-steel-300 font-semibold mt-1">
@@ -2854,8 +2854,13 @@
             const elements = document.querySelectorAll('[data-i18n]');
             elements.forEach(el => {
                 const key = el.getAttribute('data-i18n');
-                if (currentTranslations[key]) {
-                    el.textContent = currentTranslations[key];
+
+                const value = key.split('.').reduce((obj, index)=> {
+                    return obj && obj[index] ? obj[index] : null;
+                }, currentTranslations);
+
+                if (value && typeof value === 'string') {
+                    el.textContent = value;
                 }
             });
         }

@@ -191,7 +191,7 @@
   "material_standard": {
     "title": "Traceable Fabrication Systems from Material Selection to Final Delivery",
     "desc": "We verify all batch materials and processing methods applied to each case, maintaining a strict digital database to preserve workflow consistency and protocol standards."
-  },
+  }
  },
  
   "workflow": {
@@ -223,7 +223,7 @@
       "bite_desc": "Confirm that maxillo-mandibular occlusal data is accurately aligned via a 3D viewer, checking for mesh overlaps or potential premature contacts.",
       "scanbody_title": "Validating Scanbody Seating",
       "scanbody_desc": "Ensure the scanbody is completely and accurately seated; please attach clinical photographs or complementary diagnostic data if required."
-    },
+    }
    },
    
     "contact": {

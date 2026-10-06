@@ -18,7 +18,7 @@
       "badge": "디지털 데이터 기반의 정밀 보철 제작",
       "title_tech": "정밀한 디지털 기술과",
       "title_craft": "장인의 섬세한 손길을 더합니다.",
-      "description": "아티잔 덴탈 스튜디오는 디지털 CAD/CAM 기술과 숙련된 기공 정밀한 핸드 피니싱을 결합하여, <br class='hidden lg:inline'>임상 환경에 최적화된 하이엔드 보철을 제작합니다.",
+      "description": "아티잔 덴탈 스튜디오는 디지털 CAD/CAM 기술과 숙련된 기공사의 <br class='hidden sm:block'>정밀한 핸드 피니싱을 결합하여, <strong class='text-silver-200 font-semibold'>임상 환경에 최적화된 하이엔드 보철물</strong>을 제작합니다.",
       "btn_directions": "오시는 길",
       "btn_products": "보철물 제작 품목 보기"
     },
@@ -29,8 +29,8 @@
       "materials_desc": "검증된 글로벌 소재를 통한",
       "inspection_title": "품질을 확인합니다",
       "inspection_desc": "출고 전 단계별 정밀 검수로",
-      "communication_desc": "치과와 기공소 간 빠르고"
-      "communication_title": "정확한 커뮤니케이션",
+      "communication_desc": "치과와 기공소 간 빠르고",
+      "communication_title": "정확한 커뮤니케이션"
     },
 		"competencies": {
       "section_title": "아티잔 덴탈 스튜디오의 3대 핵심 경쟁력",
@@ -194,7 +194,7 @@
   "material_standard": {
     "title": "소재 선택부터 최종 보철까지 기록 가능한 제작 시스템",
     "desc": "케이스에 적용되는 소재 and 제작 방식을 확인하고 디지털 데이터를 기반으로 일관된 작업 프로토콜을 유지합니다."
-  },
+  }
  },
  
   "workflow": {
@@ -232,7 +232,7 @@
       
       "scanbody_title": "Scanbody 체결 상태 확인",
       "scanbody_desc": "Scanbody가 정확하게 체결되었는지 확인하고 필요 시 임상 이미지 및 추가 데이터를 함께 전달합니다."
-    },
+    }
    },
    
    "contact": {
@@ -251,8 +251,8 @@
       "saturday_label": "토요일",
       "sunday_holiday_label": "일요일 / 공휴일",
       "closed_label": "휴무"
+    }
     },
-	 },
 	 
 	 "footer": {
       "corporate_info": "상호: 아티잔 덴탈 스튜디오 (Artisan Dental Studio) | 대표: 김아티잔",
