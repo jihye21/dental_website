@@ -129,11 +129,11 @@
     "tabs": {
       "zirconia": "Zirconia",
       "zirconia_sub": "",
-      "implant": "임플란트",
+      "implant": "Implant",
       "implant_sub": "",
-      "esthetic": "심미 보철", 
+      "esthetic": "Esthetic", 
       "esthetic_sub": "",
-      "aligner": "투명교정",
+      "aligner": "Aligner",
       "aligner_sub": ""
     },
  "table_headers": {
