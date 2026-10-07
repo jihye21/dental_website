@@ -281,7 +281,7 @@
             <a href="javascript:void(0)" onclick="navigateTo('about')"
                 class="block py-2 text-navy-900 border-b border-silver-100" data-i18n="nav-bar.nav-about">기공소 소개</a>
             <a href="javascript:void(0)" onclick="navigateTo('products')"
-                class="block py-2 text-navy-900 border-b border-silver-100" data-i18n="nav-bar.nab-products">주요 기공 품목</a>
+                class="block py-2 text-navy-900 border-b border-silver-100" data-i18n="nav-bar.nav-products">주요 기공 품목</a>
             <a href="javascript:void(0)" onclick="navigateTo('workflow')"
                 class="block py-2 text-navy-900 border-b border-silver-100" data-i18n="nav-bar.nav-workflow">디지털 워크플로우</a>
             <a href="javascript:void(0)" onclick="navigateTo('contact')" class="block py-2 text-navy-900"
@@ -1319,7 +1319,7 @@
                                                             세부 항목
                                                         </th>
                                                         <th class="p-4 border-r border-navy-800"
-                                                            data-i18n="products.table_header.material">
+                                                            data-i18n="products.table_headers.material">
                                                             사용 소재
                                                         </th>
                                                         <th class="p-4 border-r border-navy-800"
@@ -1327,7 +1327,7 @@
                                                             주요 특징
                                                         </th>
                                                         <th class="p-4"
-                                                            dat-i18n="products.table_headers.criteria">
+                                                            data-i18n="products.table_headers.criteria">
                                                             제작 기준
                                                         </th>
                                                     </tr>
@@ -1918,8 +1918,8 @@
 
             <!-- TAB 04 : ALIGNER -->
             <div id="tab-aligner" class="product-tab-content hidden">
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start mb-10">
-                    <div class="lg:col-span-4 px-5 sm:px-6 lg:px-0">
+                <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:px-6 lg:px-8">
+                    <div class="lg:col-span-4 px-5 sm:p-6 lg:p-7">
                         <span class="text-[10px] font-mono font-bold uppercase tracking-widest text-steel-500">
                             04 / Digital Orthodontics
                         </span>
@@ -1980,7 +1980,7 @@
                     </div>
 
                     <div class="lg:col-span-8">
-                        <div class="border border-silver-200 bg-white">
+                        <div class="border border-silver-200 bg-white" p-7 sm:p-8>
                             <!-- Visual -->
                             <div class="relative bg-slate-100 overflow-hidden">
                                 <img src="https://images.pexels.com/photos/13207280/pexels-photo-13207280.jpeg?auto=compress&cs=tinysrgb&w=1200"
@@ -2816,10 +2816,10 @@
                         data-i18n="nav-bar.nav-home">홈</a>
                     <a href="javascript:void(0)" onclick="navigateTo('about')"
                         class="hover:text-white transition-colors"
-                        data-i18n="nav-bar.nav-home">기공소 소개</a>
+                        data-i18n="nav-bar.nav-about">기공소 소개</a>
                     <a href="javascript:void(0)" onclick="navigateTo('products')"
                         class="hover:text-white transition-colors"
-                        data-i18n="nav-bar.nav-home">주요 기공 품목</a>
+                        data-i18n="nav-bar.nav-products">주요 기공 품목</a>
                     <a href="javascript:void(0)" onclick="navigateTo('workflow')"
                         class="hover:text-white transition-colors"
                         data-i18n="nav-bar.nav-workflow">디지털 워크플로우</a>
@@ -2833,7 +2833,7 @@
                 <div>
                     <p data-i18n="footer.corporate_info">상호: 아티잔 덴탈 스튜디오 (Artisan Dental Studio) | 대표: 김아티잔</p>
                     <p data-i18n="footer.registration_info">사업자등록번호: 220-88-12345 | 치과기공소 등록번호: 제 2025-강남-0412호</p>
-                    <p data-i18n="footer.addree_info">주소: 서울특별시 강남구 테헤란로 210 아티잔 타워 8층</p>
+                    <p data-i18n="footer.address_info">주소: 서울특별시 강남구 테헤란로 210 아티잔 타워 8층</p>
                 </div>
                 <div class="md:text-right">
                     <p>© 2026 ARTISAN DENTAL STUDIO. All Rights Reserved.</p>
@@ -2996,10 +2996,10 @@
                 const key = el.getAttribute('data-i18n');
 
                 const value = key.split('.').reduce((obj, index)=> {
-                    return obj && obj[index] ? obj[index] : null;
+                    return obj && obj[index] !== undefined ? obj[index] : null;
                 }, currentTranslations);
 
-                if (value && typeof value === 'string') {
+                if (value !== null && value !== undefined) {
                     el.textContent = value;
                 }
             });
