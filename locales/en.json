@@ -181,8 +181,12 @@
     "precision_desc": "Rather than simply fabricating monochromatic, hyper-white restorations, we design each case with deliberate consideration of adjacent tooth contours, macro/micro-textures, internal translucency, and individual shade gradients."
   },
   "tab_aligner": {
-    "title": "Digital Clear Aligner Systems",
-    "desc": "Based on digital dentition datasets, we model sequential tooth movements through staging software and seamlessly link 3D printed models with automated thermoforming processes to fabricate high-precision clear aligner systems."
+    "title": "Digital Clear Aligner",
+    "desc": "Customized clear aligners are manufactured by designing step-by-step tooth movements based on digital setups.",
+    "spec": {
+        "title": "Digital Clear Aligner System",
+        "desc": "Step-by-step setups are designed based on digital dentition data, with 3D-printed models integrated into the thermoforming process to manufacture customized clear aligners."
+    }  
   },
   "quality_system": {
     "section_title": "Consistent Quality Management Matters More Than Just Final Output.",
