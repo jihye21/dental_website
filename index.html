@@ -1241,23 +1241,23 @@
                     <!-- ================= TAB NAVIGATION ================= -->
                     <div class="flex flex-wrap gap-2 border-b border-silver-200 pb-4 mb-12" id="product-tabs">
                         <button type="button" onclick="switchProductTab('tab-zirconia', this)"
-                            class="tab-btn active px-5 py-3 border border-navy-900 bg-navy-900 text-white font-bold text-xs uppercase tracking-wider transition-all">
+                            class="tab-btn active px-5 py-3 border border-navy-900 bg-navy-900 text-white font-bold text-xs uppercase tracking-wider transition-all duration-150 active:scale-95 bg-navy-900 text-white border-navy-900">
                             <span data-i18n="products.tabs.zirconia">지르코니아</span>
                             <span class="hidden sm:inline" data-i18n="products.tabs.zirconia_sub"> / Zirconia</span>
                         </button>
                         <button type="button" onclick="switchProductTab('tab-implant', this)"
-                            class="tab-btn px-5 py-3 border border-silver-300 bg-white font-bold text-xs uppercase tracking-wider text-navy-900 hover:bg-slate-50 transition-all">
+                            class="tab-btn px-5 py-3 border border-silver-300 bg-white font-bold text-xs uppercase tracking-wider transition-all duration-150 active:scale-95 bg-white text-navy-900 border-silver-300 hover:bg-slate-50">
                             <span data-i18n="products.tabs.implant">임플란트</span>
                             <span class="hidden sm:inline" data-i18n="products.tabs.implant_sub"> / Implant</span>
 
                         </button>
                         <button type="button" onclick="switchProductTab('tab-laminate', this)"
-                            class="tab-btn px-5 py-3 border border-silver-300 bg-white font-bold text-xs uppercase tracking-wider text-navy-900 hover:bg-slate-50 transition-all">
+                            class="tab-btn px-5 py-3 border border-silver-300 bg-white font-bold text-xs uppercase tracking-wider transition-all duration-150 active:scale-95 bg-white text-navy-900 border-silver-300 hover:bg-slate-50">
                             <span data-i18n="products.tabs.esthetic">심미 보철</span>
                             <span class="hidden sm:inline" data-i18n="products.tabs.esthetic_sub"> / Esthetic</span>
                         </button>
                         <button type="button" onclick="switchProductTab('tab-aligner', this)"
-                            class="tab-btn px-5 py-3 border border-silver-300 bg-white font-bold text-xs uppercase tracking-wider text-navy-900 hover:bg-slate-50 transition-all">
+                            class="tab-btn px-5 py-3 border border-silver-300 bg-white font-bold text-xs uppercase tracking-wider transition-all duration-150 active:scale-95 bg-white text-navy-900 border-silver-300 hover:bg-slate-50">
                             <span data-i18n="products.tabs.aligner">투명교정</span>
                             <span class="hidden sm:inline" data-i18n="products.tabs.aligner_sub"> / Aligner</span>
                         </button>
@@ -3213,7 +3213,8 @@
                 tab.classList.add(
                     'bg-white',
                     'text-navy-900',
-                    'border-silver-300'
+                    'border-silver-300',
+                    'hover:bg-slate-50'
                 );
             });
 
@@ -3223,7 +3224,8 @@
                 clickedButton.classList.remove(
                     'bg-white',
                     'text-navy-900',
-                    'border-silver-300'
+                    'border-silver-300',
+                    'hover:bg-slate-50'
                 );
 
                 clickedButton.classList.add(
@@ -3239,7 +3241,6 @@
             const contents = document.querySelectorAll(
                 '.product-tab-content'
             );
-
             contents.forEach(content => {
                 content.classList.add('hidden');
             });
@@ -3247,7 +3248,6 @@
 
             // 선택된 콘텐츠 표시
             const targetContent = document.getElementById(tabId);
-
             if (targetContent) {
                 targetContent.classList.remove('hidden');
             }
