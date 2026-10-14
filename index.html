@@ -47,6 +47,231 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
+        :root {
+            color-scheme: dark;
+
+            --navy-950: #080F18;
+            --navy-900: #0B1622;
+            --navy-850: #101C29;
+            --navy-800: #172431;
+            --navy-750: #1B2A38;
+            --navy-700: #202B35;
+
+            --steel-500: #91CDE0;
+            --steel-400: #A8D8E7;
+            --steel-300: #BBDDE8;
+
+            --silver-100: #E8EEF2;
+            --silver-200: #D9E0E5;
+            --silver-300: #B5C1CB;
+            --silver-400: #AAB7C2;
+
+            --line-dark: #263440;
+            --line-medium: #344552;
+            --line-hover: #6E9EB2;
+
+            --glass-bg: rgba(11, 22, 34, 0.84);
+            --glass-border: rgba(168, 216, 231, 0.14);
+
+            --shadow-premium:
+                0 18px 50px rgba(0, 0, 0, 0.22);
+        }
+
+        /* 기본 페이지 */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* 공통 다크 배경 */
+        .theme-dark {
+            background-color: var(--navy-900);
+            color: var(--silver-200);
+        }
+
+        .theme-dark-secondary {
+            background-color: var(--navy-850);
+            color: var(--silver-200);
+        }
+
+        /* 반투명 상단 메뉴 */
+        .site-header,
+        .navbar-glass {
+            background: var(--glass-bg);
+            border-bottom: 1px solid var(--glass-border);
+            -webkit-backdrop-filter: blur(18px) saturate(125%);
+            backdrop-filter: blur(18px) saturate(125%);
+        }
+
+        /* 스크롤 위치에 따른 헤더 강조 */
+        .site-header.is-scrolled {
+            background: rgba(8, 15, 24, 0.95);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.16);
+        }
+
+        /* 공통 콘텐츠 카드 */
+        .premium-card {
+            background: var(--navy-800);
+            border: 1px solid var(--line-medium);
+            transition:
+                border-color 300ms ease,
+                background-color 300ms ease,
+                transform 300ms ease,
+                box-shadow 300ms ease;
+        }
+
+        .premium-card:hover {
+            background: var(--navy-750);
+            border-color: var(--line-hover);
+            box-shadow: var(--shadow-premium);
+            transform: translateY(-3px);
+        }
+
+        /* 공통 영문 레이블 */
+        .section-eyebrow {
+            color: var(--steel-500);
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+        }
+
+        /* 주요 제목 */
+        .heading-premium {
+            color: var(--silver-100);
+            letter-spacing: -0.035em;
+            line-height: 1.25;
+        }
+
+        /* 본문 */
+        .text-premium-muted {
+            color: var(--silver-300);
+            line-height: 1.9;
+        }
+
+        /* 아이스 블루 포인트 */
+        .text-steel-accent {
+            color: var(--steel-400);
+        }
+
+        .border-premium {
+            border-color: var(--line-medium);
+        }
+
+        /* 기본 버튼 */
+        .btn-premium-primary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.875rem 1.75rem;
+            background: var(--silver-100);
+            color: var(--navy-900);
+            border: 1px solid var(--silver-100);
+            font-size: 0.875rem;
+            font-weight: 600;
+            transition:
+                background-color 250ms ease,
+                border-color 250ms ease,
+                color 250ms ease;
+        }
+
+        .btn-premium-primary:hover {
+            background: #FFFFFF;
+            border-color: #FFFFFF;
+        }
+
+        .btn-premium-secondary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.875rem 1.75rem;
+            background: rgba(255, 255, 255, 0.015);
+            color: var(--silver-200);
+            border: 1px solid var(--line-medium);
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition:
+                background-color 250ms ease,
+                border-color 250ms ease,
+                color 250ms ease;
+        }
+
+        .btn-premium-secondary:hover {
+            background: rgba(145, 205, 224, 0.06);
+            border-color: var(--line-hover);
+            color: var(--steel-400);
+        }
+
+        /* 공통 이미지 */
+        .premium-image-frame {
+            position: relative;
+            overflow: hidden;
+            background: var(--navy-800);
+            border: 1px solid var(--line-medium);
+        }
+
+        .premium-image-frame img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* 이미지 오버레이 */
+        .premium-image-overlay {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            background: linear-gradient(
+                to top,
+                rgba(8, 15, 24, 0.88) 0%,
+                rgba(8, 15, 24, 0.20) 45%,
+                rgba(8, 15, 24, 0.04) 100%
+            );
+        }
+
+        /* 얇은 구분선 */
+        .divider-premium {
+            border-color: var(--line-dark);
+        }
+
+        /* 키보드 포커스 */
+        a:focus-visible,
+        button:focus-visible {
+            outline: 2px solid var(--steel-400);
+            outline-offset: 4px;
+        }
+
+        .nav-link::after {
+            content: "";
+            position: absolute;
+            left: 20%;
+            right: 20%;
+            bottom: 2px;
+            height: 2px;
+            background: #8EDCF4;
+            transform: scaleX(0);
+            transform-origin: center;
+            transition: transform 250ms ease;
+            box-shadow: 0 0 10px rgba(142, 220, 244, 0.25);
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            transform: scaleX(1);
+        }
+
+        .nav-link.active {
+            color: #E5F7FF;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .nav-link::after {
+                transition: none;
+            }
+        }
+
         /* table */
         .table-scroll {
             width: 100%;
@@ -67,6 +292,21 @@
         .table-scroll td {
             white-space: nowrap;
             word-break: keep-all;
+        }
+
+        /* 움직임 최소화 설정 */
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
         }
 
         /* Mobile */
@@ -131,8 +371,10 @@
 
         body {
             font-family: 'Pretendard', 'Inter', sans-serif;
-            background-color: #F8FAFC;
-            color: #102A43;
+            background-color: var(--navy-900);
+            color: var(--silver-200);
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
             letter-spacing: -0.01em;
         }
 
@@ -182,110 +424,208 @@
     </style>
 </head>
 
-<body class="antialiased selection:bg-navy-900 selection:text-white flex flex-col min-h-screen">
+<body class="antialiased selection:bg-sky-300 selection:text-slate-950 flex flex-col min-h-screen bg-[#0B111A] text-slate-200">
 
-    <!-- Top System Line -->
-    <div class="bg-slate-100 text-slate-700 text-xs py-2 border-b border-slate-200 font-sans">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-            <!-- left -->
-            <div class="flex items-center space-x-4 text-xs font-semibold tracking-tight text-slate-800">
-                <span class="flex items-center gap-1.5 text-blue-700">
-                    <i class="fa-solid fa-tooth"></i> 
+    <div class="relative bg-[#0B1420] text-slate-400 text-xs py-2 border-b border-white/[0.07] font-sans">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center gap-4">
+
+            <!-- Left: Brand Information -->
+            <div class="flex items-center gap-4 text-xs font-medium tracking-tight min-w-0">
+                <span class="flex items-center gap-2 text-sky-300 whitespace-nowrap">
+                    <i class="fa-solid fa-tooth text-sky-400"></i>
                     <span data-i18n="top-line.title">디지털 치과기공 전문 스튜디오</span>
                 </span>
-                <span class="hidden md:inline text-slate-300">|</span>
-                <span class="hidden md:inline text-slate-500 font-normal" data-i18n="top-line.iso_cert">ISO 13485 의료기기 품질경영인증 기공소</span>
+
+                <span class="hidden md:inline text-slate-700">|</span>
+
+                <span class="hidden md:inline text-slate-400 font-normal"
+                    data-i18n="top-line.iso_cert">
+                    ISO 13485 의료기기 품질경영인증 기공소
+                </span>
             </div>
 
-            <!-- right -->
-            <div class="flex items-center space-x-4 text-xs">
-                <span class="text-slate-600 font-medium">
-                    <i class="fa-solid fa-phone text-blue-600 mr-1"></i> 
-                        <span data-i18n="top-line.contact_label">기공 의뢰 및 상담:</span> 
-                        <strong class="text-slate-900 font-bold" data-i18n="top-line.phone_number">02-555-8920</strong>
+            <!-- Right: Contact & Language -->
+            <div class="flex items-center gap-3 sm:gap-4 text-xs shrink-0">
+
+                <span class="hidden sm:inline text-slate-400 font-medium whitespace-nowrap">
+                    <i class="fa-solid fa-phone text-sky-400 mr-1.5"></i>
+                    <span data-i18n="top-line.contact_label">기공 의뢰 및 상담:</span>
+                    <strong class="text-slate-100 font-semibold ml-1"
+                        data-i18n="top-line.phone_number">02-555-8920</strong>
                 </span>
 
-                <span class="text-slate-300">|</span>
-                <div class="flex items-center space-x-1 font-semibold">
-                    <button onclick="switchLanguage('ko')" class="hover:text-blue-700 transition-colors">KO</button>
-                    <span class="text-slate-300">/</span>
-                    <button onclick="switchLanguage('en')" class="hover:text-blue-700 transition-colors">EN</button>
+                <span class="hidden sm:inline text-slate-700">|</span>
+
+                <div class="flex items-center gap-2 font-semibold tracking-wide">
+                    <button type="button" onclick="switchLanguage('ko')"
+                        class="text-slate-200 hover:text-sky-300 transition-colors duration-200">
+                        KO
+                    </button>
+                    <span class="text-slate-700">/</span>
+                    <button type="button" onclick="switchLanguage('en')"
+                        class="text-slate-500 hover:text-sky-300 transition-colors duration-200">
+                        EN
+                    </button>
                 </div>
-                <!--
-                <span class="hidden sm:inline text-slate-300">|</span>
-                <a href="javascript:void(0)" onclick="navigateTo('contact')" class="text-slate-600 hover:text-blue-700 transition-colors hidden sm:inline flex items-center gap-1">
-                    <i class="fa-solid fa-cloud-arrow-up text-slate-400"></i> CAD 데이터/구강스캔 파일 전송
-                </a>
-                -->
             </div>
         </div>
     </div>
 
 
-    <!-- Main Navigation Header -->
-    <header class="bg-white border-b border-silver-200 sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-20 items-center">
+    <!-- Main Navigation Header | Glass Navy -->
+    <header class="absolute top-0 left-0 right-0 z-50
+                bg-[#081321]/80 backdrop-blur-xl
+                border-b border-white/15
+                shadow-[0_8px_30px_rgba(0,0,0,0.20)]">
 
-                <!-- Brand Logo -->
-                <a href="javascript:void(0)" onclick="navigateTo('home')" class="flex items-center space-x-3 group">
-                    <div
-                        class="w-10 h-10 bg-navy-900 text-white flex items-center justify-center font-bold text-lg tracking-widest border border-navy-800">
-                        A
+        <div class="max-w-[1600px] mx-auto px-5 lg:px-10">
+            <div class="min-h-[88px] lg:h-24 flex items-center justify-between gap-5">
+
+                <!-- LEFT BRAND: CHAEUM -->
+                <a href="javascript:void(0)"
+                onclick="navigateTo('home')"
+                class="flex items-center gap-3 lg:gap-5 shrink-0 group">
+
+                    <!-- Crown-style logo placeholder -->
+                    <div class="w-12 h-12 lg:w-16 lg:h-16 flex items-center justify-center
+                                text-[#D9B58A] border-b-2 border-[#D9B58A]/80">
+                        <i class="fa-solid fa-crown text-3xl lg:text-4xl"></i>
                     </div>
-                    <div>
-                        <span
-                            class="text-xl font-extrabold tracking-tight text-navy-900 block leading-none">ARTISAN</span>
-                        <span class="text-[10px] font-mono tracking-widest text-steel-600 uppercase block mt-1">DENTAL
-                            LABORATORY</span>
+
+                    <div class="leading-none">
+                        <span class="block text-2xl lg:text-4xl
+                                    font-serif tracking-[0.08em]
+                                    text-[#F1D5B1] group-hover:text-white
+                                    transition-colors">
+                            CHAEUM
+                        </span>
+                        <span class="block mt-2 text-[9px] lg:text-xs
+                                    text-[#D9B58A] tracking-[0.32em] text-center">
+                            — DENTAL LAB —
+                        </span>
                     </div>
                 </a>
 
-                <!-- Desktop Menu Navigation -->
-                <nav class="hidden lg:flex space-x-8 font-medium text-sm text-steel-600">
-                    <a href="javascript:void(0)" onclick="navigateTo('home')" id="nav-home"
-                        class="nav-link py-7 px-1 transition-all active" data-i18n="nav-bar.nav-home">홈</a>
-                    <a href="javascript:void(0)" onclick="navigateTo('about')" id="nav-about"
-                        class="nav-link py-7 px-1 transition-all" data-i18n="nav-bar.nav-about">기공소 소개</a>
-                    <a href="javascript:void(0)" onclick="navigateTo('products')" id="nav-products"
-                        class="nav-link py-7 px-1 transition-all" data-i18n="nav-bar.nav-products">주요 기공 품목</a>
-                    <a href="javascript:void(0)" onclick="navigateTo('workflow')" id="nav-workflow"
-                        class="nav-link py-7 px-1 transition-all" data-i18n="nav-bar.nav-workflow">디지털 워크플로우</a>
-                    <a href="javascript:void(0)" onclick="navigateTo('contact')" id="nav-contact"
-                        class="nav-link py-7 px-1 transition-all" data-i18n="nav-bar.nav-contact">오시는 길<!--파트너십 문의--></a>
+                <!-- DESKTOP NAVIGATION -->
+                <nav class="hidden lg:flex flex-1 justify-center items-center
+                            text-slate-100 text-sm xl:text-base"
+                    aria-label="Main navigation">
+
+                    <a href="javascript:void(0)" onclick="navigateTo('home')"
+                    id="nav-home"
+                    class="nav-link relative px-5 xl:px-7 py-3
+                            border-r border-white/15
+                            hover:text-sky-300 transition-colors active"
+                    data-i18n="nav-bar.nav-home">
+                        홈
+                    </a>
+
+                    <a href="javascript:void(0)" onclick="navigateTo('about')"
+                    id="nav-about"
+                    class="nav-link relative px-5 xl:px-7 py-3
+                            border-r border-white/15
+                            hover:text-sky-300 transition-colors"
+                    data-i18n="nav-bar.nav-about">
+                        기공소 소개
+                    </a>
+
+                    <a href="javascript:void(0)" onclick="navigateTo('products')"
+                    id="nav-products"
+                    class="nav-link relative px-5 xl:px-7 py-3
+                            border-r border-white/15
+                            hover:text-sky-300 transition-colors"
+                    data-i18n="nav-bar.nav-products">
+                        주요 기공 품목
+                    </a>
+
+                    <a href="javascript:void(0)" onclick="navigateTo('workflow')"
+                    id="nav-workflow"
+                    class="nav-link relative px-5 xl:px-7 py-3
+                            border-r border-white/15
+                            hover:text-sky-300 transition-colors"
+                    data-i18n="nav-bar.nav-workflow">
+                        디지털 워크플로우
+                    </a>
+
+                    <a href="javascript:void(0)" onclick="navigateTo('contact')"
+                    id="nav-contact"
+                    class="nav-link relative px-5 xl:px-7 py-3
+                            hover:text-sky-300 transition-colors"
+                    data-i18n="nav-bar.nav-contact">
+                        오시는 길
+                    </a>
                 </nav>
 
-                <!-- Header CTA Button -->
-                <!--
-                <div class="hidden md:flex items-center">
-                    <a href="javascript:void(0)" onclick="navigateTo('contact')" class="bg-navy-900 hover:bg-steel-800 text-white text-xs font-semibold uppercase tracking-wider px-6 py-3 border border-navy-900 transition-colors">
-                        파트너십 문의
-                    </a>
-                </div>
-                -->
+                <!-- RIGHT BRAND: COLOR MARK -->
+                <a href="javascript:void(0)"
+                onclick="navigateTo('home')"
+                class="hidden md:flex items-center gap-3 pl-5 lg:pl-8
+                        border-l border-white/20 shrink-0">
 
-                <!-- Mobile Menu Toggle Button -->
-                <div class="lg:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="text-navy-900 p-2 focus:outline-none">
-                        <i class="fa-solid fa-bars text-xl"></i>
-                    </button>
-                </div>
+                    <!-- Replace with the official Chaeum logo image if available -->
+                    <div class="relative w-9 h-9 lg:w-11 lg:h-11">
+                        <span class="absolute top-0 left-2.5 w-4 h-4 rounded-full bg-yellow-400"></span>
+                        <span class="absolute top-1 left-0 w-4 h-4 rounded-full bg-orange-500"></span>
+                        <span class="absolute top-1 right-0 w-4 h-4 rounded-full bg-emerald-500"></span>
+                        <span class="absolute bottom-0 left-1 w-4 h-4 rounded-full bg-red-500"></span>
+                        <span class="absolute bottom-0 right-1 w-4 h-4 rounded-full bg-blue-600"></span>
+                    </div>
+
+                    <div>
+                        <span class="block text-2xl lg:text-3xl font-medium
+                                    tracking-tight text-white">
+                            채움
+                        </span>
+                        <span class="block text-[8px] lg:text-[9px]
+                                    text-slate-400 whitespace-nowrap">
+                            Chaeum Dental Laboratory
+                        </span>
+                    </div>
+                </a>
+
+                <!-- MOBILE MENU BUTTON -->
+                <button type="button"
+                        id="mobile-menu-btn"
+                        class="lg:hidden w-10 h-10 flex items-center justify-center
+                            text-white border border-white/20
+                            bg-white/5 hover:bg-white/10
+                            transition-colors"
+                        aria-label="메뉴 열기"
+                        aria-controls="mobile-menu"
+                        aria-expanded="false">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
             </div>
         </div>
 
-        <!-- Mobile Navigation Menu Dropdown -->
+        <!-- MOBILE NAVIGATION -->
         <div id="mobile-menu"
-            class="hidden lg:hidden bg-white border-b border-silver-200 px-4 py-4 space-y-3 text-sm font-medium">
+            class="hidden lg:hidden bg-[#081321]/95 backdrop-blur-xl
+                    border-t border-white/10 px-5 py-4 space-y-1">
+
             <a href="javascript:void(0)" onclick="navigateTo('home')"
-                class="block py-2 text-navy-900 border-b border-silver-100" data-i18n="nav-bar.nav-home">홈</a>
+            class="block py-3 px-3 text-slate-100 border-b border-white/10
+                    hover:text-sky-300"
+            data-i18n="nav-bar.nav-home">홈</a>
+
             <a href="javascript:void(0)" onclick="navigateTo('about')"
-                class="block py-2 text-navy-900 border-b border-silver-100" data-i18n="nav-bar.nav-about">기공소 소개</a>
+            class="block py-3 px-3 text-slate-100 border-b border-white/10
+                    hover:text-sky-300"
+            data-i18n="nav-bar.nav-about">기공소 소개</a>
+
             <a href="javascript:void(0)" onclick="navigateTo('products')"
-                class="block py-2 text-navy-900 border-b border-silver-100" data-i18n="nav-bar.nav-products">주요 기공 품목</a>
+            class="block py-3 px-3 text-slate-100 border-b border-white/10
+                    hover:text-sky-300"
+            data-i18n="nav-bar.nav-products">주요 기공 품목</a>
+
             <a href="javascript:void(0)" onclick="navigateTo('workflow')"
-                class="block py-2 text-navy-900 border-b border-silver-100" data-i18n="nav-bar.nav-workflow">디지털 워크플로우</a>
-            <a href="javascript:void(0)" onclick="navigateTo('contact')" class="block py-2 text-navy-900"
-                data-i18n="nav-bar.nav-contact">오시는길<!--파트너십 문의--></a>
+            class="block py-3 px-3 text-slate-100 border-b border-white/10
+                    hover:text-sky-300"
+            data-i18n="nav-bar.nav-workflow">디지털 워크플로우</a>
+
+            <a href="javascript:void(0)" onclick="navigateTo('contact')"
+            class="block py-3 px-3 text-slate-100 hover:text-sky-300"
+            data-i18n="nav-bar.nav-contact">오시는 길</a>
         </div>
     </header>
 
@@ -294,459 +634,649 @@
 
         <!-- ================= PAGE 1: HOME ================= -->
         <section id="page-home" class="page-section active">
-            <!-- HERO SECTION-->
-            <div class="relative bg-navy-900 text-white overflow-hidden py-20 lg:py-28 border-b border-navy-800">
 
-                <div class="absolute top-0 right-0 w-[520px] h-[520px] bg-steel-400/5 rounded-full blur-3xl"></div>
-                <div class="absolute bottom-0 left-1/3 w-[360px] h-[360px] bg-white/[0.02] rounded-full blur-3xl"></div>
+            <!-- HERO BACKGROUND + OVERLAY HEADER -->
+            <div class="relative min-h-[760px] lg:min-h-[900px]
+                        overflow-hidden bg-[#081321] text-white"
+                 id="hero-slider">
 
-                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+                <!-- hero image -->
+                <div class="hero-slide absolute inset-0
+                        transition-opacity duration-700
+                        ease-in-out opacity-100">
+                <img
+                    src="https://images.unsplash.com/photo-1664902265139-934219cee42f?auto=format&fit=crop&w=1400&q=85"
+                    alt="디지털 치과 장비 및 CAD/CAM 작업 환경"
+                    class="w-full h-full object-cover"
+                    loading="eager">
+                </div>
 
-                        <!-- LEFT : MAIN MESSAGE -->
-                        <div class="lg:col-span-7">
+                <div class="hero-slide absolute inset-0
+                            transition-opacity duration-700
+                            ease-in-out opacity-0">
+                    <img
+                        src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1400&q=85"
+                        alt="치과 진료 및 디지털 스캔"
+                        class="w-full h-full object-cover"
+                        loading="lazy">
+                </div>
 
-                            <!-- 브랜드 레이블 -->
-                            <div class="flex items-center gap-3 mb-8">
-                                <span class="w-10 h-px bg-steel-400"></span>
-                                <span class="text-xs font-semibold tracking-[0.18em] text-steel-300">
-                                    DIGITAL DENTAL LABORATORY
+                <div class="hero-slide absolute inset-0
+                            transition-opacity duration-700
+                            ease-in-out opacity-0">
+                    <img
+                        src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1400&q=85"
+                        alt="정밀 의료 작업 환경"
+                        class="w-full h-full object-cover"
+                        loading="lazy">
+                </div>
+
+                <div class="hero-slide absolute inset-0
+                            transition-opacity duration-700
+                            ease-in-out opacity-0">
+                    <img
+                        src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1400&q=85"
+                        alt="디지털 치과 시스템"
+                        class="w-full h-full object-cover"
+                        loading="lazy">
+                </div>
+
+                <div class="hero-slide absolute inset-0
+                            transition-opacity duration-700
+                            ease-in-out opacity-0">
+                    <img
+                        src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1400&q=85"
+                        alt="첨단 의료 환경"
+                        class="w-full h-full object-cover"
+                        loading="lazy">
+                </div>
+
+                <div class="premium-image-overlay"></div>
+
+                <div id="hero-indicators"
+                    class="absolute bottom-7 right-6
+                            flex items-center gap-1.5 z-30">
+                    <span class="w-5 h-1 rounded-full bg-[#A8D8E7]"></span>
+                    <span class="w-2 h-1 rounded-full bg-white/40"></span>
+                    <span class="w-2 h-1 rounded-full bg-white/40"></span>
+                    <span class="w-2 h-1 rounded-full bg-white/40"></span>
+                    <span class="w-2 h-1 rounded-full bg-white/40"></span>
+                </div>
+
+                <!-- Dark blue overlay for text readability -->
+                <div class="absolute inset-0
+                            bg-gradient-to-r
+                            from-[#07111F]/95
+                            via-[#0B1725]/70
+                            to-[#081321]/15">
+                </div>
+
+                <div class="absolute inset-0
+                            bg-gradient-to-b
+                            from-[#081321]/25
+                            via-transparent
+                            to-[#081321]/65">
+                </div>
+
+                <!-- HERO CONTENT -->
+                <div class="relative z-10 max-w-[1600px] mx-auto
+                            px-6 lg:px-16
+                            pt-36 sm:pt-40 lg:pt-52
+                            pb-36 lg:pb-48">
+
+                    <p class="text-xs sm:text-sm tracking-[0.35em]
+                                text-sky-200 mb-6">
+                        DIGITAL × PRECISION × AESTHETIC
+                    </p>
+
+                    <h1 class="max-w-2xl
+                                text-4xl sm:text-5xl lg:text-7xl
+                                font-medium leading-[1.25]
+                                tracking-tight">
+                        <span class="block text-white">
+                            정확한 기술이 만드는
+                        </span>
+                        <span class="block text-sky-200">
+                            더 나은 결과
+                        </span>
+                    </h1>
+
+                    <div class="w-12 h-px bg-sky-200/80 my-7"></div>
+
+                    <p class="max-w-lg text-base sm:text-lg
+                                leading-8 text-slate-200">
+                        채움의 기술력은 지금도 이어지고 있습니다.
+                        디지털 디자인부터 정밀 가공, 심미 보철까지
+                        완성도 높은 결과를 제공합니다.
+                    </p>
+
+                    <!-- FEATURE LINKS -->
+                    <div class="grid grid-cols-2 gap-3 mt-8 max-w-xl">
+
+                        <a href="javascript:void(0)"
+                            onclick="navigateTo('workflow')"
+                            class="flex items-center gap-4 p-4 sm:p-5
+                                    border border-white/30
+                                    bg-[#0A1726]/65 backdrop-blur-md
+                                    hover:bg-[#16304A]/80
+                                    hover:border-sky-300/70
+                                    transition-all">
+
+                            <i class="fa-solid fa-display
+                                        text-2xl sm:text-3xl text-sky-200"></i>
+
+                            <span>
+                                <strong class="block text-sm sm:text-base">CAD</strong>
+                                <span class="block text-[10px] sm:text-xs
+                                                text-slate-300 mt-1">
+                                    DIGITAL DESIGN
                                 </span>
-                            </div>
-
-                            <!-- 메인 타이틀 -->
-                            <h1 class="text-3xl sm:text-4xl lg:text-[3.4rem] font-bold tracking-tight text-white">
-                                <span class="block leading-[1.0]" data-i18n="home.hero.title_tech">
-                                    정밀한 디지털 기술과
-                                </span>
-                                <span class="block leading-[1.0] text-steel-300 font-semibold mt-1"
-                                    data-i18n="home.hero.title_craft">
-                                    장인의 섬세한 손길을 더합니다.
-                                </span>
-                            </h1>
-
-                            <!-- 설명 -->
-                            <p class="text-base sm:text-lg text-silver-400 font-normal leading-[2] max-w-2xl mt-9">
-                                <span data-i18n="home.hero.description.tech_combination">
-                                아티잔 덴탈 스튜디오는 디지털 CAD/CAM 기술과 숙련된 기공사의
-                                </span>
-                                <br class="hidden sm:block">
-                                <span data-i18n="home.hero.description.hand_finishing">
-                                정밀한 핸드 피니싱을 결합하여,
-                                </span>
-                                <strong class="text-silver-200 font-semibold" data-i18n="home.hero.description.product_quality">
-                                    임상 환경에 최적화된 하이엔드 보철물
-                                </strong>
-                                <span data-i18n="home.hero.description.action_suffix">
-                                을 제작합니다.
-                                </span>
-                            </p>
-
-                            <!-- BUTTONS -->
-                            <div class="flex flex-col sm:flex-row gap-3 mt-11">
-                                <a href="javascript:void(0)" onclick="navigateTo('contact')"
-                                    class="bg-white hover:bg-silver-100 text-navy-900 font-semibold px-8 py-3.5 text-sm tracking-tight text-center transition-all shadow-md flex items-center justify-center gap-2">
-                                    <i class="fa-solid fa-location-dot text-steel-600"></i>
-                                    <span data-i18n="home.hero.btn_directions">오시는 길</span>
-                                </a>
-                                <a href="javascript:void(0)" onclick="navigateTo('products')"
-                                    class="bg-transparent hover:bg-navy-800 text-silver-200 font-medium px-8 py-3.5 text-sm tracking-tight text-center transition-all border border-navy-700 flex items-center justify-center gap-2">
-                                    <span data-i18n="home.hero.btn_products">보철물 제작 품목 보기</span>
-                                    <i class="fa-solid fa-arrow-right text-xs"></i>
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- RIGHT : HERO IMAGE -->
-                        <div class="lg:col-span-5">
-                            <div class="relative">
-                                <div class="relative overflow-hidden border border-navy-700 bg-navy-800 shadow-2xl">
-                                    <img src="https://images.unsplash.com/photo-1664902265139-934219cee42f?auto=format&fit=crop&w=1400&q=85"
-                                        alt="디지털 치과 장비 및 CAD/CAM 작업 환경" class="w-full h-[360px] object-cover"
-                                        loading="eager">
-                                    <!-- 이미지 그라디언트 -->
-                                    <div
-                                        class="absolute inset-0 bg-gradient-to-t from-navy-900/70 via-transparent to-transparent">
-                                    </div>
-                                    <!-- 이미지 하단 설명 -->
-                                    <div class="absolute bottom-0 left-0 right-0 p-6">
-                                        <p class="text-xs font-semibold text-steel-300 tracking-wide mb-1">
-                                            DIGITAL WORKFLOW
-                                        </p>
-                                        <p class="text-sm text-white font-medium">
-                                            <span data-i18n="home.hero.badge">디지털 데이터 기반의 정밀 보철 제작</span>
-                                        </p>
-                                    </div>
-                                </div>
-                                <!-- 장식선 -->
-                                <div
-                                    class="absolute -bottom-3 -right-3 w-24 h-24 border-r border-b border-steel-500/40 pointer-events-none">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!-- 브랜드 신뢰 요소-->
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-8 mt-20 pt-10 border-t border-navy-800">
-                        <div>
-                            <span class="block text-sm font-semibold text-steel-300 mb-2">
-                                Digital Precision
                             </span>
-                            <p class="text-sm text-silver-400 leading-relaxed">
-                                <span data-i18n="home.brand_trust.process_desc">정밀한 디지털 데이터 기반</span>
-                                <br class="hidden sm:block">
-                                <span data-i18n="home.brand_trust.process_title">보철 제작 프로세스</span>
-                            </p>
-                        </div>
-                        <div>
-                            <span class="block text-sm font-semibold text-steel-300 mb-2">
-                                Premium Materials
+
+                            <i class="fa-solid fa-chevron-right
+                                        ml-auto text-xs text-slate-400"></i>
+                        </a>
+
+                        <a href="javascript:void(0)"
+                            onclick="navigateTo('workflow')"
+                            class="flex items-center gap-4 p-4 sm:p-5
+                                    border border-white/30
+                                    bg-[#0A1726]/65 backdrop-blur-md
+                                    hover:bg-[#16304A]/80
+                                    hover:border-sky-300/70
+                                    transition-all">
+
+                            <i class="fa-solid fa-magnifying-glass
+                                        text-2xl sm:text-3xl text-sky-200"></i>
+
+                            <span>
+                                <strong class="block text-sm sm:text-base">QA</strong>
+                                <span class="block text-[10px] sm:text-xs
+                                                text-slate-300 mt-1">
+                                    FINAL INSPECTION
+                                </span>
                             </span>
-                            <p class="text-sm text-silver-400 leading-relaxed">
-                                <span data-i18n="home.brand_trust.materials_desc">검증된 글로벌 소재를 통한</span>
-                                <br class="hidden sm:block">
-                                <span data-i18n="home.brand_trust.materials_title">안정적인 보철 제작</span>
-                            </p>
-                        </div>
-                        <div>
-                            <span class="block text-sm font-semibold text-steel-300 mb-2">
-                                Precision Check
-                            </span>
-                            <p class="text-sm text-silver-400 leading-relaxed">
-                                <span data-i18n="home.brand_trust.inspection_desc">출고 전 단계별 정밀 검수로</span>
-                                <br class="hidden sm:block">
-                                <span data-i18n="home.brand_trust.inspection_title">품질을 확인합니다</span>
-                            </p>
-                        </div>
-                        <div>
-                            <span class="block text-sm font-semibold text-steel-300 mb-2">
-                                Direct Communication
-                            </span>
-                            <p class="text-sm text-silver-400 leading-relaxed">
-                                <span data-i18n="home.brand_trust.communication_desc">치과와 기공소 간 빠르고</span>
-                                <br class="hidden sm:block">
-                                <span data-i18n="home.brand_trust.communication_title">정확한 커뮤니케이션</span>
-                            </p>
-                        </div>
+
+                            <i class="fa-solid fa-chevron-right
+                                        ml-auto text-xs text-slate-400"></i>
+                        </a>
+
                     </div>
                 </div>
+
+                <!-- PRODUCT QUICK LINKS -->
+                <div class="absolute bottom-6 lg:bottom-10 left-0 right-0 z-20">
+                    <div class="max-w-[1500px] mx-auto px-5 lg:px-10
+                                grid grid-cols-2 lg:grid-cols-4 gap-3">
+
+                        <a href="javascript:void(0)"
+                            onclick="navigateTo('products')"
+                            class="p-4 lg:p-6 min-h-24
+                                    flex items-center justify-between gap-3
+                                    border border-white/25
+                                    bg-[#0A1726]/80 backdrop-blur-lg
+                                    hover:border-sky-300/60
+                                    transition-colors">
+                            <span>
+                                <strong class="block text-sm lg:text-lg">지르코니아</strong>
+                                <span class="text-[10px] lg:text-xs
+                                                text-slate-300">ZIRCONIA</span>
+                            </span>
+                            <i class="fa-solid fa-chevron-right
+                                        text-xs text-slate-400"></i>
+                        </a>
+
+                        <a href="javascript:void(0)"
+                            onclick="navigateTo('products')"
+                            class="p-4 lg:p-6 min-h-24
+                                    flex items-center justify-between gap-3
+                                    border border-white/25
+                                    bg-[#0A1726]/80 backdrop-blur-lg
+                                    hover:border-sky-300/60
+                                    transition-colors">
+                            <span>
+                                <strong class="block text-sm lg:text-lg">임플란트</strong>
+                                <span class="text-[10px] lg:text-xs
+                                                text-slate-300">IMPLANT</span>
+                            </span>
+                            <i class="fa-solid fa-chevron-right
+                                        text-xs text-slate-400"></i>
+                        </a>
+
+                        <a href="javascript:void(0)"
+                            onclick="navigateTo('products')"
+                            class="p-4 lg:p-6 min-h-24
+                                    flex items-center justify-between gap-3
+                                    border border-white/25
+                                    bg-[#0A1726]/80 backdrop-blur-lg
+                                    hover:border-sky-300/60
+                                    transition-colors">
+                            <span>
+                                <strong class="block text-sm lg:text-lg">심미 보철</strong>
+                                <span class="text-[10px] lg:text-xs
+                                                text-slate-300">ESTHETIC</span>
+                            </span>
+                            <i class="fa-solid fa-chevron-right
+                                        text-xs text-slate-400"></i>
+                        </a>
+
+                        <a href="javascript:void(0)"
+                            onclick="navigateTo('products')"
+                            class="p-4 lg:p-6 min-h-24
+                                    flex items-center justify-between gap-3
+                                    border border-white/25
+                                    bg-[#0A1726]/80 backdrop-blur-lg
+                                    hover:border-sky-300/60
+                                    transition-colors">
+                            <span>
+                                <strong class="block text-sm lg:text-lg">투명교정</strong>
+                                <span class="text-[10px] lg:text-xs
+                                                text-slate-300">ALIGNER</span>
+                            </span>
+                            <i class="fa-solid fa-chevron-right
+                                        text-xs text-slate-400"></i>
+                        </a>
+
+                    </div>
+                </div>
+
             </div>
 
-            <!-- CORE COMPETENCIES-->
-            <div class="py-24 bg-white border-b border-silver-200">
+            <!-- RIGHT: HERO IMAGE SLIDER -->
+            <div class="lg:col-span-5">
+                <div class="relative">
+
+                    <div class="premium-image-frame shadow-2xl">
+                        <div id="hero-slider"
+                            class="relative h-[360px] sm:h-[440px]">
+
+                            <div class="hero-slide absolute inset-0
+                                        transition-opacity duration-700
+                                        ease-in-out opacity-100">
+                                <img
+                                    src="https://images.unsplash.com/photo-1664902265139-934219cee42f?auto=format&fit=crop&w=1400&q=85"
+                                    alt="디지털 치과 장비 및 CAD/CAM 작업 환경"
+                                    class="w-full h-full object-cover"
+                                    loading="eager">
+                            </div>
+
+                            <div class="hero-slide absolute inset-0
+                                        transition-opacity duration-700
+                                        ease-in-out opacity-0">
+                                <img
+                                    src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1400&q=85"
+                                    alt="치과 진료 및 디지털 스캔"
+                                    class="w-full h-full object-cover"
+                                    loading="lazy">
+                            </div>
+
+                            <div class="hero-slide absolute inset-0
+                                        transition-opacity duration-700
+                                        ease-in-out opacity-0">
+                                <img
+                                    src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1400&q=85"
+                                    alt="정밀 의료 작업 환경"
+                                    class="w-full h-full object-cover"
+                                    loading="lazy">
+                            </div>
+
+                            <div class="hero-slide absolute inset-0
+                                        transition-opacity duration-700
+                                        ease-in-out opacity-0">
+                                <img
+                                    src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1400&q=85"
+                                    alt="디지털 치과 시스템"
+                                    class="w-full h-full object-cover"
+                                    loading="lazy">
+                            </div>
+
+                            <div class="hero-slide absolute inset-0
+                                        transition-opacity duration-700
+                                        ease-in-out opacity-0">
+                                <img
+                                    src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1400&q=85"
+                                    alt="첨단 의료 환경"
+                                    class="w-full h-full object-cover"
+                                    loading="lazy">
+                            </div>
+
+                            <div class="premium-image-overlay"></div>
+
+                            <div class="absolute bottom-0 left-0
+                                        right-0 z-20 p-6">
+                                <p class="section-eyebrow mb-2">
+                                    Digital Workflow
+                                </p>
+                                <p id="hero-slide-text"
+                                class="text-sm text-[#E8EEF2] font-medium">
+                                    디지털 데이터 기반의 정밀 보철 제작
+                                </p>
+                            </div>
+
+                            <div id="hero-indicators"
+                                class="absolute bottom-7 right-6
+                                        flex items-center gap-1.5 z-30">
+                                <span class="w-5 h-1 rounded-full bg-[#A8D8E7]"></span>
+                                <span class="w-2 h-1 rounded-full bg-white/40"></span>
+                                <span class="w-2 h-1 rounded-full bg-white/40"></span>
+                                <span class="w-2 h-1 rounded-full bg-white/40"></span>
+                                <span class="w-2 h-1 rounded-full bg-white/40"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="absolute -bottom-3 -right-3
+                                w-24 h-24 border-r border-b
+                                border-[#91CDE0]/40
+                                pointer-events-none"></div>
+                </div>
+            </div>
+        </section>
+
+            <!-- CORE COMPETENCIES -->
+            <section class="py-24 bg-[#101C29] border-b border-[#263440]">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
                     <div class="mb-14">
-                        <span class="text-xs font-semibold tracking-[0.16em] text-steel-500 block mb-3">
-                            OUR EXPERTISE
-                        </span>
-                        <h2 class="text-2xl sm:text-3xl font-extrabold text-navy-900 tracking-tight"
+                        <p class="section-eyebrow mb-4">Our Expertise</p>
+
+                        <h2 class="heading-premium text-2xl sm:text-3xl font-bold"
                             data-i18n="home.competencies.section_title">
                             아티잔 덴탈 스튜디오의 3대 핵심 경쟁력
                         </h2>
-                        <p class="text-sm text-steel-500 mt-4 max-w-2xl leading-relaxed"
-                            data-i18n="home.competencies.section_desc">
-                            디지털 기술의 정밀함과 사람의 섬세한 기술을 하나의 제작 프로세스로 연결합니다.
+
+                        <p class="text-premium-muted text-sm mt-4 max-w-2xl"
+                        data-i18n="home.competencies.section_desc">
+                            디지털 기술의 정밀함과 사람의 섬세한 기술을
+                            하나의 제작 프로세스로 연결합니다.
                         </p>
                     </div>
 
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        <!-- COMPETENCY 1-->
-                        <div
-                            class="group border border-silver-200 bg-white shadow-sm hover:shadow-lg transition-shadow duration-300">
-                            <div class="relative h-52 overflow-hidden bg-steel-100 border-b border-silver-200">
-                                <img src="https://images.unsplash.com/photo-1743056586194-837401d75e0a?auto=format&fit=crop&w=1400&q=85"
+                        <!-- COMPETENCY 1 -->
+                        <article class="premium-card group">
+                            <div class="relative h-56 overflow-hidden">
+                                <img
+                                    src="https://images.unsplash.com/photo-1743056586194-837401d75e0a?auto=format&fit=crop&w=1400&q=85"
                                     alt="디지털 제조 및 정밀 가공 장비"
-                                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                    class="w-full h-full object-cover
+                                        transition-transform duration-700
+                                        group-hover:scale-105"
                                     loading="lazy">
-                                <div
-                                    class="absolute inset-0 bg-navy-900/10 group-hover:bg-transparent transition-colors duration-300">
-                                </div>
-                                <div
-                                    class="absolute top-4 left-4 w-10 h-10 bg-white text-navy-900 flex items-center justify-center shadow-sm">
+
+                                <div class="absolute inset-0 bg-[#0B1622]/15
+                                            group-hover:bg-transparent
+                                            transition-colors duration-500"></div>
+
+                                <div class="absolute top-4 left-4 w-11 h-11
+                                            flex items-center justify-center
+                                            bg-[#172431]/95 border border-white/10
+                                            text-[#A8D8E7]">
                                     <i class="fa-solid fa-microchip"></i>
                                 </div>
                             </div>
 
                             <div class="p-8">
-                                <span class="text-xs font-semibold tracking-wide text-steel-500">
-                                    DIGITAL TECHNOLOGY
-                                </span>
-                                <h3 class="text-lg font-bold text-navy-900 mt-2 mb-3"
+                                <p class="section-eyebrow">Digital Technology</p>
+
+                                <h3 class="text-lg font-bold text-[#E8EEF2] mt-3 mb-4"
                                     data-i18n="home.competencies.cadcam_title">
                                     최신 디지털 CAD/CAM 시스템
                                 </h3>
-                                <p class="text-sm text-steel-600 leading-7"
-                                    data-i18n="home.competencies.cadcam_desc">
+
+                                <p class="text-sm text-[#B5C1CB] leading-7"
+                                data-i18n="home.competencies.cadcam_desc">
                                     3Shape 및 Exocad 기반의 디지털 워크플로우를 활용하여
-                                    구강 스캔 데이터를 정밀하게 분석하고,
-                                    고속 밀링 장비를 통해 보철 형태를 가공합니다.
+                                    구강 스캔 데이터를 분석하고 정밀한 보철 형태를 설계합니다.
                                 </p>
                             </div>
+                        </article>
 
-                        </div>
-
-
-                        <!-- COMPETENCY 2-->
-                        <div
-                            class="group border border-silver-200 bg-white shadow-sm hover:shadow-lg transition-shadow duration-300">
-                            <div class="relative h-52 overflow-hidden bg-steel-100 border-b border-silver-200">
-                                <img src="https://images.unsplash.com/photo-1771442873038-dda05b6ca447?auto=format&fit=crop&w=1400&q=85"
+                        <!-- COMPETENCY 2 -->
+                        <article class="premium-card group">
+                            <div class="relative h-56 overflow-hidden">
+                                <img
+                                    src="https://images.unsplash.com/photo-1771442873038-dda05b6ca447?auto=format&fit=crop&w=1400&q=85"
                                     alt="치과 정밀 기구와 숙련된 수작업"
-                                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                    class="w-full h-full object-cover
+                                        transition-transform duration-700
+                                        group-hover:scale-105"
                                     loading="lazy">
-                                <div
-                                    class="absolute inset-0 bg-navy-900/10 group-hover:bg-transparent transition-colors duration-300">
-                                </div>
-                                <div
-                                    class="absolute top-4 left-4 w-10 h-10 bg-white text-navy-900 flex items-center justify-center shadow-sm">
+
+                                <div class="absolute inset-0 bg-[#0B1622]/15
+                                            group-hover:bg-transparent
+                                            transition-colors duration-500"></div>
+
+                                <div class="absolute top-4 left-4 w-11 h-11
+                                            flex items-center justify-center
+                                            bg-[#172431]/95 border border-white/10
+                                            text-[#A8D8E7]">
                                     <i class="fa-solid fa-hand-sparkles"></i>
                                 </div>
                             </div>
 
                             <div class="p-8">
-                                <span class="text-xs font-semibold tracking-wide text-steel-500">
-                                    HAND FINISHING
-                                </span>
-                                <h3 class="text-lg font-bold text-navy-900 mt-2 mb-3"
+                                <p class="section-eyebrow">Hand Finishing</p>
+
+                                <h3 class="text-lg font-bold text-[#E8EEF2] mt-3 mb-4"
                                     data-i18n="home.competencies.handmade_title">
                                     숙련된 기공사의 핸드메이드 마감
                                 </h3>
-                                <p class="text-sm text-steel-600 leading-7"
-                                    data-i18n="home.competencies.handmade_desc">
-                                    기계 가공만으로 완성하기 어려운 미세한 표면 질감과
-                                    자연치 인접면 컨투어링,
+
+                                <p class="text-sm text-[#B5C1CB] leading-7"
+                                data-i18n="home.competencies.handmade_desc">
+                                    미세한 표면 질감과 자연스러운 컨투어링,
                                     개별 쉐이드 표현을 숙련된 테크니션의 손으로 완성합니다.
                                 </p>
                             </div>
-                        </div>
+                        </article>
 
-
-                        <!-- COMPETENCY 3-->
-                        <div
-                            class="group border border-silver-200 bg-white shadow-sm hover:shadow-lg transition-shadow duration-300">
-                            <div class="relative h-52 overflow-hidden bg-steel-100 border-b border-silver-200">
-                                <img src="https://images.unsplash.com/photo-1639772823907-a716be4bdecc?auto=format&fit=crop&w=1400&q=85"
-                                    alt="현미경을 이용한 정밀 품질 검사"
-                                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        <!-- COMPETENCY 3 -->
+                        <article class="premium-card group">
+                            <div class="relative h-56 overflow-hidden">
+                                <img
+                                    src="https://images.unsplash.com/photo-1639772823907-a716be4bdecc?auto=format&fit=crop&w=1400&q=85"
+                                    alt="정밀 품질 검사"
+                                    class="w-full h-full object-cover
+                                        transition-transform duration-700
+                                        group-hover:scale-105"
                                     loading="lazy">
-                                <div
-                                    class="absolute inset-0 bg-navy-900/10 group-hover:bg-transparent transition-colors duration-300">
-                                </div>
-                                <div
-                                    class="absolute top-4 left-4 w-10 h-10 bg-white text-navy-900 flex items-center justify-center shadow-sm">
+
+                                <div class="absolute inset-0 bg-[#0B1622]/15
+                                            group-hover:bg-transparent
+                                            transition-colors duration-500"></div>
+
+                                <div class="absolute top-4 left-4 w-11 h-11
+                                            flex items-center justify-center
+                                            bg-[#172431]/95 border border-white/10
+                                            text-[#A8D8E7]">
                                     <i class="fa-solid fa-microscope"></i>
                                 </div>
                             </div>
 
                             <div class="p-8">
-                                <span class="text-xs font-semibold tracking-wide text-steel-500">
-                                    QUALITY CONTROL
-                                </span>
+                                <p class="section-eyebrow">Quality Control</p>
 
-                                <h3 class="text-lg font-bold text-navy-900 mt-2 mb-3"
+                                <h3 class="text-lg font-bold text-[#E8EEF2] mt-3 mb-4"
                                     data-i18n="home.competencies.quality_title">
                                     철저한 품질 관리 및 정품 재료
                                 </h3>
-                                <p class="text-sm text-steel-600 leading-7"
-                                    data-i18n="home.competencies.quality_desc">
-                                    검증된 글로벌 정품 소재를 사용하고,
-                                    출고 전 정밀 검수 과정을 거쳐
-                                    완성도 높은 보철물만 치과에 공급합니다.
+
+                                <p class="text-sm text-[#B5C1CB] leading-7"
+                                data-i18n="home.competencies.quality_desc">
+                                    검증된 소재와 출고 전 정밀 검수 과정을 통해
+                                    완성도 높은 보철물 제작을 지향합니다.
                                 </p>
                             </div>
-                        </div>
+                        </article>
+
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <!-- PRODUCTS PREVIEW-->
-            <div class="py-24 bg-slate-50 border-b border-silver-200">
+            <!-- PRODUCTS PREVIEW -->
+            <section class="py-24 bg-[#0B1622] border-b border-[#263440]">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12">
+
+                    <div class="flex flex-col md:flex-row
+                                justify-between items-start md:items-end mb-12">
                         <div>
-                            <span class="text-xs font-semibold tracking-[0.16em] text-steel-500 block mb-3">
-                                PROSTHETIC SOLUTIONS
-                            </span>
-                            <h2 class="text-2xl sm:text-3xl font-extrabold text-navy-900 tracking-tight"
+                            <p class="section-eyebrow mb-4">Prosthetic Solutions</p>
+
+                            <h2 class="heading-premium text-2xl sm:text-3xl font-bold"
                                 data-i18n="home.products_preview.section_title">
                                 주요 전문 보철 품목
                             </h2>
-                            <p class="text-sm text-steel-500 mt-4"
-                                data-i18n="home.products_preview.section_desc">
+
+                            <p class="text-premium-muted text-sm mt-4"
+                            data-i18n="home.products_preview.section_desc">
                                 임상 목적과 케이스에 맞춘 다양한 보철 제작 서비스를 제공합니다.
                             </p>
                         </div>
 
-                        <a href="javascript:void(0)" onclick="navigateTo('products')"
-                            class="text-sm font-semibold text-navy-900 hover:text-steel-600 flex items-center gap-2 mt-5 md:mt-0 transition-colors">
-                            <span data-i18n="home.products_preview.btn_view_all">
+                        <a href="javascript:void(0)"
+                        onclick="navigateTo('products')"
+                        class="inline-flex items-center gap-2 mt-5 md:mt-0
+                                text-sm font-semibold text-[#D9E0E5]
+                                hover:text-[#A8D8E7] transition-colors">
                             전체 품목 및 규격 상세 보기
-                            </span>
                             <i class="fa-solid fa-arrow-right text-xs"></i>
                         </a>
-
                     </div>
 
-
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+                    <div class="grid grid-cols-1 sm:grid-cols-2
+                                lg:grid-cols-4 gap-5">
 
                         <!-- PRODUCT 1 -->
-                        <div
-                            class="bg-white border border-silver-200 p-7 hover:border-steel-300 hover:shadow-md transition-all">
-                            <span class="text-xs font-semibold tracking-wide text-steel-500">
-                                FULL ZIRCONIA
-                            </span>
-                            <h3 class="font-bold text-navy-900 text-base mt-2 mb-3"
+                        <article class="premium-card p-7">
+                            <p class="section-eyebrow">Full Zirconia</p>
+                            <h3 class="text-base font-bold text-[#E8EEF2] mt-3 mb-4"
                                 data-i18n="home.products_preview.zirconia_title">
                                 지르코니아 보철
                             </h3>
-                            <p class="text-xs text-steel-600 leading-6"
-                                data-i18n="home.products_preview.zirconia_desc">
-                                고투명 멀티레이어 블록을 활용하여
-                                강도와 심미성을 함께 고려한
-                                전치부 및 구치부 지르코니아.
+                            <p class="text-sm text-[#B5C1CB] leading-7"
+                            data-i18n="home.products_preview.zirconia_desc">
+                                강도와 심미성을 함께 고려한 전치부 및 구치부 지르코니아.
                             </p>
-                            <div class="mt-6 pt-4 border-t border-silver-100">
-                                <span class="text-xs text-steel-500" 
+                            <div class="mt-6 pt-4 border-t border-[#344552]
+                                        flex justify-between gap-3">
+                                <span class="text-xs text-[#AAB7C2]"
                                     data-i18n="home.products_preview.duration_label">
                                     제작 기간
                                 </span>
-                                <span class="float-right text-xs font-semibold text-navy-900" 
+                                <span class="text-xs font-semibold text-[#E8EEF2]"
                                     data-i18n="home.products_preview.zirconia_duration">
                                     3–4일
                                 </span>
                             </div>
-                        </div>
+                        </article>
 
                         <!-- PRODUCT 2 -->
-                        <div
-                            class="bg-white border border-silver-200 p-7 hover:border-steel-300 hover:shadow-md transition-all">
-                            <span class="text-xs font-semibold tracking-wide text-steel-500">
-                                IMPLANT PROSTHETICS
-                            </span>
-                            <h3 class="font-bold text-navy-900 text-base mt-2 mb-3"
+                        <article class="premium-card p-7">
+                            <p class="section-eyebrow">Implant Prosthetics</p>
+                            <h3 class="text-base font-bold text-[#E8EEF2] mt-3 mb-4"
                                 data-i18n="home.products_preview.implant_title">
                                 임플란트 맞춤 보철
                             </h3>
-                            <p class="text-xs text-steel-600 leading-6"
-                                data-i18n="home.products_preview.implant_desc">
-                                Custom Abutment 밀링 및
-                                Screw-Retained 타입의
-                                단일·전악 임플란트 보철물.
+                            <p class="text-sm text-[#B5C1CB] leading-7"
+                            data-i18n="home.products_preview.implant_desc">
+                                Custom Abutment 밀링 및 Screw-Retained 타입의 임플란트 보철물.
                             </p>
-                            <div class="mt-6 pt-4 border-t border-silver-100">
-                                <span class="text-xs text-steel-500"
+                            <div class="mt-6 pt-4 border-t border-[#344552]
+                                        flex justify-between gap-3">
+                                <span class="text-xs text-[#AAB7C2]"
                                     data-i18n="home.products_preview.duration_label">
                                     제작 기간
                                 </span>
-                                <span class="float-right text-xs font-semibold text-navy-900"
+                                <span class="text-xs font-semibold text-[#E8EEF2]"
                                     data-i18n="home.products_preview.implant_duration">
                                     4–5일
                                 </span>
                             </div>
-                        </div>
+                        </article>
 
                         <!-- PRODUCT 3 -->
-                        <div
-                            class="bg-white border border-silver-200 p-7 hover:border-steel-300 hover:shadow-md transition-all">
-                            <span class="text-xs font-semibold tracking-wide text-steel-500">
-                                AESTHETIC VENEER
-                            </span>
-                            <h3 class="font-bold text-navy-900 text-base mt-2 mb-3"
+                        <article class="premium-card p-7">
+                            <p class="section-eyebrow">Aesthetic Veneer</p>
+                            <h3 class="text-base font-bold text-[#E8EEF2] mt-3 mb-4"
                                 data-i18n="home.products_preview.laminate_title">
                                 최소 삭제 라미네이트
                             </h3>
-                            <p class="text-xs text-steel-600 leading-6"
-                                data-i18n="home.products_preview.laminate_desc">
-                                초박막 세라믹을 활용하여
-                                자연스러운 형태와 색감을 고려한
-                                심미 보철을 제작합니다.
+                            <p class="text-sm text-[#B5C1CB] leading-7"
+                            data-i18n="home.products_preview.laminate_desc">
+                                자연스러운 형태와 색감을 고려한 심미 보철.
                             </p>
-                            <div class="mt-6 pt-4 border-t border-silver-100">
-                                <span class="text-xs text-steel-500"
+                            <div class="mt-6 pt-4 border-t border-[#344552]
+                                        flex justify-between gap-3">
+                                <span class="text-xs text-[#AAB7C2]"
                                     data-i18n="home.products_preview.duration_label">
                                     제작 기간
                                 </span>
-                                <span class="float-right text-xs font-semibold text-navy-900"
+                                <span class="text-xs font-semibold text-[#E8EEF2]"
                                     data-i18n="home.products_preview.laminate_duration">
                                     4일
                                 </span>
                             </div>
-                        </div>
-
+                        </article>
 
                         <!-- PRODUCT 4 -->
-                        <div
-                            class="bg-white border border-silver-200 p-7 hover:border-steel-300 hover:shadow-md transition-all">
-                            <span class="text-xs font-semibold tracking-wide text-steel-500">
-                                DIGITAL ALIGNER
-                            </span>
-                            <h3 class="font-bold text-navy-900 text-base mt-2 mb-3"
+                        <article class="premium-card p-7">
+                            <p class="section-eyebrow">Digital Aligner</p>
+                            <h3 class="text-base font-bold text-[#E8EEF2] mt-3 mb-4"
                                 data-i18n="home.products_preview.aligner_title">
                                 디지털 투명교정
                             </h3>
-                            <p class="text-xs text-steel-600 leading-6"
-                                data-i18n="home.products_preview.aligner_desc">
-                                디지털 Setup을 기반으로
-                                단계별 치아 이동을 설계하고
-                                맞춤형 투명교정 장치를 제작합니다.
+                            <p class="text-sm text-[#B5C1CB] leading-7"
+                            data-i18n="home.products_preview.aligner_desc">
+                                디지털 Setup 기반의 맞춤형 투명교정 장치.
                             </p>
-                            <div class="mt-6 pt-4 border-t border-silver-100">
-                                <span class="text-xs text-steel-500"
+                            <div class="mt-6 pt-4 border-t border-[#344552]
+                                        flex justify-between gap-3">
+                                <span class="text-xs text-[#AAB7C2]"
                                     data-i18n="home.products_preview.duration_label">
                                     제작 기간
                                 </span>
-                                <span class="float-right text-xs font-semibold text-navy-900"
+                                <span class="text-xs font-semibold text-[#E8EEF2]"
                                     data-i18n="home.products_preview.aligner_duration">
                                     3일
                                 </span>
                             </div>
-                        </div>
+                        </article>
+
                     </div>
                 </div>
-            </div>
+            </section>
 
-
-            <!-- DIRECT PARTNERSHIP BANNER -->
-
+            <!-- PARTNERSHIP BANNER -->
             <!--
-            <div class="bg-navy-900 text-white py-16 border-b border-navy-800">
-
+            <section class="py-16 bg-[#101C29] border-b border-[#263440]">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8
-                            flex flex-col md:flex-row justify-between
-                            items-start md:items-center gap-6">
+                            flex flex-col md:flex-row
+                            justify-between items-start md:items-center gap-6">
 
                     <div>
+                        <p class="section-eyebrow mb-3">Partnership</p>
 
-                        <span class="text-xs font-semibold tracking-[0.16em] text-steel-300">
-                            PARTNERSHIP
-                        </span>
+                        <h2 class="text-xl sm:text-2xl font-bold
+                                text-[#E8EEF2] tracking-tight">
+                            신규 치과 파트너십 및 제작 상담
+                        </h2>
 
-                        <h3 class="text-xl sm:text-2xl font-bold tracking-tight mt-2">
-                            신규 치과 파트너십 및 샘플 테스팅 문의
-                        </h3>
-
-                        <p class="text-sm text-silver-400 mt-2">
-                            원내 스캔 데이터 연동 테스트 및 전담 기공사 매칭 상담을 신청하실 수 있습니다.
+                        <p class="text-sm text-[#B5C1CB] mt-3 leading-7">
+                            디지털 워크플로우 연동 및 보철 제작 관련 상담을 문의해 주세요.
                         </p>
-
                     </div>
 
                     <a href="javascript:void(0)"
                     onclick="navigateTo('contact')"
-                    class="bg-white hover:bg-silver-100 text-navy-900 font-bold px-8 py-3.5 text-sm transition-colors whitespace-nowrap">
-
-                        파트너십 신청하기
-
+                    class="btn-premium-primary whitespace-nowrap">
+                        파트너십 문의하기
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
                     </a>
-
                 </div>
-
-            </div>
+            </section>
             -->
-
         </section>
 
         <!-- ================= PAGE 2: ABOUT US ================= -->
@@ -3193,6 +3723,70 @@
             // Close mobile menu if open
             document.getElementById('mobile-menu').classList.add('hidden');
         }
+
+        //헤더 스크롤 효과
+        document.addEventListener("DOMContentLoaded", () => {
+            const header = document.querySelector(".site-header");
+
+            if (!header) return;
+
+            const updateHeader = () => {
+                header.classList.toggle(
+                    "is-scrolled",
+                    window.scrollY > 20
+                );
+            };
+
+            updateHeader();
+            window.addEventListener("scroll", updateHeader, {
+                passive: true
+            });
+        });
+
+        //Hero Image Auto Slider
+        document.addEventListener("DOMContentLoaded", function () {
+            const slides = document.querySelectorAll(".hero-slide");
+            const indicators = document.querySelectorAll("#hero-indicators span");
+            const slideTexts = [
+                "디지털 데이터 기반의 섬세하고 자연스러운 보철 제작",
+                "3D 스캐너를 통한 맞춤형 진료",
+                "세심한 품질 관리와 체계적인 랩 시스템", 
+                "디지털 CAD/CAM으로 완성하는 디테일한 디자인",
+                "편안하고 안전한 프리미엄 치과 솔루션"
+            ];
+            const textElement = document.querySelector("#hero-slide-text span");
+
+            let currentIndex= 0;
+            const intervalTime = 2000; //2초 간격
+
+            function changeSlide(){
+                //기존 슬라이드 및 인디케이터 초기화
+                slides[currentIndex].classList.remove("opacity-100");
+                slides[currentIndex].classList.add("opacity-0");
+                indicators[currentIndex].classList.remove("bg-white", "w-6");
+                indicators[currentIndex].classList.add("bg-white/40", "w-2");
+
+                //다음 인덱스로 이동
+                currentIndex = (currentIndex + 1) % slides.length;
+
+                //새 슬라이드 및 인디케이터 활성화
+                slides[currentIndex].classList.remove("opacity-0");
+                slides[currentIndex].classList.add("opacity-100");
+                indicators[currentIndex].classList.remove("bg-white/40", "w-2");
+                indicators[currentIndex].classList.add("bg-white", "w-6");
+
+                //텍스트 변경
+                if(textElement) {
+                    textElement.textContent = slideTexts[currentIndex];
+                }
+            }
+
+            //2초 마다 슬라이드 전환 실행
+            if(slides.length > 0){
+                setInterval(changeSlide, intervalTime);
+            }
+            
+        });
 
         // Product Tab Switcher
         function switchProductTab(tabId, clickedButton) {
