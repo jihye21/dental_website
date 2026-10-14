@@ -3272,22 +3272,9 @@
         document.addEventListener("DOMContentLoaded", function () {
             const slides = document.querySelectorAll(".hero-slide");
             const indicators = document.querySelectorAll("#hero-indicators span");
-            const slideTexts = [
-                "디지털 데이터 기반의 섬세하고 자연스러운 보철 제작",
-                "3D 스캐너를 통한 맞춤형 진료",
-                "세심한 품질 관리와 체계적인 랩 시스템", 
-                "디지털 CAD/CAM으로 완성하는 디테일한 디자인",
-                "편안하고 안전한 프리미엄 치과 솔루션"
-            ];
-            const textElement = document.querySelector("#hero-slide-text span");
 
             let currentIndex = 0;
             const intervalTime = 2000; // 2초 간격
-
-            // 초기 첫 번째 텍스트 세팅
-            if (textElement && slideTexts.length > 0) {
-                textElement.textContent = slideTexts[currentIndex];
-            }
 
             function changeSlide() {
                 // 기존 슬라이드 및 인디케이터 비활성화
@@ -3307,11 +3294,6 @@
                 if (indicators[currentIndex]) {
                     indicators[currentIndex].classList.remove("bg-white/40", "w-2");
                     indicators[currentIndex].classList.add("bg-white", "w-6");
-                }
-
-                // 텍스트 변경
-                if (textElement) {
-                    textElement.textContent = slideTexts[currentIndex];
                 }
             }
 
