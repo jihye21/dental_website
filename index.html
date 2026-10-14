@@ -17,6 +17,12 @@
                             800: '#172431',
                             700: '#202B35',
                         },
+                        charcol: {
+                            900: '#141D26',
+                            800: '#1A242F',
+                            700: '#202B35',
+                            600: '#2C3A47',
+                        },
                         steel: {
                             800: '#243B53',
                             600: '#334E68',
@@ -158,8 +164,8 @@
         }
 
         .nav-link.active {
-            color: #0B192C;
-            border-bottom: 2px solid #0B192C;
+            color: #E0F2FE;
+            border-bottom: 2px solid #91CDE0;
             font-weight: 700;
         }
 
@@ -182,7 +188,7 @@
     </style>
 </head>
 
-<body class="antialiased selection:bg-navy-900 selection:text-white flex flex-col min-h-screen">
+<body class="antialiased selection:bg-navy-900 selection:text-white bg-navy-900">
 
     <div class="sticky top-0 z-50 w-full">
         <!-- Top System Line -->
@@ -296,7 +302,7 @@
         <!-- ================= PAGE 1: HOME ================= -->
         <section id="page-home" class="page-section active">
             <!-- HERO SECTION-->
-            <div class="relative -mt-[105px] pt-44 pb-20 lg:pt-44 lg:pb-28 border-b
+            <div class="relative -mt-[105px] pt-44 pb-20 lg:pt-44 lg:pb-28
                     overflow-hidden bg-[#081321] text-white"
                 id="hero-slider">
 
@@ -419,12 +425,12 @@
                             <!-- BUTTONS -->
                             <div class="flex flex-col sm:flex-row gap-3 mt-11">
                                 <a href="javascript:void(0)" onclick="navigateTo('contact')"
-                                    class="bg-white hover:bg-silver-100 text-navy-900 font-semibold px-8 py-3.5 text-sm tracking-tight text-center transition-all shadow-md flex items-center justify-center gap-2">
+                                    class="bg-white/80 backdrop-blur-xl hover:bg-silver-100 text-navy-900 font-semibold px-8 py-3.5 text-sm tracking-tight text-center transition-all shadow-md flex items-center justify-center gap-2">
                                     <i class="fa-solid fa-location-dot text-steel-600"></i>
                                     <span data-i18n="home.hero.btn_directions">오시는 길</span>
                                 </a>
                                 <a href="javascript:void(0)" onclick="navigateTo('products')"
-                                    class="bg-transparent hover:bg-navy-800 text-silver-200 font-medium px-8 py-3.5 text-sm tracking-tight text-center transition-all border border-navy-700 flex items-center justify-center gap-2">
+                                    class="bg-transparent/20 hover:bg-navy-900 text-silver-200 font-medium px-8 py-3.5 text-sm tracking-tight text-center transition-all border border-navy-700 flex items-center justify-center gap-2">
                                     <span data-i18n="home.hero.btn_products">보철물 제작 품목 보기</span>
                                     <i class="fa-solid fa-arrow-right text-xs"></i>
                                 </a>
@@ -508,22 +514,21 @@
             </div>
 
             <!-- CORE COMPETENCIES-->
-            <div class="py-24 bg-white border-b border-silver-200">
+            <div class="py-24 bg-navy-900">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="mb-14">
-                        <span class="text-xs font-semibold tracking-[0.16em] text-steel-500 block mb-3">
+                        <span class="text-xs font-semibold tracking-[0.16em] text-silver-300 block mb-3">
                             OUR EXPERTISE
                         </span>
-                        <h2 class="text-2xl sm:text-3xl font-extrabold text-navy-900 tracking-tight"
+                        <h2 class="text-2xl sm:text-3xl font-extrabold text-steel-100 tracking-tight"
                             data-i18n="home.competencies.section_title">
                             아티잔 덴탈 스튜디오의 3대 핵심 경쟁력
                         </h2>
-                        <p class="text-sm text-steel-500 mt-4 max-w-2xl leading-relaxed"
+                        <p class="text-sm text-silver-200 mt-4 max-w-2xl leading-relaxed"
                             data-i18n="home.competencies.section_desc">
                             디지털 기술의 정밀함과 사람의 섬세한 기술을 하나의 제작 프로세스로 연결합니다.
                         </p>
                     </div>
-
 
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                         <!-- COMPETENCY 1-->
@@ -636,18 +641,18 @@
             </div>
 
             <!-- PRODUCTS PREVIEW-->
-            <div class="py-24 bg-slate-50 border-b border-silver-200">
+            <div class="py-24 bg-navy-700">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12">
                         <div>
-                            <span class="text-xs font-semibold tracking-[0.16em] text-steel-500 block mb-3">
+                            <span class="text-xs font-semibold tracking-[0.16em] text-silver-100 block mb-3">
                                 PROSTHETIC SOLUTIONS
                             </span>
-                            <h2 class="text-2xl sm:text-3xl font-extrabold text-navy-900 tracking-tight"
+                            <h2 class="text-2xl sm:text-3xl font-extrabold text-steel-100 tracking-tight"
                                 data-i18n="home.products_preview.section_title">
                                 주요 전문 보철 품목
                             </h2>
-                            <p class="text-sm text-steel-500 mt-4"
+                            <p class="text-sm text-silver-200 mt-4"
                                 data-i18n="home.products_preview.section_desc">
                                 임상 목적과 케이스에 맞춘 다양한 보철 제작 서비스를 제공합니다.
                             </p>
@@ -846,25 +851,25 @@
             </div>
 
             <!-- ================= PHILOSOPHY ================= -->
-            <div class="py-20 bg-white border-b border-silver-200">
+                <div class="py-20 bg-navy-700">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                         <!-- Text -->
                         <div class="lg:col-span-5 space-y-5">
-                            <span class="text-xs font-mono font-bold uppercase text-steel-500 tracking-widest block">
+                            <span class="text-xs font-mono font-bold uppercase text-silver-300 tracking-widest block">
                                 Philosophy
                             </span>
-                            <h2 class="text-2xl sm:text-3xl font-extrabold text-navy-900 tracking-tight leading-snug"
+                            <h2 class="text-2xl sm:text-3xl font-extrabold text-steel-100 tracking-tight leading-snug"
                                 data-i18n="about.philosophy.title">
                                 원장님의 진료 철학을
                                 완벽하게 이해하는 보철 파트너
                             </h2>
-                            <p class="text-sm text-steel-600 leading-relaxed font-normal"
+                            <p class="text-sm text-silver-200 leading-relaxed font-normal"
                                 data-i18n="about.philosophy.desc_highlight">
                                 치과기공물은 단순한 인공 구조물이 아니라 환자의 구강 내에서
                                 수년 이상 기능해야 하는 정밀 의료 기기입니다.
                             </p>
-                            <p class="text-sm text-steel-600 leading-relaxed font-normal"
+                            <p class="text-sm text-silver-200 leading-relaxed font-normal"
                                 data-i18n="about.philosophy.desc_main">
                                 아티잔 덴탈 스튜디오는 각 치과마다 상이한 프렙 마진 스타일,
                                 교합 조정 선호도, 콘택 타이트니스 취향을 데이터베이스화하여
@@ -874,19 +879,19 @@
                             <!-- Mini Stats -->
                             <div class="grid grid-cols-2 gap-4 pt-4">
                                 <div class="border-l-2 border-navy-900 pl-4">
-                                    <span class="block text-xl font-extrabold text-navy-900">
+                                    <span class="block text-xl font-extrabold text-steel-100">
                                         01
                                     </span>
-                                    <span class="text-[11px] text-steel-500 uppercase tracking-wide">
+                                    <span class="text-[11px] text-silver-200 uppercase tracking-wide">
                                         Precision Workflow
                                     </span>
                                 </div>
 
                                 <div class="border-l-2 border-navy-900 pl-4">
-                                    <span class="block text-xl font-extrabold text-navy-900">
+                                    <span class="block text-xl font-extrabold text-steel-100">
                                         02
                                     </span>
-                                    <span class="text-[11px] text-steel-500 uppercase tracking-wide">
+                                    <span class="text-[11px] text-silver-200 uppercase tracking-wide">
                                         Consistent QA
                                     </span>
                                 </div>
@@ -1002,21 +1007,21 @@
             </div>
 
             <!-- ================= EQUIPMENT ================= -->
-            <div class="py-20 bg-slate-50 border-b border-silver-200">
+            <div class="py-20 bg-navy-800">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <!-- Section Header -->
                     <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-5 mb-12">
                         <div>
                             <span
-                                class="text-xs font-mono font-bold uppercase text-steel-500 tracking-widest block mb-2">
+                                class="text-xs font-mono font-bold uppercase text-silver-300 tracking-widest block mb-2">
                                 Equipment Spec
                             </span>
-                            <h2 class="text-2xl sm:text-3xl font-extrabold text-navy-900 tracking-tight"
+                            <h2 class="text-2xl sm:text-3xl font-extrabold text-steel-100 tracking-tight"
                                 data-i18n="about.equipment.section_title">
                                 보유 디지털 장비 및 시스템
                             </h2>
                         </div>
-                        <p class="text-xs text-steel-500 leading-relaxed max-w-md lg:text-right"
+                        <p class="text-xs text-silver-200 leading-relaxed max-w-md lg:text-right"
                             data-i18n="about.equipment.section_desc">
                             CAD 디자인부터 CAM, 밀링, 3D 프린팅까지
                             디지털 제작 공정을 연결하여<br class="hidden lg:block">
@@ -1226,21 +1231,21 @@
             </div>
 
             <!-- ================= INTRO ================= -->
-            <div class="bg-white border-b border-silver-200">
+            <div class="bg-navy-800">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
                     <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
                         <!-- Text -->
                         <div class="lg:col-span-5">
-                            <span class="text-xs font-mono font-bold uppercase tracking-widest text-steel-500">
+                            <span class="text-xs font-mono font-bold uppercase tracking-widest text-silver-300">
                                 Laboratory Standard
                             </span>
                             <h2
-                                class="mt-3 text-2xl sm:text-3xl font-extrabold text-navy-900 tracking-tight leading-snug"
+                                class="mt-3 text-2xl sm:text-3xl font-extrabold text-steel-100 tracking-tight leading-snug"
                                 data-i18n="products.intro.title">
                                 케이스의 목적에 따라
                                 소재와 제작 방식을 설계합니다.
                             </h2>
-                            <p class="mt-5 text-sm text-steel-600 leading-relaxed"
+                            <p class="mt-5 text-sm text-silver-200 leading-relaxed"
                                 data-i18n="products.intro.desc">
                                 아티잔 덴탈 스튜디오는 단순히 보철물을 제작하는 것이 아니라
                                 치과에서 전달되는 스캔 데이터와 임상 정보를 기반으로
@@ -1310,7 +1315,7 @@
             </div>
 
             <!-- ================= PRODUCTS ================= -->
-            <div class="py-16 bg-white border-b border-silver-200">
+            <div class="py-16 bg-navy-700">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <!-- ================= TAB NAVIGATION ================= -->
                     <div class="flex flex-wrap gap-2 border-b border-silver-200 pb-4 mb-12" id="product-tabs">
@@ -1342,15 +1347,15 @@
                         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start mb-10">
                             <!-- LEFT -->
                             <div class="lg:col-span-4">
-                                <span class="text-[10px] font-mono font-bold uppercase tracking-widest text-steel-500">
+                                <span class="text-[10px] font-mono font-bold uppercase tracking-widest text-silver-300">
                                     01 / Zirconia
                                 </span>
-                                <h3 class="mt-3 text-2xl font-extrabold text-navy-900 tracking-tight"
+                                <h3 class="mt-3 text-2xl font-extrabold text-steel-100 tracking-tight"
                                     data-i18n="products.tab_zirconia.title">
                                     멀티레이어
                                     지르코니아 시리즈
                                 </h3>
-                                <p class="mt-5 text-sm text-steel-600 leading-relaxed"
+                                <p class="mt-5 text-sm text-silver-200 leading-relaxed"
                                     data-i18n="products.tab_zirconia.desc">
                                     전치부의 심미성과 구치부의 기능적 요구를 고려하여
                                     케이스에 맞는 지르코니아 소재와 제작 방식을 적용합니다.
@@ -1484,15 +1489,15 @@
                     <div id="tab-implant" class="product-tab-content hidden">
                         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start mb-10">
                             <div class="lg:col-span-4">
-                                <span class="text-[10px] font-mono font-bold uppercase tracking-widest text-steel-500">
+                                <span class="text-[10px] font-mono font-bold uppercase tracking-widest text-silver-300">
                                     02 / Implant
                                 </span>
-                                <h3 class="mt-3 text-2xl font-extrabold text-navy-900 tracking-tight"
+                                <h3 class="mt-3 text-2xl font-extrabold text-steel-100 tracking-tight"
                                     data-i18n="products.tab_implant.title">
                                     맞춤형
                                     임플란트 보철 시스템
                                 </h3>
-                                <p class="mt-5 text-sm text-steel-600 leading-relaxed"
+                                <p class="mt-5 text-sm text-silver-200 leading-relaxed"
                                     data-i18n="products.tab_implant.desc">
                                     Implant Scan Data와 emergence profile,
                                     보철 공간 및 교합 정보를 종합적으로 확인하여
@@ -1502,7 +1507,7 @@
                                     <div class="flex items-center gap-3">
                                         <span class="w-2 h-2 bg-navy-900 rounded-full">
                                         </span>
-                                        <span class="text-xs text-steel-600">
+                                        <span class="text-xs text-silver-200">
                                             Custom Abutment
                                         </span>
                                     </div>
@@ -1510,7 +1515,7 @@
                                     <div class="flex items-center gap-3">
                                         <span class="w-2 h-2 bg-navy-900 rounded-full">
                                         </span>
-                                        <span class="text-xs text-steel-600">
+                                        <span class="text-xs text-silver-200">
                                             Ti-Base Hybrid
                                         </span>
                                     </div>
@@ -1518,7 +1523,7 @@
                                     <div class="flex items-center gap-3">
                                         <span class="w-2 h-2 bg-navy-900 rounded-full">
                                         </span>
-                                        <span class="text-xs text-steel-600">
+                                        <span class="text-xs text-silver-200">
                                             Screw-Retained Restoration
                                         </span>
                                     </div>
@@ -1696,15 +1701,15 @@
                         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start mb-10">
                             <!-- LEFT : Description -->
                             <div class="lg:col-span-4">
-                                <span class="text-[10px] font-mono font-bold uppercase tracking-widest text-steel-500">
+                                <span class="text-[10px] font-mono font-bold uppercase tracking-widest text-silver-300">
                                     03 / Esthetic
                                 </span>
-                                <h3 class="mt-3 text-2xl font-extrabold text-navy-900 tracking-tight leading-tight"
+                                <h3 class="mt-3 text-2xl font-extrabold text-steel-100 tracking-tight leading-tight"
                                     data-i18n="products.tab_esthetic.title">
                                     정밀 심미 보철
                                     & 라미네이트
                                 </h3>
-                                <p class="mt-5 text-sm text-steel-600 leading-relaxed"
+                                <p class="mt-5 text-sm text-silver-200 leading-relaxed"
                                     data-i18n="products.tab_esthetic.desc">
                                     치아의 형태와 표면 텍스처, 투명도 및 색조를 세밀하게 분석하여
                                     자연치와 조화를 이루는 심미 보철을 제작합니다.
@@ -1714,42 +1719,42 @@
                                 <div class="mt-8 border-t border-silver-200">
                                     <div class="py-4 border-b border-silver-200 flex items-center justify-between">
                                         <div>
-                                            <span class="text-[9px] font-mono text-steel-400">
+                                            <span class="text-[9px] font-mono text-silver-300">
                                                 STEP 01
                                             </span>
-                                            <p class="mt-1 text-xs font-bold text-navy-900">
+                                            <p class="mt-1 text-xs font-bold text-silver-200">
                                                 Shade Analysis
                                             </p>
                                         </div>
-                                        <span class="text-[10px] font-mono text-steel-400">
+                                        <span class="text-[10px] font-mono text-silver-300">
                                             01
                                         </span>
                                     </div>
 
                                     <div class="py-4 border-b border-silver-200 flex items-center justify-between">
                                         <div>
-                                            <span class="text-[9px] font-mono text-steel-400">
+                                            <span class="text-[9px] font-mono text-silver-300">
                                                 STEP 02
                                             </span>
-                                            <p class="mt-1 text-xs font-bold text-navy-900">
+                                            <p class="mt-1 text-xs font-bold text-silver-200">
                                                 Form & Texture
                                             </p>
                                         </div>
-                                        <span class="text-[10px] font-mono text-steel-400">
+                                        <span class="text-[10px] font-mono text-silver-300">
                                             02
                                         </span>
                                     </div>
 
                                     <div class="py-4 border-b border-silver-200 flex items-center justify-between">
                                         <div>
-                                            <span class="text-[9px] font-mono text-steel-400">
+                                            <span class="text-[9px] font-mono text-silver-300">
                                                 STEP 03
                                             </span>
-                                            <p class="mt-1 text-xs font-bold text-navy-900">
+                                            <p class="mt-1 text-xs font-bold text-silver-200">
                                                 Final Characterization
                                             </p>
                                         </div>
-                                        <span class="text-[10px] font-mono text-steel-400">
+                                        <span class="text-[10px] font-mono text-silver-300">
                                             03
                                         </span>
                                     </div>
@@ -1789,7 +1794,7 @@
                                                         ESTHETIC
                                                     </span>
                                                     <span class="block mt-2 text-[10px] font-mono
-                                           tracking-[0.2em] text-silver-400">
+                                                        tracking-[0.2em] text-silver-400">
                                                         RESTORATION
                                                     </span>
                                                 </div>
@@ -1797,13 +1802,13 @@
 
                                             <!-- Image Overlay -->
                                             <div class="absolute inset-0 bg-gradient-to-t
-                                    from-navy-900/75 via-transparent to-transparent">
+                                                 from-navy-900/75 via-transparent to-transparent">
                                             </div>
 
                                             <!-- Image Label -->
                                             <div class="absolute bottom-0 left-0 right-0 p-6">
                                                 <span class="text-[9px] font-mono tracking-[0.2em]
-                                       text-silver-300">
+                                                    text-silver-300">
                                                     ESTHETIC RESTORATION
                                                 </span>
                                                 <p class="mt-1 text-sm font-bold text-white">
@@ -1815,7 +1820,7 @@
                                         <!-- SPECIFICATION -->
                                         <div class="p-7 sm:p-8 bg-white">
                                             <span class="text-[9px] font-mono font-bold uppercase
-                                   tracking-[0.2em] text-steel-500">
+                                                tracking-[0.2em] text-steel-500">
                                                 Technical Specification
                                             </span>
                                             <h4 class="mt-3 text-lg font-bold text-navy-900"
@@ -1836,7 +1841,7 @@
                                                             Shade
                                                         </span>
                                                         <span class="text-[10px] font-mono
-                                                 font-bold text-navy-900">
+                                                            font-bold text-navy-900">
                                                             COLOR
                                                         </span>
                                                     </div>
@@ -1851,7 +1856,7 @@
                                                             Surface Texture
                                                         </span>
                                                         <span class="text-[10px] font-mono
-                                                 font-bold text-navy-900">
+                                                            font-bold text-navy-900">
                                                             FORM
                                                         </span>
                                                     </div>
@@ -1866,7 +1871,7 @@
                                                             Translucency
                                                         </span>
                                                         <span class="text-[10px] font-mono
-                                                 font-bold text-navy-900">
+                                                            font-bold text-navy-900">
                                                             OPTICAL
                                                         </span>
                                                     </div>
@@ -1880,7 +1885,7 @@
                                             <div class="mt-6 p-4 bg-slate-50 border border-silver-200">
                                                 <div class="flex justify-between items-center">
                                                     <span class="text-[9px] font-mono
-                                             tracking-widest text-steel-500">
+                                                        tracking-widest text-steel-500">
                                                         MATERIAL
                                                     </span>
 
@@ -1894,7 +1899,7 @@
 
                                     <!-- Bottom Information -->
                                     <div class="border-t border-silver-200
-                            grid grid-cols-2 sm:grid-cols-4">
+                                        grid grid-cols-2 sm:grid-cols-4">
 
                                         <div class="p-5 border-b sm:border-b-0 sm:border-r border-silver-200">
                                             <span class="block text-[9px] font-mono text-steel-400">
@@ -2076,17 +2081,17 @@
                             <!-- LEFT : Description -->
                             <div class="lg:col-span-4">
 
-                                <span class="text-[10px] font-mono font-bold uppercase tracking-widest text-steel-500">
+                                <span class="text-[10px] font-mono font-bold uppercase tracking-widest text-silver-300">
                                     04 / Digital Orthodontics
                                 </span>
 
-                                <h3 class="mt-3 text-2xl font-extrabold text-navy-900 tracking-tight leading-tight"
+                                <h3 class="mt-3 text-2xl font-extrabold text-steel-100 tracking-tight leading-tight"
                                     data-i18n="products.tab_aligner.title">
                                     디지털
                                     투명교정 시스템
                                 </h3>
 
-                                <p class="mt-5 text-sm text-steel-600 leading-relaxed"
+                                <p class="mt-5 text-sm text-silver-200 leading-relaxed"
                                     data-i18n="products.tab_aligner.desc">
                                     디지털 치열 데이터를 기반으로 단계별 셋업을 설계하고
                                     3D 프린팅 모델과 thermoforming 공정을 연결하여
@@ -2098,60 +2103,60 @@
 
                                     <div class="py-4 border-b border-silver-200 flex items-center justify-between">
                                         <div>
-                                            <span class="text-[9px] font-mono text-steel-400">
+                                            <span class="text-[9px] font-mono text-silver-300">
                                                 STEP 01
                                             </span>
-                                            <p class="mt-1 text-xs font-bold text-navy-900">
+                                            <p class="mt-1 text-xs font-bold text-silver-200">
                                                 Digital Scan
                                             </p>
                                         </div>
 
-                                        <span class="text-[10px] font-mono text-steel-400">
+                                        <span class="text-[10px] font-mono text-silver-300">
                                             01
                                         </span>
                                     </div>
 
                                     <div class="py-4 border-b border-silver-200 flex items-center justify-between">
                                         <div>
-                                            <span class="text-[9px] font-mono text-steel-400">
+                                            <span class="text-[9px] font-mono text-silver-300">
                                                 STEP 02
                                             </span>
-                                            <p class="mt-1 text-xs font-bold text-navy-900">
+                                            <p class="mt-1 text-xs font-bold text-silver-200">
                                                 CAD Setup
                                             </p>
                                         </div>
 
-                                        <span class="text-[10px] font-mono text-steel-400">
+                                        <span class="text-[10px] font-mono text-silver-300">
                                             02
                                         </span>
                                     </div>
 
                                     <div class="py-4 border-b border-silver-200 flex items-center justify-between">
                                         <div>
-                                            <span class="text-[9px] font-mono text-steel-400">
+                                            <span class="text-[9px] font-mono text-silver-300">
                                                 STEP 03
                                             </span>
-                                            <p class="mt-1 text-xs font-bold text-navy-900">
+                                            <p class="mt-1 text-xs font-bold text-silver-200">
                                                 3D Printing
                                             </p>
                                         </div>
 
-                                        <span class="text-[10px] font-mono text-steel-400">
+                                        <span class="text-[10px] font-mono text-silver-300">
                                             03
                                         </span>
                                     </div>
 
                                     <div class="py-4 border-b border-silver-200 flex items-center justify-between">
                                         <div>
-                                            <span class="text-[9px] font-mono text-steel-400">
+                                            <span class="text-[9px] font-mono text-silver-300">
                                                 STEP 04
                                             </span>
-                                            <p class="mt-1 text-xs font-bold text-navy-900">
+                                            <p class="mt-1 text-xs font-bold text-silver-200">
                                                 Thermoforming
                                             </p>
                                         </div>
 
-                                        <span class="text-[10px] font-mono text-steel-400">
+                                        <span class="text-[10px] font-mono text-silver-300">
                                             04
                                         </span>
                                     </div>
@@ -2424,160 +2429,155 @@
                         </div>
 
                     </div>
-                </div>
-            </div>
-            </div>
-            </div>
-            </div>
 
-            <!-- QUALITY SYSTEM -->
-            <div class="mt-16 pt-14 border-t border-silver-200">
-                <div class="text-center max-w-2xl mx-auto">
-                    <span class="text-xs font-mono font-bold uppercase tracking-widest text-steel-500">
-                        Quality Control
-                    </span>
-                    <h2 class="mt-3 text-2xl sm:text-3xl font-extrabold text-navy-900"
-                        data-i18n="products.quality_system.section_title">
-                        제작 결과보다 중요한 것은
-                        일관된 품질 관리입니다.
-                    </h2>
-                    <p class="mt-4 text-sm text-steel-600 leading-relaxed"
-                        data-i18n="products.quality_system.section_desc">
-                        하나의 보철물이 완성되기까지 디자인, 가공, 적합도,
-                        형태와 최종 마감 상태를 단계별로 확인합니다.
-                    </p>
-                </div>
-
-                <!-- QA Process -->
-                <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                    <!-- QA 01 -->
-                    <div class="relative bg-slate-50 border border-silver-200 p-6">
-                        <span class="text-[10px] font-mono text-steel-500">
-                            QC / 01
-                        </span>
-                        <h4 class="mt-3 text-sm font-bold text-navy-900">
-                            Digital Inspection
-                        </h4>
-                        <p class="mt-2 text-xs text-steel-600 leading-relaxed"
-                            data-i18n="products.quality_system.qa_cad_match">
-                            CAD 디자인과 스캔 데이터를 비교하여
-                            형태 및 주요 접촉점을 확인합니다.
-                        </p>
-                    </div>
-
-                    <!-- QA 02 -->
-                    <div class="relative bg-slate-50 border border-silver-200 p-6">
-                        <span class="text-[10px] font-mono text-steel-500">
-                            QC / 02
-                        </span>
-                        <h4 class="mt-3 text-sm font-bold text-navy-900">
-                            Manufacturing Check
-                        </h4>
-                        <p class="mt-2 text-xs text-steel-600 leading-relaxed"
-                            data-i18n="products.quality_system.qa_post_milling">
-                            밀링 또는 프린팅 후 제작 상태와
-                            주요 형상을 확인합니다.
-                        </p>
-                    </div>
-
-                    <!-- QA 03 -->
-                    <div class="relative bg-slate-50 border border-silver-200 p-6">
-                        <span class="text-[10px] font-mono text-steel-500">
-                            QC / 03
-                        </span>
-                        <h4 class="mt-3 text-sm font-bold text-navy-900">
-                            Margin & Contact
-                        </h4>
-                        <p class="mt-2 text-xs text-steel-600 leading-relaxed"
-                            data-i18n="products.quality_system.qa_case_review">
-                            마진, 인접면, 접촉 관계 등
-                            케이스별 주요 항목을 검토합니다.
-                        </p>
-                    </div>
-
-                    <!-- QA 04 -->
-                    <div class="relative bg-slate-50 border border-silver-200 p-6">
-                        <span class="text-[10px] font-mono text-steel-500">
-                            QC / 04
-                        </span>
-                        <h4 class="mt-3 text-sm font-bold text-navy-900">
-                            Final Finish
-                        </h4>
-                        <p class="mt-2 text-xs text-steel-600 leading-relaxed"
-                            data-i18n="products.quality_system.qa_final_finish">
-                            최종 형태와 표면 마감 상태를 확인한 후
-                            출고 준비를 진행합니다.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- MATERIAL STANDARD -->
-            <div class="mt-12 bg-navy-900 text-white p-7 sm:p-9">
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-                    <div class="lg:col-span-7">
-                        <span class="text-[10px] font-mono uppercase tracking-[0.2em] text-silver-400">
-                            Material Standard
-                        </span>
-                        <h3 class="mt-3 text-xl sm:text-2xl font-extrabold"
-                            data-i18n="products.material_standard.title">
-                            소재 선택부터 최종 보철까지
-                            기록 가능한 제작 시스템
-                        </h3>
-                        <p class="mt-3 text-xs sm:text-sm text-silver-400 leading-relaxed max-w-2xl"
-                            data-i18n="products.material_standard.desc">
-                            케이스에 적용되는 소재와 제작 방식을 확인하고
-                            디지털 데이터를 기반으로 일관된 작업 프로토콜을 유지합니다.
-                        </p>
-                    </div>
-
-                    <div class="lg:col-span-5 grid grid-cols-2 gap-px bg-navy-800">
-                        <div class="bg-navy-900 p-5">
-                            <span class="block text-lg font-bold">
-                                CAD
+                    <!-- QUALITY SYSTEM -->
+                    <div class="bg-navy-800 mt-16 pt-14">
+                        <div class="text-center max-w-2xl mx-auto">
+                            <span class="text-xs font-mono font-bold uppercase tracking-widest text-silver-300">
+                                Quality Control
                             </span>
-                            <span class="text-[10px] font-mono text-silver-400 uppercase">
-                                Design
-                            </span>
+                            <h2 class="mt-3 text-2xl sm:text-3xl font-extrabold text-steel-100"
+                                data-i18n="products.quality_system.section_title">
+                                제작 결과보다 중요한 것은
+                                일관된 품질 관리입니다.
+                            </h2>
+                            <p class="mt-4 text-sm text-silver-200 leading-relaxed"
+                                data-i18n="products.quality_system.section_desc">
+                                하나의 보철물이 완성되기까지 디자인, 가공, 적합도,
+                                형태와 최종 마감 상태를 단계별로 확인합니다.
+                            </p>
                         </div>
 
-                        <div class="bg-navy-900 p-5">
-                            <span class="block text-lg font-bold">
-                                CAM
-                            </span>
-                            <span class="text-[10px] font-mono text-silver-400 uppercase">
-                                Manufacturing
-                            </span>
-                        </div>
+                        <!-- QA Process -->
+                        <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                            <!-- QA 01 -->
+                            <div class="relative bg-slate-50 border border-silver-200 p-6">
+                                <span class="text-[10px] font-mono text-steel-500">
+                                    QC / 01
+                                </span>
+                                <h4 class="mt-3 text-sm font-bold text-navy-900">
+                                    Digital Inspection
+                                </h4>
+                                <p class="mt-2 text-xs text-steel-600 leading-relaxed"
+                                    data-i18n="products.quality_system.qa_cad_match">
+                                    CAD 디자인과 스캔 데이터를 비교하여
+                                    형태 및 주요 접촉점을 확인합니다.
+                                </p>
+                            </div>
 
-                        <div class="bg-navy-900 p-5">
-                            <span class="block text-lg font-bold">
-                                QC
-                            </span>
-                            <span class="text-[10px] font-mono text-silver-400 uppercase">
-                                Inspection
-                            </span>
-                        </div>
+                            <!-- QA 02 -->
+                            <div class="relative bg-slate-50 border border-silver-200 p-6">
+                                <span class="text-[10px] font-mono text-steel-500">
+                                    QC / 02
+                                </span>
+                                <h4 class="mt-3 text-sm font-bold text-navy-900">
+                                    Manufacturing Check
+                                </h4>
+                                <p class="mt-2 text-xs text-steel-600 leading-relaxed"
+                                    data-i18n="products.quality_system.qa_post_milling">
+                                    밀링 또는 프린팅 후 제작 상태와
+                                    주요 형상을 확인합니다.
+                                </p>
+                            </div>
 
-                        <div class="bg-navy-900 p-5">
-                            <span class="block text-lg font-bold">
-                                DATA
-                            </span>
-                            <span class="text-[10px] font-mono text-silver-400 uppercase">
-                                Archive
-                            </span>
+                            <!-- QA 03 -->
+                            <div class="relative bg-slate-50 border border-silver-200 p-6">
+                                <span class="text-[10px] font-mono text-steel-500">
+                                    QC / 03
+                                </span>
+                                <h4 class="mt-3 text-sm font-bold text-navy-900">
+                                    Margin & Contact
+                                </h4>
+                                <p class="mt-2 text-xs text-steel-600 leading-relaxed"
+                                    data-i18n="products.quality_system.qa_case_review">
+                                    마진, 인접면, 접촉 관계 등
+                                    케이스별 주요 항목을 검토합니다.
+                                </p>
+                            </div>
+
+                            <!-- QA 04 -->
+                            <div class="relative bg-slate-50 border border-silver-200 p-6">
+                                <span class="text-[10px] font-mono text-steel-500">
+                                    QC / 04
+                                </span>
+                                <h4 class="mt-3 text-sm font-bold text-navy-900">
+                                    Final Finish
+                                </h4>
+                                <p class="mt-2 text-xs text-steel-600 leading-relaxed"
+                                    data-i18n="products.quality_system.qa_final_finish">
+                                    최종 형태와 표면 마감 상태를 확인한 후
+                                    출고 준비를 진행합니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MATERIAL STANDARD -->
+                    <div class="bg-navy-900 mt-12 text-white p-7 sm:p-9">
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                            <div class="lg:col-span-7">
+                                <span class="text-[10px] font-mono uppercase tracking-[0.2em] text-silver-400">
+                                    Material Standard
+                                </span>
+                                <h3 class="mt-3 text-xl sm:text-2xl font-extrabold"
+                                    data-i18n="products.material_standard.title">
+                                    소재 선택부터 최종 보철까지
+                                    기록 가능한 제작 시스템
+                                </h3>
+                                <p class="mt-3 text-xs sm:text-sm text-silver-400 leading-relaxed max-w-2xl"
+                                    data-i18n="products.material_standard.desc">
+                                    케이스에 적용되는 소재와 제작 방식을 확인하고
+                                    디지털 데이터를 기반으로 일관된 작업 프로토콜을 유지합니다.
+                                </p>
+                            </div>
+
+                            <div class="lg:col-span-5 grid grid-cols-2 gap-px bg-navy-800">
+                                <div class="bg-navy-900 p-5">
+                                    <span class="block text-lg font-bold">
+                                        CAD
+                                    </span>
+                                    <span class="text-[10px] font-mono text-silver-400 uppercase">
+                                        Design
+                                    </span>
+                                </div>
+
+                                <div class="bg-navy-900 p-5">
+                                    <span class="block text-lg font-bold">
+                                        CAM
+                                    </span>
+                                    <span class="text-[10px] font-mono text-silver-400 uppercase">
+                                        Manufacturing
+                                    </span>
+                                </div>
+
+                                <div class="bg-navy-900 p-5">
+                                    <span class="block text-lg font-bold">
+                                        QC
+                                    </span>
+                                    <span class="text-[10px] font-mono text-silver-400 uppercase">
+                                        Inspection
+                                    </span>
+                                </div>
+
+                                <div class="bg-navy-900 p-5">
+                                    <span class="block text-lg font-bold">
+                                        DATA
+                                    </span>
+                                    <span class="text-[10px] font-mono text-silver-400 uppercase">
+                                        Archive
+                                    </span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            </div>
             </div>
         </section>
 
         <!-- ================= PAGE 4: DIGITAL WORKFLOW ================= -->
         <section id="page-workflow" class="page-section">
             <!-- Header Banner -->
-            <div class="relative -mt-[105px] pt-36 pb-16 bg-navy-900 text-white py-16 border-b border-navy-800">
+            <div class="relative -mt-[105px] pt-36 pb-16 bg-navy-900 text-white py-16">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <span class="text-xs font-mono uppercase tracking-widest text-silver-400 block mb-2">
                         Digital Process
@@ -2595,20 +2595,20 @@
             </div>
 
             <!-- DIGITAL WORKFLOW -->
-            <div class="py-20 bg-white border-b border-silver-200">
+            <div class="py-20 bg-navy-700">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end mb-14">
                         <div class="lg:col-span-7">
                             <span
-                                class="text-xs font-mono font-bold uppercase text-steel-500 tracking-widest block mb-2">
+                                class="text-xs font-mono font-bold uppercase text-silver-300 tracking-widest block mb-2">
                                 4-Step Digital Workflow
                             </span>
-                            <h2 class="text-2xl sm:text-3xl font-extrabold text-navy-900 tracking-tight">
+                            <h2 class="text-2xl sm:text-3xl font-extrabold text-steel-100 tracking-tight">
                                 <span data-i18n="workflow.intro.title_start">스캔 데이터 접수부터</span>
                                 <br class="hidden sm:block">
                                 <span data-i18n="workflow.intro.title_end">최종 납품까지</span>
                             </h2>
-                            <p class="mt-5 max-w-2xl text-sm text-steel-600 leading-relaxed"
+                            <p class="mt-5 max-w-2xl text-sm text-silver-200 leading-relaxed"
                                 data-i18n="workflow.intro.desc">
                                 디지털 인상 데이터를 기반으로 디자인과 제작 데이터를 연계하고,
                                 각 공정별 QC 포인트를 적용하여 최종 보철물의 일관성을 관리합니다.
@@ -2847,21 +2847,21 @@
             </div>
 
             <!-- SCAN DATA GUIDELINE -->
-            <div class="py-20 bg-slate-50 border-b border-silver-200">
+            <div class="py-20 bg-navy-800">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
                         <!-- Left -->
                         <div class="lg:col-span-5">
                             <span
-                                class="text-xs font-mono font-bold uppercase text-steel-500 tracking-widest block mb-2">
+                                class="text-xs font-mono font-bold uppercase text-silver-300 tracking-widest block mb-2">
                                 Scan Data Protocol
                             </span>
-                            <h2 class="text-2xl sm:text-3xl font-extrabold text-navy-900 tracking-tight"
+                            <h2 class="text-2xl sm:text-3xl font-extrabold text-steel-100 tracking-tight"
                                 data-i18n="workflow.guideline.section_title">
                                 스캔 데이터 제출 전
                                 확인 사항
                             </h2>
-                            <p class="mt-5 text-sm text-steel-600 leading-relaxed"
+                            <p class="mt-5 text-sm text-silver-200 leading-relaxed"
                                 data-i18n="workflow.guideline.section_desc">
                                 정확한 보철 디자인을 위해 스캔 데이터의 상태와
                                 주요 임상 정보를 사전에 확인해 주세요.
@@ -3024,7 +3024,6 @@
             </div>
         </section>
 
-
         <!-- ================= PAGE 5: PARTNERSHIP & CONTACT ================= -->
         <section id="page-contact" class="page-section">
 
@@ -3046,14 +3045,14 @@
             </div>
 
             <!-- Location -->
-            <div class="py-20 bg-white border-b border-silver-200">
+            <div class="py-20 bg-navy-800">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <!-- Section Header -->
                     <div class="mb-12">
-                        <span class="text-xs font-mono font-bold uppercase text-steel-500 tracking-widest block mb-2">
+                        <span class="text-xs font-mono font-bold uppercase text-silver-300 tracking-widest block mb-2">
                             Studio Location
                         </span>
-                        <h2 class="text-2xl sm:text-3xl font-extrabold text-navy-900 tracking-tight"
+                        <h2 class="text-2xl sm:text-3xl font-extrabold text-steel-100 tracking-tight"
                             data-i18n="contact.location.section_title">
                             기공소 위치 및 방문 안내
                         </h2>
@@ -3171,7 +3170,6 @@
                 </div>
             </div>
         </section>
-
 
     </main>
 
