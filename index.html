@@ -212,11 +212,9 @@
                 <!-- left -->
                 <div class="flex items-center space-x-4 text-xs font-semibold tracking-tight text-slate-800">
                     <span class="flex items-center gap-1.5 text-blue-700">
-                        <i class="fa-solid fa-tooth"></i> 
-                        <span data-i18n="top-line.title">디지털 치과기공 전문 스튜디오</span>
+                        <img src="img/crown_logo.png" alt="crown_logo" class="w-4 h-4 object-contain">
+                        <span data-i18n="top-line.title">디지털 치과기공 전문 랩</span>
                     </span>
-                    <span class="hidden md:inline text-slate-300">|</span>
-                    <span class="hidden md:inline text-slate-500 font-normal" data-i18n="top-line.iso_cert">ISO 13485 의료기기 품질경영인증 기공소</span>
                 </div>
 
                 <!-- right -->
@@ -224,7 +222,7 @@
                     <span class="text-slate-600 font-medium">
                         <i class="fa-solid fa-phone text-blue-600 mr-1"></i> 
                             <span data-i18n="top-line.contact_label">기공 의뢰 및 상담:</span> 
-                            <strong class="text-slate-900 font-bold" data-i18n="top-line.phone_number">02-555-8920</strong>
+                            <strong class="text-slate-900 font-bold" data-i18n="top-line.phone_number">02-2169-2977</strong>
                     </span>
 
                     <span class="text-slate-300">|</span>
@@ -249,9 +247,9 @@
                 <div class="flex justify-between h-20 items-center">
 
                     <!-- Brand Logo -->
-                    <a href="javascript:void(0)" onclick="navigateTo('home')" class="flex items-center space-x-3 group">
-                       <img src="img/crown_logo.png" alt="CHAEUM DENTAL LABORATORY" class="h-8 w-auto object-contain" />
-                       <img src="img/text_logo.png" alt="CHAEUM DENTAL LABORATORY" class="h-10 w-[50%] object-contain" />
+                    <a href="javascript:void(0)" onclick="navigateTo('home')" class="flex items-center group">
+                       <img src="img/crown_logo.png" alt="CHAEUM DENTAL LAB" class="h-8 w-auto object-contain" />
+                       <img src="img/text_logo2.png" alt="CHAEUM DENTAL LAB" class="h-10 w-auto object-contain" />
                         
                         <!-- 
                        <img src="img/logo2.png" alt="CHAEUM DENTAL LABORATORY" class="h-20 w-auto object-contain" />
@@ -272,7 +270,7 @@
                         <a href="javascript:void(0)" onclick="navigateTo('workflow')" id="nav-workflow"
                             class="nav-link py-7 px-1 transition-all" data-i18n="nav-bar.nav-workflow">디지털 워크플로우</a>
                         <a href="javascript:void(0)" onclick="navigateTo('contact')" id="nav-contact"
-                            class="nav-link py-7 px-1 transition-all" data-i18n="nav-bar.nav-contact">오시는 길<!--파트너십 문의--></a>
+                            class="nav-link py-7 px-1 transition-all" data-i18n="nav-bar.nav-contact">케이스 상담<!--파트너십 문의--></a>
                     </nav>
 
                     <!-- Header CTA Button -->
@@ -295,17 +293,17 @@
 
             <!-- Mobile Navigation Menu Dropdown -->
             <div id="mobile-menu"
-                class="hidden lg:hidden bg-white border-b border-silver-200 px-4 py-4 space-y-3 text-sm font-medium">
+                class="hidden lg:hidden bg-[#081321]/95 backdrop-blur-md border-b border-white/10 px-4 py-4 space-y-1 text-sm font-medium">
                 <a href="javascript:void(0)" onclick="navigateTo('home')"
-                    class="block py-2 text-navy-900 border-b border-silver-100" data-i18n="nav-bar.nav-home">홈</a>
+                    class="block py-2.5 px-3 rounded-md text-white/90 hover:text-white hover:bg-white/10 transition-colors border-b border-white/5" data-i18n="nav-bar.nav-home">홈</a>
                 <a href="javascript:void(0)" onclick="navigateTo('about')"
-                    class="block py-2 text-navy-900 border-b border-silver-100" data-i18n="nav-bar.nav-about">기공소 소개</a>
+                    class="block py-2.5 px-3 rounded-md text-white/90 hover:text-white hover:bg-white/10 transition-colors border-b border-white/5" data-i18n="nav-bar.nav-about">기공소 소개</a>
                 <a href="javascript:void(0)" onclick="navigateTo('products')"
-                    class="block py-2 text-navy-900 border-b border-silver-100" data-i18n="nav-bar.nav-products">주요 기공 품목</a>
+                    class="block py-2.5 px-3 rounded-md text-white/90 hover:text-white hover:bg-white/10 transition-colors border-b border-white/5" data-i18n="nav-bar.nav-products">주요 기공 품목</a>
                 <a href="javascript:void(0)" onclick="navigateTo('workflow')"
-                    class="block py-2 text-navy-900 border-b border-silver-100" data-i18n="nav-bar.nav-workflow">디지털 워크플로우</a>
-                <a href="javascript:void(0)" onclick="navigateTo('contact')" class="block py-2 text-navy-900"
-                    data-i18n="nav-bar.nav-contact">오시는길<!--파트너십 문의--></a>
+                    class="block py-2.5 px-3 rounded-md text-white/90 hover:text-white hover:bg-white/10 transition-colors border-b border-white/5" data-i18n="nav-bar.nav-workflow">디지털 워크플로우</a>
+                <a href="javascript:void(0)" onclick="navigateTo('contact')" 
+                    class="block py-2.5 px-3 rounded-md text-white/90 hover:text-white hover:bg-white/10 transition-colors" data-i18n="nav-bar.nav-contact">케이스 상담</a>
             </div>
         </header>
     </div>
@@ -323,30 +321,107 @@
         <!-- ================= PAGE 1: HOME ================= -->
         <section id="page-home" class="page-section">
             <!-- HERO SECTION-->
-            <div class="relative -mt-[105px] pt-44 pb-20 lg:pt-44 lg:pb-28 overflow-hidden bg-deepBlue-950 text-white">
+            <div class="relative -mt-[105px] min-h-screen flex items-center overflow-hidden bg-deepBlue-950 text-white">
 
                 <!-- background image -->
+                <div class="absolute inset-0 z-0">
+                    <!-- 슬라이드 이미지들 -->
+                    <div class="hero-slide absolute inset-0 h-[90vh] sm:h-full items-center justify-center transition-opacity duration-[1200ms] ease-in-out opacity-100 z-0 pointer-events-auto cursor-pointer"
+                                onclick="navigateTo('products', true, 'tab-zirconia');switchProductTab('tab-zirconia', document.getElementById('btn-tab-zirconia'));">
+                                <!--<img src="https://images.unsplash.com/photo-1664902265139-934219cee42f?auto=format&fit=crop&w=1400&q=85"
+                        --><img src="img/01_home_background(2).png"
+                            alt="디지털 치과 장비 및 CAD/CAM 작업 환경"
+                            class="w-full h-full object-cover object-[80%_center] sm:object-contain sm:object-center filter brightness-95"
+                            loading="eager">
+                        <div class="absolute inset-0 bg-gradient-to-t from-deepBlue-950/80 via-transparent to-transparent"></div>
+                    </div>
+                    <div class="hero-slide absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0 z-0 pointer-events-none cursor-pointer">
+                        <!--<img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1400&q=85"
+                    --><img src="img/02.png"
+                            alt="치과 진료 및 디지털 스캔"
+                            class="w-full h-full object-cover filter brightness-95"
+                            loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-deepBlue-950/80 via-transparent to-transparent"></div>
+                    </div>
+                    <div class="hero-slide absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0 z-0 pointer-events-none cursor-pointer">
+                    <!--<img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1400&q=85"
+                        -->
+                        <img src="img/03.png"
+                            alt="정밀 의료 작업 환경"
+                            class="w-full h-full object-cover filter brightness-95"
+                            loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-deepBlue-950/80 via-transparent to-transparent"></div>
+                    </div>
+                    <div class="hero-slide absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0 z-0 pointer-events-none cursor-pointer">
+                    <!--<img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1400&q=85"
+                        -->
+                        <img src="img/04.png"
+                            alt="디지털 치과 시스템"
+                            class="w-full h-full object-cover filter brightness-95"
+                            loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-deepBlue-950/80 via-transparent to-transparent"></div>
+                    </div>
+                    <div class="hero-slide absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0 z-0 pointer-events-none cursor-pointer">
+                    <!--<img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1400&q=85"
+                    -->
+                        <img src="img/05.png"
+                            alt="첨단 의료 환경"
+                            class="w-full h-full object-cover filter brightness-95"
+                            loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-deepBlue-950/80 via-transparent to-transparent"></div>
+                    </div>
+                    <div class="hero-slide absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0 z-0 pointer-events-none cursor-pointer">
+                    <!--<img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1400&q=85"
+                    -->
+                        <img src="img/06.jpg"
+                            alt="첨단 의료 환경"
+                            class="w-full h-full object-cover filter brightness-95"
+                            loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-deepBlue-950/80 via-transparent to-transparent"></div>
+                    </div>
+                    <div class="hero-slide absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0 z-0 pointer-events-none cursor-pointer">
+                    <!--<img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1400&q=85"
+                    -->
+                        <img src="img/07.png"
+                            alt="첨단 의료 환경"
+                            class="w-full h-full object-cover filter brightness-95"
+                            loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-deepBlue-950/80 via-transparent to-transparent"></div>
+                    </div>
+                    <div class="hero-slide absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0 z-0 pointer-events-none cursor-pointer">
+                    <!--<img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1400&q=85"
+                    -->
+                        <img src="img/08.png"
+                            alt="첨단 의료 환경"
+                            class="w-full h-full object-cover filter brightness-95"
+                            loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-deepBlue-950/80 via-transparent to-transparent"></div>
+                    </div>
+                </div>
+                <!--
                 <div class="absolute inset-0 transition-opacity duration-700 ease-in-out opacity-100 z-0">
-                    <!--<img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1400&q=85" 
-                --><img src="img/01_home_background(1).png"
+                    <img src="img/01_home_background(1).png"
                         alt="디지털 치과 장비 및 CAD/CAM 작업 환경"
                         class="w-full h-full object-cover opacity-60 mix-blend-luminosity"
                         loading="eager">
                 </div>
-                
+                -->
                 <!-- overlay -->
+                <div class="absolute inset-0 bg-deepBlue-950/80 sm:bg-deepBlue-950/0 z-10"></div>
+                <!--
                 <div class="absolute inset-0 bg-gradient-to-r from-deepBlue-950/95 via-navy-900/80 to-navy-900/40"></div>
                 <div class="absolute inset-0 bg-gradient-to-b from-navy-900/40 via-transparent to-deepBlue-950/90"></div>
-                
+                -->
                 <!-- Light Effects -->
+                 <!--
                 <div class="absolute top-0 right-0 w-[520px] h-[520px] bg-ice-500/10 rounded-full blur-[140px] pointer-events-none"></div>
                 <div class="absolute bottom-0 left-1/3 w-[360px] h-[360px] bg-steel-500/10 rounded-full blur-[120px] pointer-events-none"></div>
-
-                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                -->
+                <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <div class="grid grid-cols-1 lg:grid-cols-12 gap-0 lg:gap-0 items-center">
 
                         <!-- LEFT : MAIN MESSAGE -->
-                        <div class="lg:col-span-5">
+                        <div class="lg:col-span-5 lg:col-start-1">
 
                             <!-- 브랜드 레이블 -->
                             <div class="flex items-center gap-3 mb-8">
@@ -358,41 +433,53 @@
 
                             <!-- 메인 타이틀 -->
                             <h1 class="text-3xl sm:text-4xl lg:text-[3.4rem] font-bold tracking-tight text-white">
-                                <span class="block leading-[1.1]" data-i18n="home.hero.title_tech">
-                                    정밀한 디지털 기술과
+                                <span class="block leading-[1.1]">
+                                    <span class="text-[#D4AF37] font-extrabold"
+                                        data-i18n="home.hero.target_entity">
+                                        보철
+                                    </span>
+                                    <span class="-ml-[6px]" data-i18n="home.hero.process_context">
+                                        은 제작에서
+                                    </span>
                                 </span>
-                                <span class="block leading-[1.1] text-ice-500 font-semibold mt-1 drop-shadow-[0_0_20px_rgba(145,205,224,0.25)]"
-                                    data-i18n="home.hero.title_craft">
-                                    장인의 섬세한 손길을 더합니다.
-                                </span>
+                                <!--<span class="block leading-[1.1] text-ice-500 font-semibold mt-1 drop-shadow-[0_0_20px_rgba(145,205,224,0.25)]"
+                                    data-i18n="home.hero.title_craft">-->
+                                    <span class="text-[#D4AF37] font-extrabold"
+                                        data-i18n="home.hero.core_concept">
+                                        시작
+                                    </span>
+                                   <span class="-ml-[6px]" data-i18n="home.hero.negation_predicate">
+                                        되지 않습니다.
+                                    </span>
+                                <!--</span>-->
                             </h1>
 
                             <!-- 설명 -->
                             <p class="text-base sm:text-lg text-silver-300 font-normal leading-[2] max-w-2xl mt-9">
                                 <span data-i18n="home.hero.description.tech_combination">
-                                    채움 덴탈 스튜디오는 디지털 CAD/CAM 기술과 숙련된 기공사의
+                                    서로의 생각을 나누고, 가능성을 함께 찾아가는 과정에서 시작됩니다.
                                 </span>
                                 <br class="hidden sm:block">
                                 <span data-i18n="home.hero.description.hand_finishing">
-                                    정밀한 핸드 피니싱을 결합하여,
+                                    
                                 </span>
                                 <strong class="text-steel-100 font-semibold" data-i18n="home.hero.description.product_quality">
-                                    임상 환경에 최적화된 하이엔드 보철물
+                                    
                                 </strong>
                                 <span data-i18n="home.hero.description.action_suffix">
-                                    을 제작합니다.
+                                    
                                 </span>
                             </p>
 
                             <!-- BUTTONS -->
                             <div class="flex flex-col sm:flex-row gap-4 mt-11">
-                                <!-- 오시는 길 버튼 -->
+                                <!-- 케이스 상담 버튼 -->
                                 <a href="javascript:void(0)" onclick="navigateTo('contact')"
                                     class="relative group overflow-hidden bg-charcol-800/80 hover:bg-navy-800 backdrop-blur-md text-silver-200 hover:text-white font-medium px-8 py-3.5 text-sm tracking-tight text-center transition-all duration-300 border border-[rgba(145,205,224,0.2)] hover:border-ice-500 shadow-[0_8px_32px_0_rgba(4,8,15,0.5)] flex items-center justify-center gap-2.5">
                                     <div class="absolute inset-0 w-full h-full bg-gradient-to-tr from-transparent via-white/[0.05] to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out pointer-events-none"></div>
                                     <span class="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-ice-500/40 to-transparent"></span>
                                     <i class="fa-solid fa-location-dot text-ice-500 group-hover:scale-110 transition-transform"></i>
-                                    <span data-i18n="home.hero.btn_directions" class="relative z-10">오시는 길</span>
+                                    <span data-i18n="home.hero.btn_directions" class="relative z-10">케이스 상담</span>
                                 </a>
 
                                 <!-- 품목 보기 버튼 -->
@@ -405,107 +492,23 @@
                                 </a>
                             </div>
                         </div>
-
-                        <!-- RIGHT : HERO IMAGE SLIDER -->
-                        <div class="lg:col-span-7">
-                            <div class="relative">
-                                <div class="relative overflow-hidden bg-charcol-900 shadow-[0_20px_50px_rgba(4,8,15,0.7)] backdrop-blur-md"
-                                    id="hero-slider">
-                                    
-                                    <!-- 슬라이드 이미지들 -->
-                                    <div class="hero-slide absolute inset-0 transition-opacity duration-[1200ms] ease-in-out opacity-100 z-0 pointer-events-auto cursor-pointer"
-                                                onclick="navigateTo('products', true, 'tab-zirconia');switchProductTab('tab-zirconia', document.getElementById('btn-tab-zirconia'));">
-                                    
-                                                <!--<img src="https://images.unsplash.com/photo-1664902265139-934219cee42f?auto=format&fit=crop&w=1400&q=85"
-                                     --><img src="img/01.png"
-                                            alt="디지털 치과 장비 및 CAD/CAM 작업 환경"
-                                            class="w-full h-full object-cover filter brightness-95"
-                                            loading="eager">
-                                        <div class="absolute inset-0 bg-gradient-to-t from-deepBlue-950/80 via-transparent to-transparent"></div>
-                                    </div>
-                                    <div class="hero-slide absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0 z-0 pointer-events-none cursor-pointer">
-                                       <!--<img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1400&q=85"
-                                    --><img src="img/02.png"
-                                            alt="치과 진료 및 디지털 스캔"
-                                            class="w-full h-full object-cover filter brightness-95"
-                                            loading="lazy">
-                                        <div class="absolute inset-0 bg-gradient-to-t from-deepBlue-950/80 via-transparent to-transparent"></div>
-                                    </div>
-                                    <div class="hero-slide absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0 z-0 pointer-events-none cursor-pointer">
-                                    <!--<img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1400&q=85"
-                                        -->
-                                        <img src="img/03.png"
-                                            alt="정밀 의료 작업 환경"
-                                            class="w-full h-full object-cover filter brightness-95"
-                                            loading="lazy">
-                                        <div class="absolute inset-0 bg-gradient-to-t from-deepBlue-950/80 via-transparent to-transparent"></div>
-                                    </div>
-                                    <div class="hero-slide absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0 z-0 pointer-events-none cursor-pointer">
-                                    <!--<img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1400&q=85"
-                                        -->
-                                        <img src="img/04.png"
-                                            alt="디지털 치과 시스템"
-                                            class="w-full h-full object-cover filter brightness-95"
-                                            loading="lazy">
-                                        <div class="absolute inset-0 bg-gradient-to-t from-deepBlue-950/80 via-transparent to-transparent"></div>
-                                    </div>
-                                    <div class="hero-slide absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0 z-0 pointer-events-none cursor-pointer">
-                                    <!--<img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1400&q=85"
-                                    -->
-                                        <img src="img/05.png"
-                                            alt="첨단 의료 환경"
-                                            class="w-full h-full object-cover filter brightness-95"
-                                            loading="lazy">
-                                        <div class="absolute inset-0 bg-gradient-to-t from-deepBlue-950/80 via-transparent to-transparent"></div>
-                                    </div>
-                                    <div class="hero-slide absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0 z-0 pointer-events-none cursor-pointer">
-                                    <!--<img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1400&q=85"
-                                    -->
-                                        <img src="img/06.jpg"
-                                            alt="첨단 의료 환경"
-                                            class="w-full h-full object-cover filter brightness-95"
-                                            loading="lazy">
-                                        <div class="absolute inset-0 bg-gradient-to-t from-deepBlue-950/80 via-transparent to-transparent"></div>
-                                    </div>
-                                    <div class="hero-slide absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0 z-0 pointer-events-none cursor-pointer">
-                                    <!--<img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1400&q=85"
-                                    -->
-                                        <img src="img/07.png"
-                                            alt="첨단 의료 환경"
-                                            class="w-full h-full object-cover filter brightness-95"
-                                            loading="lazy">
-                                        <div class="absolute inset-0 bg-gradient-to-t from-deepBlue-950/80 via-transparent to-transparent"></div>
-                                    </div>
-                                    <div class="hero-slide absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0 z-0 pointer-events-none cursor-pointer">
-                                    <!--<img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1400&q=85"
-                                    -->
-                                        <img src="img/08.png"
-                                            alt="첨단 의료 환경"
-                                            class="w-full h-full object-cover filter brightness-95"
-                                            loading="lazy">
-                                        <div class="absolute inset-0 bg-gradient-to-t from-deepBlue-950/80 via-transparent to-transparent"></div>
-                                    </div>
-
-                                    <!-- 빈 컨테이너 -->
-                                    <div class="w-full h-[380px] invisible">
-                                        <img src="https://images.unsplash.com/photo-1664902265139-934219cee42f?auto=format&fit=crop&w=1400&q=85" class="w-full h-[380px] object-cover">
-                                    </div>
-                                    
-                                    <!-- 인디케이터 -->
-                                    <div id="hero-indicators" class="absolute bottom-5 right-6 flex items-center gap-1.5 z-30">
-                                        <span data-index="0" class="w-6 h-1.5 rounded-full bg-ice-500 shadow-[0_0_8px_rgba(145,205,224,0.6)]"></span>
-                                        <span data-index="1" class="w-2 h-1.5 rounded-full bg-silver-400/50"></span>
-                                        <span data-index="2" class="w-2 h-1.5 rounded-full bg-silver-400/50"></span>
-                                        <span data-index="3" class="w-2 h-1.5 rounded-full bg-silver-400/50"></span>
-                                        <span data-index="4" class="w-2 h-1.5 rounded-full bg-silver-400/50"></span>
-                                        <span data-index="5" class="w-2 h-1.5 rounded-full bg-silver-400/50"></span>
-                                        <span data-index="6" class="w-2 h-1.5 rounded-full bg-silver-400/50"></span>
-                                        <span data-index="7" class="w-2 h-1.5 rounded-full bg-silver-400/50"></span>
-                                    </div>
-                                </div>
-                            </div>
+                        <!-- RIGHT : 호버 감지 영역 -->
+                        <div id="hero-slider" class="hidden lg:col-start-6 lg:col-span-7 w-full h-[450px] lg:h-[550px] pointer-events-auto cursor-pointer
+                        bg-red-500/30">                 
                         </div>
                     </div>
+                </div>
+                
+                <!-- 인디케이터 -->
+                <div id="hero-indicators" class="absolute bottom-5 right-6 flex items-center gap-1.5 z-30">
+                    <span data-index="0" class="w-6 h-1.5 rounded-full bg-ice-500 shadow-[0_0_8px_rgba(145,205,224,0.6)]"></span>
+                    <span data-index="1" class="w-2 h-1.5 rounded-full bg-silver-400/50"></span>
+                    <span data-index="2" class="w-2 h-1.5 rounded-full bg-silver-400/50"></span>
+                    <span data-index="3" class="w-2 h-1.5 rounded-full bg-silver-400/50"></span>
+                    <span data-index="4" class="w-2 h-1.5 rounded-full bg-silver-400/50"></span>
+                    <span data-index="5" class="w-2 h-1.5 rounded-full bg-silver-400/50"></span>
+                    <span data-index="6" class="w-2 h-1.5 rounded-full bg-silver-400/50"></span>
+                    <span data-index="7" class="w-2 h-1.5 rounded-full bg-silver-400/50"></span>
                 </div>
             </div>
 
@@ -520,7 +523,7 @@
                         </span>
                         <h2 class="text-2xl sm:text-3xl font-extrabold text-steel-100 tracking-tight"
                             data-i18n="home.competencies.section_title">
-                            채움 덴탈 스튜디오의 3대 핵심 경쟁력
+                            채움 덴탈 랩의 3대 핵심 경쟁력
                         </h2>
                         <p class="text-sm text-silver-300 mt-4 max-w-2xl leading-relaxed"
                             data-i18n="home.competencies.section_desc">
@@ -867,7 +870,7 @@
 
                             <p class="text-sm text-silver-300 leading-relaxed font-normal"
                                 data-i18n="about.philosophy.desc_main">
-                                채움 덴탈 스튜디오는 각 치과마다 상이한 프렙 마진 스타일, 교합 조정 선호도, 콘택 타이트니스 취향을 데이터베이스화하여 체어타임(Chair Time)을 단축시키고 일관된 보철 결과를 구현합니다.
+                                채움 덴탈 랩은 각 치과마다 상이한 프렙 마진 스타일, 교합 조정 선호도, 콘택 타이트니스 취향을 데이터베이스화하여 체어타임(Chair Time)을 단축시키고 일관된 보철 결과를 구현합니다.
                             </p>
 
                             <!-- Mini Stats -->
@@ -910,7 +913,7 @@
                                         <div class="flex items-end justify-between gap-4">
                                             <div>
                                                 <span class="text-[10px] font-mono uppercase tracking-[0.2em] text-ice-500 block">
-                                                    CHAEUM Dental Studio
+                                                    CHAEUM Dental Lab
                                                 </span>
                                                 <p class="mt-1 text-sm font-semibold text-steel-100">
                                                     Digital Precision Laboratory
@@ -1244,7 +1247,7 @@
                             
                             <p class="mt-5 text-sm text-silver-300 leading-relaxed"
                                 data-i18n="products.intro.desc">
-                                채움 덴탈 스튜디오는 단순히 보철물을 제작하는 것이 아니라 치과에서 전달되는 스캔 데이터와 임상 정보를 기반으로 케이스별 제작 조건을 검토합니다.
+                                채움 덴탈 랩은 단순히 보철물을 제작하는 것이 아니라 치과에서 전달되는 스캔 데이터와 임상 정보를 기반으로 케이스별 제작 조건을 검토합니다.
                             </p>
                             
                             <div class="mt-8 grid grid-cols-2 gap-4">
@@ -1527,30 +1530,31 @@
 
                                     <div class="grid grid-cols-1 sm:grid-cols-2 border-b border-[rgba(145,205,224,0.12)]">
                                         <!-- Visual Image Section -->
-                                        <div class="relative min-h-[260px] overflow-hidden bg-navy-900 border-r border-[rgba(145,205,224,0.12)]">
-                                            <img src="img/03_product_implant.png"
-                                                alt="Dental implant prosthetic laboratory"
-                                                class="absolute inset-0 w-full h-full object-cover filter brightness-90 group-hover:scale-105 transition-all duration-700" 
-                                                loading="lazy"
-                                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                                            
-                                            <!-- Image Fallback -->
-                                            <div class="hidden absolute inset-0 bg-navy-900 items-center justify-center p-6 text-center">
-                                                <div>
-                                                    <span class="text-2xl font-extrabold tracking-tight text-white block">
-                                                        IMPLANT
-                                                    </span>
-                                                    <span class="block mt-2 text-[10px] font-mono tracking-[0.2em] text-ice-500 font-semibold">
-                                                        CUSTOM PROSTHETICS
-                                                    </span>
+                                        <div class="relative bg-navy-900 overflow-hidden border-r border-[rgba(145,205,224,0.12)] flex flex-col justify-between">
+    
+                                            <!-- 이미지 -->
+                                            <div class="relative w-full flex-1 flex items-center justify-center sm:min-h-[220px]">
+                                                <img src="img/03_product_implant.png"
+                                                    alt="Dental implant prosthetic laboratory"
+                                                    class="w-full max-h-[200px] sm:max-h-[260px] object-contain filter brightness-90 group-hover:scale-105 transition-all duration-700" 
+                                                    loading="lazy"
+                                                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                                
+                                                <!-- Image Fallback -->
+                                                <div class="hidden absolute inset-0 bg-navy-900 items-center justify-center p-6 text-center">
+                                                    <div>
+                                                        <span class="text-2xl font-extrabold tracking-tight text-white block">
+                                                            IMPLANT
+                                                        </span>
+                                                        <span class="block mt-2 text-[10px] font-mono tracking-[0.2em] text-ice-500 font-semibold">
+                                                            CUSTOM PROSTHETICS
+                                                        </span>
+                                                    </div>
                                                 </div>
                                             </div>
 
-                                            <!-- Gradient Overlay -->
-                                            <div class="absolute inset-0 bg-gradient-to-t from-navy-900/90 via-navy-900/20 to-transparent pointer-events-none"></div>
-
-                                            <!-- Image Caption -->
-                                            <div class="absolute bottom-0 left-0 right-0 p-5 bg-navy-900/80 backdrop-blur-md border-t border-[rgba(145,205,224,0.12)]">
+                                            <!-- 라벨 -->
+                                            <div class="p-5 sm:p-6 bg-navy-900/80 backdrop-blur-md border-t border-[rgba(145,205,224,0.12)]">
                                                 <span class="text-[10px] font-mono tracking-[0.2em] uppercase text-ice-500 font-semibold block">
                                                     IMPLANT PROSTHETICS
                                                 </span>
@@ -1558,6 +1562,7 @@
                                                     Custom Abutment & Screw-Retained
                                                 </p>
                                             </div>
+
                                         </div>
 
                                         <!-- Workflow Info Section -->
@@ -1746,30 +1751,31 @@
 
                                     <div class="grid grid-cols-1 sm:grid-cols-2">
                                         <!-- IMAGE MODULE -->
-                                        <div class="relative min-h-[320px] bg-navy-900 overflow-hidden border-b sm:border-b-0 sm:border-r border-[rgba(145,205,224,0.12)]">
-                                            <img src="img/03_product_estheticpng.png"
-                                                alt="Dental esthetic restoration and veneers"
-                                                class="absolute inset-0 w-full h-full object-cover filter brightness-90 group-hover:scale-105 transition-all duration-700" 
-                                                loading="lazy"
-                                                onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');">
+                                        <div class="relative bg-navy-900 overflow-hidden border-b sm:border-b-0 sm:border-r border-[rgba(145,205,224,0.12)] flex flex-col justify-between">
                                             
-                                            <!-- Fallback -->
-                                            <div class="hidden absolute inset-0 bg-navy-900 items-center justify-center p-6 text-center">
-                                                <div>
-                                                    <span class="text-2xl font-extrabold tracking-tight text-white block">
-                                                        ESTHETIC
-                                                    </span>
-                                                    <span class="block mt-2 text-[10px] font-mono tracking-[0.2em] text-ice-500 font-semibold">
-                                                        RESTORATION
-                                                    </span>
+                                            <!-- 아미지 -->
+                                            <div class="relative w-full flex-1 flex items-center justify-center sm:min-h-[220px]">
+                                                <img src="img/03_product_estheticpng.png"
+                                                    alt="Dental esthetic restoration and veneers"
+                                                    class="w-full max-h-[200px] sm:max-h-[260px] object-contain filter brightness-90 group-hover:scale-105 transition-all duration-700" 
+                                                    loading="lazy"
+                                                    onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');">
+                                                
+                                                <!-- Fallback -->
+                                                <div class="hidden absolute inset-0 bg-navy-900 items-center justify-center p-6 text-center">
+                                                    <div>
+                                                        <span class="text-2xl font-extrabold tracking-tight text-white block">
+                                                            ESTHETIC
+                                                        </span>
+                                                        <span class="block mt-2 text-[10px] font-mono tracking-[0.2em] text-ice-500 font-semibold">
+                                                            RESTORATION
+                                                        </span>
+                                                    </div>
                                                 </div>
                                             </div>
 
-                                            <!-- Dark Overlay -->
-                                            <div class="absolute inset-0 bg-gradient-to-t from-navy-900/90 via-navy-900/20 to-transparent pointer-events-none"></div>
-
-                                            <!-- Image Label -->
-                                            <div class="absolute bottom-0 left-0 right-0 p-6 bg-navy-900/80 backdrop-blur-md border-t border-[rgba(145,205,224,0.12)]">
+                                            <!-- 라벨 -->
+                                            <div class="p-5 sm:p-6 bg-navy-900/80 backdrop-blur-md border-t border-[rgba(145,205,224,0.12)]">
                                                 <span class="text-[9px] font-mono tracking-[0.2em] uppercase text-ice-500 font-semibold block">
                                                     ESTHETIC RESTORATION
                                                 </span>
@@ -1777,6 +1783,7 @@
                                                     Precision Ceramic Work
                                                 </p>
                                             </div>
+
                                         </div>
 
                                         <!-- SPECIFICATION MODULE -->
@@ -1943,13 +1950,13 @@
 
                                     <div class="grid grid-cols-1 sm:grid-cols-2">
                                         <!-- IMAGE MODULE -->
-                                        <div class="relative min-h-[400px] bg-navy-900 overflow-hidden border-b sm:border-b-0 sm:border-r border-[rgba(145,205,224,0.12)]">
+                                        <div class="relative bg-navy-900 overflow-hidden border-b sm:border-b-0 sm:border-r border-[rgba(145,205,224,0.12)] flex items-start justify-center">
                                             <img src="img/03_product_aligner.png"
                                                 alt="Dental 3D printed aligner models"
-                                                class="absolute inset-0 w-full h-full object-cover filter brightness-90 group-hover:scale-105 transition-all duration-700"
+                                                class="w-full max-h-[500px] object-contain filter brightness-90 group-hover:scale-105 transition-all duration-700"
                                                 loading="lazy"
                                                 onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');">
-
+                                            
                                             <!-- Fallback -->
                                             <div class="hidden absolute inset-0 bg-navy-900 items-center justify-center p-6 text-center">
                                                 <div>
@@ -2300,7 +2307,7 @@
                         <div class="grid grid-cols-1 lg:grid-cols-2">
                             
                             <!-- Image Module -->
-                            <div class="relative min-h-[320px] lg:min-h-[460px] bg-navy-900 overflow-hidden border-b lg:border-b-0 lg:border-r border-[rgba(145,205,224,0.15)]">
+                            <div class="relative min-h-[430px] lg:min-h-[460px] bg-navy-900 overflow-hidden border-b lg:border-b-0 lg:border-r border-[rgba(145,205,224,0.15)]">
                                 <img src="img/04_workflow.png"
                                     alt="Digital dental laboratory workflow"
                                     class="absolute inset-0 w-full h-full object-cover filter brightness-90 hover:scale-105 transition-all duration-700" loading="lazy"
@@ -2593,11 +2600,11 @@
                     </span>
                     <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight"
                         data-i18n="contact.hero.title_ko">
-                        오시는 길
+                        케이스 상담
                     </h1>
                     <p class="mt-4 max-w-2xl text-sm text-silver-400 leading-relaxed"
                         data-i18n="contact.hero.subtitle">
-                        채움 덴탈 스튜디오의 위치
+                        채움 덴탈 랩의 위치
                     </p>
                 </div>
             </div>
@@ -2611,7 +2618,7 @@
                     <!-- Section Header -->
                     <div class="mb-12">
                         <span class="text-xs font-semibold uppercase text-ice-500 tracking-widest block mb-2 font-mono flex items-center gap-2">
-                            Studio Location
+                            Lab Location
                         </span>
                         <h2 class="text-2xl sm:text-3xl font-extrabold text-steel-100 tracking-tight leading-snug"
                             data-i18n="contact.location.section_title">
@@ -2627,20 +2634,19 @@
                         <!-- Left: Map Container -->
                         <div class="lg:col-span-8 relative min-h-[380px] lg:min-h-[520px] bg-navy-950 overflow-hidden border-b lg:border-b-0 lg:border-r border-[rgba(145,205,224,0.15)]">
                             <!-- Google Maps Embed with Dark Invert Filter -->
-                            <iframe src="https://www.google.com/maps?q=서울특별시%20강남구%20테헤란로%20210&output=embed"
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x357b61d70fb64ec9%3A0xe42546932906e7f8!2z7ZiE64yA7KeA7Iud7IKw7JeF7IS87YSw!5e0!3m2!1sko!2skr!4v1792995409438!5m2!1sko!2skr"
                                 class="absolute inset-0 w-full h-full border-0 filter invert-[0.9] hue-rotate-180 contrast-125 opacity-80" 
                                 loading="lazy"
                                 referrerpolicy="no-referrer-when-downgrade" 
-                                title="채움 덴탈 스튜디오 위치 지도">
+                                title="채움 덴탈 랩 위치 지도">
                             </iframe>
-
                             <!-- Map Overlay Label -->
                             <div class="absolute top-5 left-5 bg-navy-900/90 backdrop-blur-md border border-[rgba(145,205,224,0.2)] px-4 py-3 shadow-[0_10px_25px_rgba(4,8,15,0.5)]">
                                 <span class="block text-[9px] font-mono font-bold tracking-widest text-ice-500 uppercase">
-                                    CHAEUM DENTAL STUDIO
+                                    CHAEUM DENTAL LAB
                                 </span>
                                 <span class="block mt-1 text-xs font-bold text-steel-100">
-                                    STUDIO LOCATION
+                                    LAB LOCATION
                                 </span>
                             </div>
                         </div>
@@ -2653,7 +2659,7 @@
                                 </span>
                                 <h3 class="mt-2 text-xl font-extrabold text-steel-100"
                                     data-i18n="contact.location.studio_name">
-                                    채움 덴탈 스튜디오
+                                    채움 덴탈 랩
                                 </h3>
 
                                 <!-- Address -->
@@ -2663,8 +2669,8 @@
                                     </span>
                                     <p class="mt-2 text-sm font-bold text-steel-100 leading-relaxed"
                                         data-i18n="contact.location.address">
-                                        서울특별시 강남구 테헤란로 210<br>
-                                        채움 타워 8층
+                                        서울특별시 금천구 두산로 70,<br>
+                                        현대지식산업센터 B동 12층 1206호
                                     </p>
                                 </div>
 
@@ -2676,7 +2682,7 @@
                                     <a href="tel:025558920"
                                         class="block mt-2 text-sm font-bold text-ice-500 hover:text-ice-400 transition-colors font-mono"
                                         data-i18n="contact.location.telephone">
-                                        02-555-8920
+                                        02-2169-2977
                                     </a>
                                     <p class="mt-1 text-[11px] text-silver-400">
                                         Partnership / Case Support
@@ -2688,7 +2694,7 @@
                                     <span class="block text-[9px] font-mono font-bold tracking-widest text-silver-400">
                                         DIGITAL DATA
                                     </span>
-                                    <a href="mailto:stl@chaeumdental.co.kr"
+                                    <a href="mailto:chaeum2016@hanmail.net"
                                         class="block mt-2 text-xs font-mono font-bold text-ice-500 hover:text-ice-400 transition-colors break-all">
                                         chaeum2016@hanmail.net
                                     </a>
@@ -2747,10 +2753,9 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
             <div
                 class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 pb-8 border-b border-navy-800">
-                <div class="flex items-center space-x-3">
-                    <div class="w-8 h-8 bg-white text-navy-900 font-bold flex items-center justify-center text-base">A
-                    </div>
-                    <span class="text-base font-bold text-white tracking-wider">CHAEUM DENTAL STUDIO</span>
+                <div class="flex items-center">
+                    <img src="img/crown_logo.png" alt="CHAEUM DENTAL LAB" class="h-8 w-auto object-contain" />
+                    <img src="img/text_logo2.png" alt="CHAEUM DENTAL LAB" class="h-10 w-auto object-contain" />
                 </div>
                 <div class="flex flex-wrap gap-6 text-silver-400 font-medium">
                     <a href="javascript:void(0)" onclick="navigateTo('home')"
@@ -2767,18 +2772,18 @@
                         data-i18n="nav-bar.nav-workflow">디지털 워크플로우</a>
                     <a href="javascript:void(0)" onclick="navigateTo('contact')"
                         class="hover:text-white transition-colors"
-                        data-i18n="nav-bar.nav-contact">오시는 길<!--파트너십 문의--></a>
+                        data-i18n="nav-bar.nav-contact">케이스 상담<!--파트너십 문의--></a>
                 </div>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-silver-400 leading-relaxed font-normal">
                 <div>
-                    <p data-i18n="footer.corporate_info">상호: 채움 (Chaeum) | 대표: 김채움</p>
+                    <p data-i18n="footer.corporate_info">상호: 채움 (Chaeum) | 대표: 김병주</p>
                     <p data-i18n="footer.registration_info">사업자등록번호: 220-88-12345 | 치과기공소 등록번호: 제 2025-강남-0412호</p>
-                    <p data-i18n="footer.address_info">주소: 서울특별시 강남구 테헤란로 210 채움 타워 8층</p>
+                    <p data-i18n="footer.address_info">주소: 서울특별시 금천구 두산로 70, 현대지식산업센터 B동 12층 1206호</p>
                 </div>
                 <div class="md:text-right">
-                    <p>© 2026 CHAEUM DENTAL STUDIO. All Rights Reserved.</p>
+                    <p>© 2026 CHAEUM DENTAL LAB. All Rights Reserved.</p>
                     <p class="text-steel-400 mt-1">High-Precision Dental CAD/CAM Laboratory for Professionals</p>
                 </div>
             </div>
@@ -2905,7 +2910,7 @@
             const sliderContainer = document.querySelector("#hero-slider");
             
             let currentIndex = 0;
-            const intervalTime = 3700; // 6초 간격
+            const intervalTime = 3700; // 3.7초 간격
             let slideInterval; // 타이머를 담을 변수
             
             function goToSlide(targetIndex) {

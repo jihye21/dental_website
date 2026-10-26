@@ -1,9 +1,8 @@
 {
   "top-line": {
-    "title": "Digital Dental Laboratory Studio",
-    "iso_cert": "ISO 13485 Certified Medical Device Dental Lab",
+    "title": "Digital Dental Lab",
     "contact_label": "Order & Consultation:",
-    "phone_number": "+82-2-555-8920"
+    "phone_number": "+82-2-2169-2977"
   },
   "nav-bar": {
     "nav-home": "Home", 
@@ -16,15 +15,14 @@
   "home": {
     "hero": {
       "badge": "Precision Prosthetics Driven by Digital Data",
-      "title_tech": "Integrating Advanced Digital Technology",
-      "title_craft": "With the Delicate Touch of a Master Artisan.",
+      "target_entity": "Prosthetics",
+      "process_context": "do not start",
+      "core_concept": "with",
+      "negation_predicate": "fabrication.",
       "description": {
-        "tech_combination": "Artisan Dental Studio combines advanced CAD/CAM technology with skilled,",
-        "hand_finishing": "meticulous hand-finishing",
-        "product_quality": "to craft premium high-end prosthetics optimized for every clinical environment.",
-        "action_suffix": " "
+        "tech_combination": "It all starts where ideas meet and possibilities unfold."
       },
-      "btn_directions": "Find Our Studio",
+      "btn_directions": "Find Our Lab",
       "btn_products": "View Products & Services"
     },
     "brand_trust": {
@@ -38,7 +36,7 @@
       "communication_title": "Accurate Communication"
     },
     "competencies": {
-      "section_title": "3 Core Competencies of Artisan Dental Studio",
+      "section_title": "3 Core Competencies of Chaeum Dental Lab",
       "section_desc": "We seamlessly bridge the precision of digital technology and the delicate skill of human touch into a single fabrication process.",
      
       "cadcam_title": "State-of-the-Art Digital CAD/CAM Systems",
@@ -76,13 +74,13 @@
   
   "about": {
     "hero": {
-      "title": "About Our Studio & Equipment Systems",
+      "title": "About Our Lab & Equipment Systems",
       "desc": "Through a digital workflow and a precision manufacturing framework built on clinical data, we achieve consistent, high-fidelity prosthetic outcomes that honor each clinician’s treatment philosophy."
     },
     "philosophy": {
       "title": "A Prosthetic Partner That Perfectly Understands Your Clinical Philosophy",
       "desc_highlight": "Dental prosthetics are not just simple artificial structures, but high-precision medical devices that must function inside a patient's oral cavity for years.",
-      "desc_main": "Artisan Dental Studio databases each clinic's unique preparation margin styles, occlusal adjustment preferences, and proximal contact tightness trends. This targeted synchronization minimizes chair time and guarantees consistently predictable prosthetic outcomes."
+      "desc_main": "Chaeum Dental Lab databases each clinic's unique preparation margin styles, occlusal adjustment preferences, and proximal contact tightness trends. This targeted synchronization minimizes chair time and guarantees consistently predictable prosthetic outcomes."
     },
     "trust": {
       "dedicated_title": "1:1 Dedicated Clinic Technician System",
@@ -124,7 +122,7 @@
     },
     "intro": {
       "title": "Engineering Material Choice and Fabrication Methods Tailored to Case Objectives.",
-      "desc": "Rather than just mass-producing dental restorations, Artisan Dental Studio comprehensively reviews the unique manufacturing parameters of every case based on the intraoral scan data and clinical insights provided by the clinician."
+      "desc": "Rather than just mass-producing dental restorations, Chaeum Dental Lab comprehensively reviews the unique manufacturing parameters of every case based on the intraoral scan data and clinical insights provided by the clinician."
     },
     "tabs": {
       "zirconia": "Zirconia",
@@ -238,13 +236,13 @@
     "contact": {
       "hero": {
         "title_ko": "Contact & Location",
-        "subtitle": "Location of Artisan Dental Studio"
+        "subtitle": "Location of Chaeum Dental Lab"
       },
       "location": {
-        "section_title": "Studio Location & Visitor Guide",
-        "studio_name": "Artisan Dental Studio",
-        "address": "8F, Artisan Tower, 210 Teheran-ro, Gangnam-gu, Seoul, Republic of Korea",
-        "telephone": "+82-2-555-8920"
+        "section_title": "Lab Location & Visitor Guide",
+        "studio_name": "Chaeum Dental Lab",
+        "address": "B-1206, 70 Dusan-ro, Geumcheon-gu, Seoul, 08584, Republic of Korea",
+        "telephone": "+82-2-2169-2977"
       },
       "hours": {
         "weekday_label": "Weekdays",
@@ -255,8 +253,8 @@
     },
     
     "footer": {
-      "corporate_info": "Company: Artisan Dental Studio | CEO: Kim Artisan",
+      "corporate_info": "Company: Chaeum Dental Lab | CEO: Kim Chaeum",
       "registration_info": "Business Registration No: 220-88-12345 | Dental Laboratory License No: No. 2025-Gangnam-0412",
-      "address_info": "Address: 8F, Artisan Tower, 210 Teheran-ro, Gangnam-gu, Seoul, Republic of Korea"
+      "address_info": "Address: B-1206, 70 Dusan-ro, Geumcheon-gu, Seoul, 08584, Republic of Korea"
     }
 }

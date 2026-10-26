@@ -1,30 +1,28 @@
 {
 	"top-line": {
-	  "title": "디지털 치과기공 전문 스튜디오",
-	  "iso_cert": "ISO 13485 의료기기 품질경영인증 기공소",
+	  "title": "디지털 치과기공 전문 랩",
 	  "contact_label": "기공 의뢰 및 상담:",
-	  "phone_number": "02-555-8920"
+	  "phone_number": "02-2169-2977"
   },
   "nav-bar": {
 	  "nav-home": "홈", 
 	  "nav-about": "기공소 소개", 
 	  "nav-products": "주요 기공 품목", 
 	  "nav-workflow": "디지털 워크플로우", 
-	  "nav-contact": "오시는 길"
+	  "nav-contact": "케이스 상담"
 	},
 	
 	"home": {
 		"hero": {
       "badge": "디지털 데이터 기반의 정밀 보철 제작",
-      "title_tech": "보철은 제작에서",
-      "title_craft": "시작되지 않습니다.",
+      "target_entity": "보철",
+      "process_context": "은 제작에서",
+      "core_concept": "시작",
+      "negation_predicate": "되지 않습니다.",
       "description": {
-        "tech_combination": "서로의 생각을 나누고, 가능성을 함께 찾아가는 과정에서 시작됩니다.",
-        "hand_finishing": "",
-        "product_quality": "",
-        "action_suffix": ""
+        "tech_combination": "서로의 생각을 나누고, 가능성을 함께 찾아가는 과정에서 시작됩니다."
       },
-      "btn_directions": "오시는 길",
+      "btn_directions": "케이스 상담",
       "btn_products": "보철물 제작 품목 보기"
     },
     "brand_trust": {
@@ -38,7 +36,7 @@
       "communication_title": "정확한 커뮤니케이션"
     },
 		"competencies": {
-      "section_title": "아티잔 덴탈 스튜디오의 3대 핵심 경쟁력",
+      "section_title": "채움 덴탈 랩의 3대 핵심 경쟁력",
       "section_desc": "디지털 기술의 정밀함과 사람의 섬세한 기술을 하나의 제작 프로세스로 연결합니다.",
      
       "cadcam_title": "최신 디지털 CAD/CAM 시스템",
@@ -82,7 +80,7 @@
    "philosophy": {
       "title": "원장님의 진료 철학을 완벽하게 이해하는 보철 파트",
       "desc_highlight": "치과기공물은 단순한 인공 구조물이 아니라 환자의 구강 내에서 수년 이상 기능해야 하는 정밀 의료 기기입니다.",
-      "desc_main": "아티잔 덴탈 스튜디오는 각 치과마다 상이한 프렙 마진 스타일, 교합 조정 선호도, 콘택 타이트니스 취향을 데이터베이스화하여 체어타임(Chair Time)을 단축시키고 일관된 보철 결과를 구현합니다."
+      "desc_main": "채움 덴탈 랩은 각 치과마다 상이한 프렙 마진 스타일, 교합 조정 선호도, 콘택 타이트니스 취향을 데이터베이스화하여 체어타임(Chair Time)을 단축시키고 일관된 보철 결과를 구현합니다."
     },
     "trust": {
       "dedicated_title": "1:1 치과 전담 기공사제",
@@ -127,7 +125,7 @@
     },
     "intro": {
       "title": "케이스의 목적에 따라 소재와 제작 방식을 설계합니다.",
-      "desc": "아티잔 덴탈 스튜디오는 단순히 보철물을 제작하는 것이 아니라 치과에서 전달되는 스캔 데이터와 임상 정보를 기반으로 케이스별 제작 조건을 검토합니다."
+      "desc": "채움 덴탈 랩은 단순히 보철물을 제작하는 것이 아니라 치과에서 전달되는 스캔 데이터와 임상 정보를 기반으로 케이스별 제작 조건을 검토합니다."
     },
     "tabs": {
       "zirconia": "지르코니아",
@@ -246,14 +244,14 @@
    
    "contact": {
     "hero": {
-      "title_ko": "오시는 길",
-      "subtitle": "아티잔 덴탈 스튜디오의 위치"
+      "title_ko": "케이스 상담",
+      "subtitle": "채움 덴탈 랩의 위치"
     },
     "location": {
       "section_title": "기공소 위치 및 방문 안내",
-      "studio_name": "아티잔 덴탈 스튜디오",
-      "address": "서울특별시 강남구 테헤란로 210 아티잔 타워 8층",
-      "telephone": "02-555-8920"
+      "studio_name": "채움 덴탈 랩",
+      "address": "서울특별시 금천구 두산로 70, 현대지식산업센터 B동 12층 1206호",
+      "telephone": "02-2169-2977"
     },
     "hours": {
       "weekday_label": "평일",
@@ -264,8 +262,8 @@
     },
 	 
 	 "footer": {
-      "corporate_info": "상호: 아티잔 덴탈 스튜디오 (Artisan Dental Studio) | 대표: 김아티잔",
+      "corporate_info": "상호: 채움 덴탈 랩 (Chaeum Dental Lab) | 대표: 김병주",
       "registration_info": "사업자등록번호: 220-88-12345 | 치과기공소 등록번호: 제 2025-강남-0412호",
-      "address_info": "주소: 서울특별시 강남구 테헤란로 210 아티잔 타워 8층"
+      "address_info": "주소: 서울특별시 금천구 두산로 70, 현대지식산업센터 B동 12층 1206호"
     }
  }
