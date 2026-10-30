@@ -1228,8 +1228,26 @@
                         </div>
                     </div>
 
-                    <!-- 협력사 이미지-->
-                    <!--이미지-->
+                    <!-- ================= Partners Section ================= -->
+                    <div class="mt-20 pt-16 border-t border-steel-100/10">
+                        <span class="text-xs font-semibold tracking-[0.18em] text-ice-500 uppercase block mb-2 flex items-center gap-2"
+                            >
+                            PARTNERS
+                        </span>
+                        <h1 class="text-2xl sm:text-3xl font-extrabold text-steel-100 tracking-tight mb-8"
+                            data-i18n="about.partners.section_title">
+                            협력사
+                        </h1>
+                        
+                        <!-- 배너 이미지 영역 -->
+                        <div class="w-full overflow-hidden rounded-xl bg-navy-800 border border-steel-100/5 p-6 flex items-center justify-center">
+                            <img src="img/02_about_partner.png" 
+                                 alt="협력사 배너" 
+                                 class="w-full h-auto object-cover max-w-5xl"
+                                 data-i18n-alt="about.partners.banner_alt">
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -1419,10 +1437,9 @@
                                     <div class="relative h-56 sm:h-72 bg-navy-900 overflow-hidden border-b border-[rgba(145,205,224,0.12)]">
                                         <img src="img/03_product_zirconia.png"
                                             alt="Zirconia dental restorations" 
-                                            class="w-full h-full object-cover filter brightness-90 group-hover:scale-105 transition-all duration-700"
+                                            class="w-full h-full object-contain filter brightness-90 group-hover:scale-105 transition-all duration-700"
                                             loading="lazy" 
                                             onerror="this.style.display='none';">
-                                        <div class="absolute inset-0 bg-gradient-to-t from-navy-900 via-navy-900/30 to-transparent"></div>
                                         <span class="absolute bottom-4 left-4 text-[10px] font-mono uppercase tracking-[0.2em] text-ice-500 font-semibold bg-navy-900/80 px-3 py-1 border border-[rgba(145,205,224,0.2)] backdrop-blur-md">
                                             High-End Restorations
                                         </span>
@@ -2658,43 +2675,40 @@
                     </div>
 
                     <!-- Main Location Card (Glassmorphism Container) -->
-                    <div class="bg-charcol-800/80 backdrop-blur-xl border border-[rgba(145,205,224,0.15)] shadow-[0_20px_50px_rgba(4,8,15,0.6)] relative overflow-hidden grid grid-cols-1 lg:grid-cols-12">
-                        <!-- 상단 미세 발광 라인 -->
-                        <div class="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-ice-500/40 to-transparent"></div>
+                    <div class="bg-charcol-800/80 backdrop-blur-xl border border-[rgba(145,205,224,0.15)] shadow-[0_20px_50px_rgba(4,8,15,0.6)] relative overflow-hidden">
 
                         <!-- Left: Map Container -->
-                        <div class="lg:col-span-8 relative min-h-[380px] lg:min-h-[520px] bg-navy-950 overflow-hidden border-b lg:border-b-0 lg:border-r border-[rgba(145,205,224,0.15)]">
-                            <!-- Google Maps Embed with Dark Invert Filter -->
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x357b61d70fb64ec9%3A0xe42546932906e7f8!2z7ZiE64yA7KeA7Iud7IKw7JeF7IS87YSw!5e0!3m2!1sko!2skr!4v1792995409438!5m2!1sko!2skr"
-                                class="absolute inset-0 w-full h-full border-0 filter invert-[0.9] hue-rotate-180 contrast-125 opacity-80" 
-                                loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade" 
-                                title="채움 덴탈 랩 위치 지도">
-                            </iframe>
+                        <div class="relative w-full aspect-[1672/941] overflow-hidden border-b border-[rgba(145,205,224,0.15)] group">
+                            <!-- location image -->
+                            <img src="img/05_contact.png" 
+                                alt="채움 덴탈 랩 위치 지도"
+                                class="absolute inset-0 w-full h-full object-cover filter brightness-90 group-hover:scale-[1.01] transition-all duration-700"
+                                loading="lazy">
                             <!-- Map Overlay Label -->
-                            <div class="absolute top-5 left-5 bg-navy-900/90 backdrop-blur-md border border-[rgba(145,205,224,0.2)] px-4 py-3 shadow-[0_10px_25px_rgba(4,8,15,0.5)]">
-                                <span class="block text-[9px] font-mono font-bold tracking-widest text-ice-500 uppercase">
+                            <div class="absolute top-3 left-3 sm:top-5 sm:left-5 bg-navy-900/90 backdrop-blur-md border border-[rgba(145,205,224,0.2)] px-3 py-2 sm:px-4 sm:py-3 shadow-[0_10px_25px_rgba(4,8,15,0.5)] z-10">
+                                <span class="block text-[8px] sm:text-[9px] font-mono font-bold tracking-wider sm:tracking-widest text-ice-500 uppercase">
                                     CHAEUM DENTAL LAB
                                 </span>
-                                <span class="block mt-1 text-xs font-bold text-steel-100">
+                                <span class="block mt-0.5 sm:mt-1 text-[11px] sm:text-xs font-bold text-steel-100">
                                     LAB LOCATION
                                 </span>
                             </div>
                         </div>
 
                         <!-- Right: Contact Information -->
-                        <div class="lg:col-span-4 p-7 sm:p-9 bg-navy-900/40 flex flex-col justify-between">
-                            <div>
-                                <span class="text-[10px] font-mono uppercase tracking-widest text-ice-500 font-semibold block">
-                                    Contact Information
-                                </span>
-                                <h3 class="mt-2 text-xl font-extrabold text-steel-100"
-                                    data-i18n="contact.location.studio_name">
-                                    채움 덴탈 랩
-                                </h3>
-
-                                <!-- Address -->
-                                <div class="mt-8 pb-6 border-b border-[rgba(145,205,224,0.12)]">
+                        <div class="p-8 sm:p-10 bg-navy-900/40 grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-10 items-start">
+                            <div class="space-y-4">
+                                <div>
+                                    <span class="text-[10px] font-mono uppercase tracking-widest text-ice-500 font-semibold block">
+                                        Contact Information
+                                    </span>
+                                    <h3 class="mt-2 text-xl font-extrabold text-steel-100"
+                                        data-i18n="contact.location.studio_name">
+                                        채움 덴탈 랩
+                                    </h3>
+                                </div>
+                                <div class="pt-2">
+                                    <!-- Address -->
                                     <span class="block text-[9px] font-mono font-bold tracking-widest text-silver-400">
                                         ADDRESS
                                     </span>
@@ -2704,42 +2718,45 @@
                                         현대지식산업센터 B동 12층 1206호
                                     </p>
                                 </div>
+                            </div>
 
                                 <!-- Direct Line -->
-                                <div class="py-6 border-b border-[rgba(145,205,224,0.12)]">
-                                    <span class="block text-[9px] font-mono font-bold tracking-widest text-silver-400">
-                                        DIRECT LINE
-                                    </span>
-                                    <a href="tel:025558920"
-                                        class="block mt-2 text-sm font-bold text-ice-500 hover:text-ice-400 transition-colors font-mono"
-                                        data-i18n="contact.location.telephone">
-                                        02-2169-2977
-                                    </a>
-                                    <p class="mt-1 text-[11px] text-silver-400">
-                                        Partnership / Case Support
-                                    </p>
-                                </div>
+                                <div class="space-y-6 md:border-l md:border-[rgba(145,205,224,0.12)] md:pl-8 lg:pl-10">
+                                    <div>
+                                        <span class="block text-[9px] font-mono font-bold tracking-widest text-silver-400">
+                                            DIRECT LINE
+                                        </span>
+                                        <a href="tel:0221692977"
+                                            class="block mt-2 text-sm font-bold text-ice-500 hover:text-ice-400 transition-colors font-mono"
+                                            data-i18n="contact.location.telephone">
+                                            02-2169-2977
+                                        </a>
+                                        <p class="mt-1 text-[11px] text-silver-400">
+                                            Partnership / Case Support
+                                        </p>
+                                    </div>
 
-                                <!-- Digital Data Email -->
-                                <div class="py-6 border-b border-[rgba(145,205,224,0.12)]">
-                                    <span class="block text-[9px] font-mono font-bold tracking-widest text-silver-400">
-                                        DIGITAL DATA
-                                    </span>
-                                    <a href="mailto:chaeum2016@hanmail.net"
-                                        class="block mt-2 text-xs font-mono font-bold text-ice-500 hover:text-ice-400 transition-colors break-all">
-                                        chaeum2016@hanmail.net
-                                    </a>
-                                    <p class="mt-1 text-[11px] text-silver-400">
-                                        STL / PLY Scan Data
-                                    </p>
+                                    <!-- Digital Data Email -->
+                                    <div>
+                                        <span class="block text-[9px] font-mono font-bold tracking-widest text-silver-400">
+                                            DIGITAL DATA
+                                        </span>
+                                        <a href="mailto:chaeum2016@hanmail.net"
+                                            class="block mt-2 text-xs font-mono font-bold text-ice-500 hover:text-ice-400 transition-colors break-all">
+                                            chaeum2016@hanmail.net
+                                        </a>
+                                        <p class="mt-1 text-[11px] text-silver-400">
+                                            STL / PLY Scan Data
+                                        </p>
+                                    </div>
                                 </div>
 
                                 <!-- Business Hours -->
-                                <div class="pt-6">
+                                <div class="md:border-l md:border-[rgba(145,205,224,0.12)] md:pl-8 lg:pl-10">
                                     <span class="block text-[9px] font-mono font-bold tracking-widest text-silver-400">
                                         BUSINESS HOURS
                                     </span>
-                                    <div class="mt-3 space-y-2">
+                                    <div class="mt-3 space-y-2.5">
                                         <div class="flex justify-between gap-4">
                                             <span class="text-xs text-silver-300"
                                                 data-i18n="contact.hours.weekday_label">
