@@ -16,9 +16,9 @@
     "hero": {
       "badge": "Precision Prosthetics Driven by Digital Data",
       "target_entity": "Prosthetics",
-      "process_context": "do not start",
+      "process_context": "\u00A0do not start",
       "core_concept": "with",
-      "negation_predicate": "fabrication.",
+      "negation_predicate": "\u00A0fabrication.",
       "description": {
         "tech_combination": "It all starts where ideas meet and possibilities unfold."
       },
