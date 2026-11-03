@@ -10,6 +10,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
+            future: {
+                hoverOnlyWhenSupported: true,
+            },
             theme: {
                 extend: {
                     colors: {
@@ -862,7 +865,7 @@
             <div class="relative -mt-[105px] pt-36 pb-16 bg-navy-900 text-white py-16 border-b border-navy-800">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="max-w-3xl">
-                        <span class="text-xs font-mono uppercase tracking-widest text-silver-400 block mb-2">
+                        <span class="text-xs font-sans uppercase tracking-widest text-silver-400 block mb-2">
                             About CHAEUM
                         </span>
                         <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight"
@@ -910,7 +913,7 @@
                             <!-- Mini Stats -->
                             <div class="grid grid-cols-2 gap-6 pt-4 border-t border-[rgba(145,205,224,0.12)]">
                                 <div class="border-l-2 border-ice-500 pl-4 py-1">
-                                    <span class="block text-xl font-extrabold text-steel-100 font-mono">
+                                    <span class="block text-xl font-extrabold text-steel-100 font-sans">
                                         01
                                     </span>
                                     <span class="text-[11px] text-ice-500 uppercase tracking-wider font-medium">
@@ -919,7 +922,7 @@
                                 </div>
 
                                 <div class="border-l-2 border-ice-500 pl-4 py-1">
-                                    <span class="block text-xl font-extrabold text-steel-100 font-mono">
+                                    <span class="block text-xl font-extrabold text-steel-100 font-sans">
                                         02
                                     </span>
                                     <span class="text-[11px] text-ice-500 uppercase tracking-wider font-medium">
@@ -946,7 +949,7 @@
                                     <div class="absolute bottom-0 left-0 right-0 p-5 sm:p-6 bg-navy-900/80 backdrop-blur-md border-t border-[rgba(145,205,224,0.12)]">
                                         <div class="flex items-end justify-between gap-4">
                                             <div>
-                                                <span class="text-[10px] font-mono uppercase tracking-[0.2em] text-ice-500 block">
+                                                <span class="text-[10px] font-sans uppercase tracking-[0.2em] text-ice-500 block">
                                                     CHAEUM Dental Lab
                                                 </span>
                                                 <p class="mt-1 text-sm font-semibold text-steel-100">
@@ -954,7 +957,7 @@
                                                 </p>
                                             </div>
 
-                                            <span class="hidden sm:block text-[10px] font-mono text-silver-300 tracking-wider">
+                                            <span class="hidden sm:block text-[10px] font-sans text-silver-300 tracking-wider">
                                                 EST. / DIGITAL WORKFLOW
                                             </span>
                                         </div>
@@ -970,7 +973,7 @@
                         <!-- Card 01: Dedicated -->
                         <div class="group relative p-7 bg-charcol-800/70 backdrop-blur-xl border border-[rgba(145,205,224,0.15)] hover:border-ice-500/50 transition-all duration-300 shadow-[0_10px_30px_rgba(4,8,15,0.5)]">
                             <div class="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-ice-500/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                            <span class="text-[11px] font-mono font-bold text-ice-500 uppercase tracking-widest block">
+                            <span class="text-[11px] font-sans font-bold text-ice-500 uppercase tracking-widest block">
                                 01 / Dedicated
                             </span>
                             <h4 class="font-bold text-steel-100 text-base mt-3 mb-2"
@@ -986,7 +989,7 @@
                         <!-- Card 02: Inspection -->
                         <div class="group relative p-7 bg-charcol-800/70 backdrop-blur-xl border border-[rgba(145,205,224,0.15)] hover:border-ice-500/50 transition-all duration-300 shadow-[0_10px_30px_rgba(4,8,15,0.5)]">
                             <div class="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-ice-500/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                            <span class="text-[11px] font-mono font-bold text-ice-500 uppercase tracking-widest block">
+                            <span class="text-[11px] font-sans font-bold text-ice-500 uppercase tracking-widest block">
                                 02 / Inspection
                             </span>
                             <h4 class="font-bold text-steel-100 text-base mt-3 mb-2"
@@ -1002,7 +1005,7 @@
                         <!-- Card 03: Materials -->
                         <div class="group relative p-7 bg-charcol-800/70 backdrop-blur-xl border border-[rgba(145,205,224,0.15)] hover:border-ice-500/50 transition-all duration-300 shadow-[0_10px_30px_rgba(4,8,15,0.5)]">
                             <div class="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-ice-500/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                            <span class="text-[11px] font-mono font-bold text-ice-500 uppercase tracking-widest block">
+                            <span class="text-[11px] font-sans font-bold text-ice-500 uppercase tracking-widest block">
                                 03 / Materials
                             </span>
                             <h4 class="font-bold text-steel-100 text-base mt-3 mb-2"
@@ -1018,7 +1021,7 @@
                         <!-- Card 04: Archive -->
                         <div class="group relative p-7 bg-charcol-800/70 backdrop-blur-xl border border-[rgba(145,205,224,0.15)] hover:border-ice-500/50 transition-all duration-300 shadow-[0_10px_30px_rgba(4,8,15,0.5)]">
                             <div class="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-ice-500/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                            <span class="text-[11px] font-mono font-bold text-ice-500 uppercase tracking-widest block">
+                            <span class="text-[11px] font-sans font-bold text-ice-500 uppercase tracking-widest block">
                                 04 / Archive
                             </span>
                             <h4 class="font-bold text-steel-100 text-base mt-3 mb-2"
@@ -1074,7 +1077,7 @@
                                     class="w-full h-full object-cover filter brightness-90 group-hover:scale-105 transition-all duration-700"
                                     loading="lazy">
                                 <div class="absolute inset-0 bg-gradient-to-t from-navy-900/80 via-transparent to-transparent"></div>
-                                <span class="absolute top-4 left-4 px-3 py-1 bg-navy-900/90 backdrop-blur border border-[rgba(145,205,224,0.2)] text-[10px] font-mono font-bold text-ice-500 tracking-widest shadow-lg">
+                                <span class="absolute top-4 left-4 px-3 py-1 bg-navy-900/90 backdrop-blur border border-[rgba(145,205,224,0.2)] text-[10px] font-sans font-bold text-ice-500 tracking-widest shadow-lg">
                                     01 / CAD
                                 </span>
                             </div>
@@ -1088,10 +1091,10 @@
                                     디지털 스캔 데이터를 기반으로 보철물의 형태와 교합 관계를 설계하고, 풀아치 및 맞춤형 어버트먼트 작업에 대응합니다.
                                 </p>
                                 <div class="pt-3 border-t border-[rgba(145,205,224,0.12)] flex items-center justify-between">
-                                    <span class="text-[10px] font-mono uppercase text-ice-500 font-medium">
+                                    <span class="text-[10px] font-sans uppercase text-ice-500 font-medium">
                                         Digital Design
                                     </span>
-                                    <span class="text-[10px] font-mono text-silver-400">
+                                    <span class="text-[10px] font-sans text-silver-400">
                                         CAD / CAM
                                     </span>
                                 </div>
@@ -1108,7 +1111,7 @@
                                     class="w-full h-full object-cover filter brightness-90 group-hover:scale-105 transition-all duration-700"
                                     loading="lazy">
                                 <div class="absolute inset-0 bg-gradient-to-t from-navy-900/80 via-transparent to-transparent"></div>
-                                <span class="absolute top-4 left-4 px-3 py-1 bg-navy-900/90 backdrop-blur border border-[rgba(145,205,224,0.2)] text-[10px] font-mono font-bold text-ice-500 tracking-widest shadow-lg">
+                                <span class="absolute top-4 left-4 px-3 py-1 bg-navy-900/90 backdrop-blur border border-[rgba(145,205,224,0.2)] text-[10px] font-sans font-bold text-ice-500 tracking-widest shadow-lg">
                                     02 / MILLING
                                 </span>
                             </div>
@@ -1123,10 +1126,10 @@
                                     5축 건·습식 밀링 시스템을 활용하여 지르코니아, 티타늄, 하이브리드 세라믹 등 다양한 소재의 정밀 가공에 대응합니다.
                                 </p>
                                 <div class="pt-3 border-t border-[rgba(145,205,224,0.12)] flex items-center justify-between">
-                                    <span class="text-[10px] font-mono uppercase text-ice-500 font-medium">
+                                    <span class="text-[10px] font-sans uppercase text-ice-500 font-medium">
                                         Precision Milling
                                     </span>
-                                    <span class="text-[10px] font-mono text-silver-400">
+                                    <span class="text-[10px] font-sans text-silver-400">
                                         5-AXIS
                                     </span>
                                 </div>
@@ -1143,7 +1146,7 @@
                                     class="w-full h-full object-cover filter brightness-90 group-hover:scale-105 transition-all duration-700"
                                     loading="lazy">
                                 <div class="absolute inset-0 bg-gradient-to-t from-navy-900/80 via-transparent to-transparent"></div>
-                                <span class="absolute top-4 left-4 px-3 py-1 bg-navy-900/90 backdrop-blur border border-[rgba(145,205,224,0.2)] text-[10px] font-mono font-bold text-ice-500 tracking-widest shadow-lg">
+                                <span class="absolute top-4 left-4 px-3 py-1 bg-navy-900/90 backdrop-blur border border-[rgba(145,205,224,0.2)] text-[10px] font-sans font-bold text-ice-500 tracking-widest shadow-lg">
                                     03 / 3D PRINT
                                 </span>
                             </div>
@@ -1157,10 +1160,10 @@
                                     SLA/DLP 기반의 디지털 출력 시스템을 활용하여 서지컬 가이드, 덴쳐 베이스, 임시 보철물 등 다양한 제작 프로토콜에 대응합니다.
                                 </p>
                                 <div class="pt-3 border-t border-[rgba(145,205,224,0.12)] flex items-center justify-between">
-                                    <span class="text-[10px] font-mono uppercase text-ice-500 font-medium">
+                                    <span class="text-[10px] font-sans uppercase text-ice-500 font-medium">
                                         Additive Manufacturing
                                     </span>
-                                    <span class="text-[10px] font-mono text-silver-400">
+                                    <span class="text-[10px] font-sans text-silver-400">
                                         SLA / DLP
                                     </span>
                                 </div>
@@ -1174,7 +1177,7 @@
 
                             <!-- Step 01 -->
                             <div class="md:border-r md:border-[rgba(145,205,224,0.12)] md:pr-6">
-                                <span class="text-[10px] font-mono text-ice-500 tracking-widest font-semibold">
+                                <span class="text-[10px] font-sans text-ice-500 tracking-widest font-semibold">
                                     STEP 01
                                 </span>
                                 <h4 class="mt-2 text-sm font-bold text-steel-100">
@@ -1188,7 +1191,7 @@
 
                             <!-- Step 02 -->
                             <div class="md:border-r md:border-[rgba(145,205,224,0.12)] md:px-6">
-                                <span class="text-[10px] font-mono text-ice-500 tracking-widest font-semibold">
+                                <span class="text-[10px] font-sans text-ice-500 tracking-widest font-semibold">
                                     STEP 02
                                 </span>
                                 <h4 class="mt-2 text-sm font-bold text-steel-100">
@@ -1202,7 +1205,7 @@
 
                             <!-- Step 03 -->
                             <div class="md:border-r md:border-[rgba(145,205,224,0.12)] md:px-6">
-                                <span class="text-[10px] font-mono text-ice-500 tracking-widest font-semibold">
+                                <span class="text-[10px] font-sans text-ice-500 tracking-widest font-semibold">
                                     STEP 03
                                 </span>
                                 <h4 class="mt-2 text-sm font-bold text-steel-100">
@@ -1216,7 +1219,7 @@
 
                             <!-- Step 04 -->
                             <div class="md:pl-6">
-                                <span class="text-[10px] font-mono text-ice-500 tracking-widest font-semibold">
+                                <span class="text-[10px] font-sans text-ice-500 tracking-widest font-semibold">
                                     STEP 04
                                 </span>
                                 <h4 class="mt-2 text-sm font-bold text-steel-100">
@@ -1262,7 +1265,7 @@
             <div class="relative -mt-[105px] pt-36 pb-16 bg-navy-900 text-white py-16 border-b border-navy-800">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="max-w-4xl">
-                        <span class="text-xs font-mono uppercase tracking-widest text-silver-400 block mb-3">
+                        <span class="text-xs font-sans uppercase tracking-widest text-silver-400 block mb-3">
                             Products & Services
                         </span>
                         <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight"
@@ -1306,10 +1309,10 @@
                                 <!-- CAD Stat Box -->
                                 <div class="relative bg-charcol-800/70 backdrop-blur-xl border border-[rgba(145,205,224,0.15)] p-5 hover:border-ice-500/40 transition-all shadow-[0_8px_20px_rgba(4,8,15,0.4)]">
                                     <div class="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-ice-500/40 to-transparent"></div>
-                                    <span class="block text-xl font-extrabold text-steel-100 font-mono">
+                                    <span class="block text-xl font-extrabold text-steel-100 font-sans">
                                         CAD
                                     </span>
-                                    <span class="mt-1 block text-[10px] font-mono uppercase tracking-widest text-ice-500 font-medium">
+                                    <span class="mt-1 block text-[10px] font-sans uppercase tracking-widest text-ice-500 font-medium">
                                         Digital Design
                                     </span>
                                 </div>
@@ -1317,10 +1320,10 @@
                                 <!-- QA Stat Box -->
                                 <div class="relative bg-charcol-800/70 backdrop-blur-xl border border-[rgba(145,205,224,0.15)] p-5 hover:border-ice-500/40 transition-all shadow-[0_8px_20px_rgba(4,8,15,0.4)]">
                                     <div class="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-ice-500/40 to-transparent"></div>
-                                    <span class="block text-xl font-extrabold text-steel-100 font-mono">
+                                    <span class="block text-xl font-extrabold text-steel-100 font-sans">
                                         QA
                                     </span>
-                                    <span class="mt-1 block text-[10px] font-mono uppercase tracking-widest text-ice-500 font-medium">
+                                    <span class="mt-1 block text-[10px] font-sans uppercase tracking-widest text-ice-500 font-medium">
                                         Final Inspection
                                     </span>
                                 </div>
@@ -1344,7 +1347,7 @@
 
                                     <!-- 하단 캡션 바 -->
                                     <div class="absolute bottom-0 left-0 right-0 p-6 bg-navy-900/80 backdrop-blur-md border-t border-[rgba(145,205,224,0.12)]">
-                                        <span class="text-[10px] font-mono tracking-[0.2em] uppercase text-ice-500 font-semibold block">
+                                        <span class="text-[10px] font-sans tracking-[0.2em] uppercase text-ice-500 font-semibold block">
                                             CHAEUM DIGITAL WORKFLOW
                                         </span>
                                         <p class="mt-1 text-sm font-bold text-steel-100">
@@ -1394,6 +1397,13 @@
                             <span data-i18n="products.tabs.aligner">투명교정</span>
                             <span class="hidden sm:inline opacity-70" data-i18n="products.tabs.aligner_sub"> / Aligner</span>
                         </button>
+
+                        <!-- Tab 5: 수술가이드 -->
+                        <button type="button" onclick="switchProductTab('tab-surgical', this)"
+                            class="tab-btn px-6 py-3.5 font-bold text-xs uppercase tracking-wider transition-all duration-200 active:scale-95 bg-charcol-800/70 text-silver-300 border border-[rgba(145,205,224,0.15)] hover:border-ice-500/50 hover:text-white backdrop-blur-md">
+                            <span data-i18n="products.tabs.surgical">수술가이드</span>
+                            <span class="hidden sm:inline opacity-70" data-i18n="products.tabs.surgical_sub"> / Surgical Guide</span>
+                        </button>
                     </div>
 
                     <!-- TAB 01 : ZIRCONIA -->
@@ -1419,13 +1429,13 @@
 
                                 <!-- Tags -->
                                 <div class="pt-2 flex flex-wrap gap-2">
-                                    <span class="px-3 py-1.5 bg-navy-900/90 border border-[rgba(145,205,224,0.2)] text-[10px] font-mono text-ice-500 font-semibold tracking-wider backdrop-blur-md">
+                                    <span class="px-3 py-1.5 bg-navy-900/90 border border-[rgba(145,205,224,0.2)] text-[10px] font-sans text-ice-500 font-semibold tracking-wider backdrop-blur-md">
                                         MULTI-LAYER
                                     </span>
-                                    <span class="px-3 py-1.5 bg-navy-900/90 border border-[rgba(145,205,224,0.2)] text-[10px] font-mono text-ice-500 font-semibold tracking-wider backdrop-blur-md">
+                                    <span class="px-3 py-1.5 bg-navy-900/90 border border-[rgba(145,205,224,0.2)] text-[10px] font-sans text-ice-500 font-semibold tracking-wider backdrop-blur-md">
                                         MONOLITHIC
                                     </span>
-                                    <span class="px-3 py-1.5 bg-navy-900/90 border border-[rgba(145,205,224,0.2)] text-[10px] font-mono text-ice-500 font-semibold tracking-wider backdrop-blur-md">
+                                    <span class="px-3 py-1.5 bg-navy-900/90 border border-[rgba(145,205,224,0.2)] text-[10px] font-sans text-ice-500 font-semibold tracking-wider backdrop-blur-md">
                                         CAD / CAM
                                     </span>
                                 </div>
@@ -1440,10 +1450,10 @@
                                     <div class="relative h-56 sm:h-72 bg-[rgb(17_16_16)] overflow-hidden border-b border-[rgba(145,205,224,0.12)]">
                                         <img src="img/03_product_zirconia.png"
                                             alt="Zirconia dental restorations" 
-                                            class="w-full h-full object-contain filter brightness-90 group-hover:scale-105 transition-all duration-700"
+                                            class="w-full h-full object-contain scale-125 filter brightness-90 group-hover:scale-[1.3] transition-all duration-700"
                                             loading="lazy" 
                                             onerror="this.style.display='none';">
-                                        <span class="absolute bottom-4 left-4 text-[10px] font-mono uppercase tracking-[0.2em] text-ice-500 font-semibold bg-navy-900/80 px-3 py-1 border border-[rgba(145,205,224,0.2)] backdrop-blur-md">
+                                        <span class="absolute bottom-4 left-4 text-[10px] font-sans uppercase tracking-[0.2em] text-ice-500 font-semibold bg-navy-900/80 px-3 py-1 border border-[rgba(145,205,224,0.2)] backdrop-blur-md">
                                             High-End Restorations
                                         </span>
                                     </div>
@@ -1451,7 +1461,7 @@
                                     <!-- 상세 스펙 테이블 -->
                                     <div class="table-scroll">
                                         <table class="w-full text-xs text-left">
-                                            <thead class="bg-navy-900/90 text-ice-500 uppercase font-mono border-b border-[rgba(145,205,224,0.12)]">
+                                            <thead class="bg-navy-900/90 text-ice-500 uppercase font-sans border-b border-[rgba(145,205,224,0.12)]">
                                                 <tr>
                                                     <th class="p-4 border-r border-[rgba(145,205,224,0.12)] font-semibold" data-i18n="products.table_headers.item">
                                                         세부 항목
@@ -1480,7 +1490,7 @@
                                                     <td class="p-4 text-silver-200" data-i18n="products.tab_zirconia.anterior_title">
                                                         전치부 심미 케이스
                                                     </td>
-                                                    <td class="p-4 font-mono font-semibold text-ice-500 whitespace-nowrap" data-i18n="products.tab_zirconia.anterior_duration">
+                                                    <td class="p-4 font-sans font-semibold text-ice-500 whitespace-nowrap" data-i18n="products.tab_zirconia.anterior_duration">
                                                         3 ~ 4 Days
                                                     </td>
                                                 </tr>
@@ -1496,7 +1506,7 @@
                                                     <td class="p-4 text-silver-200" data-i18n="products.tab_zirconia.posterior_title">
                                                         구치부 및 기능성 케이스
                                                     </td>
-                                                    <td class="p-4 font-mono font-semibold text-ice-500 whitespace-nowrap" data-i18n="products.tab_zirconia.posterior_duration">
+                                                    <td class="p-4 font-sans font-semibold text-ice-500 whitespace-nowrap" data-i18n="products.tab_zirconia.posterior_duration">
                                                         3 Days
                                                     </td>
                                                 </tr>
@@ -1512,7 +1522,7 @@
                                                     <td class="p-4 text-silver-200" data-i18n="products.tab_zirconia.shade_title">
                                                         개별 색조 및 형태 표현
                                                     </td>
-                                                    <td class="p-4 font-mono font-semibold text-ice-500 whitespace-nowrap" data-i18n="products.tab_zirconia.shade_duration">
+                                                    <td class="p-4 font-sans font-semibold text-ice-500 whitespace-nowrap" data-i18n="products.tab_zirconia.shade_duration">
                                                         4 ~ 5 Days
                                                     </td>
                                                 </tr>
@@ -1525,7 +1535,7 @@
 
                         <!-- QUALITY NOTE MODULE -->
                         <div class="relative bg-charcol-800/70 backdrop-blur-xl border border-[rgba(145,205,224,0.15)] border-l-4 border-l-ice-500 p-6 shadow-[0_10px_30px_rgba(4,8,15,0.4)]">
-                            <span class="text-[10px] font-mono font-bold uppercase tracking-widest text-ice-500 block mb-1">
+                            <span class="text-[10px] font-sans font-bold uppercase tracking-widest text-ice-500 block mb-1">
                                 Quality Note
                             </span>
                             <p class="text-xs text-silver-300 leading-relaxed font-normal" data-i18n="products.tab_zirconia.quality_note">
@@ -1597,7 +1607,7 @@
                                                         <span class="text-2xl font-extrabold tracking-tight text-white block">
                                                             IMPLANT
                                                         </span>
-                                                        <span class="block mt-2 text-[10px] font-mono tracking-[0.2em] text-ice-500 font-semibold">
+                                                        <span class="block mt-2 text-[10px] font-sans tracking-[0.2em] text-ice-500 font-semibold">
                                                             CUSTOM PROSTHETICS
                                                         </span>
                                                     </div>
@@ -1606,7 +1616,7 @@
 
                                             <!-- 라벨 -->
                                             <div class="p-5 sm:p-6 bg-navy-900/80 backdrop-blur-md border-t border-[rgba(145,205,224,0.12)]">
-                                                <span class="text-[10px] font-mono tracking-[0.2em] uppercase text-ice-500 font-semibold block">
+                                                <span class="text-[10px] font-sans tracking-[0.2em] uppercase text-ice-500 font-semibold block">
                                                     IMPLANT PROSTHETICS
                                                 </span>
                                                 <p class="mt-1 text-xs font-bold text-steel-100">
@@ -1618,14 +1628,14 @@
 
                                         <!-- Workflow Info Section -->
                                         <div class="p-7 flex flex-col justify-between bg-navy-900/40">
-                                            <span class="text-[10px] font-mono text-ice-500 uppercase tracking-widest font-semibold block mb-4">
+                                            <span class="text-[10px] font-sans text-ice-500 uppercase tracking-widest font-semibold block mb-4">
                                                 Workflow Steps
                                             </span>
                                             
                                             <div class="space-y-4">
                                                 <!-- Step 01 -->
                                                 <div class="border-l-2 border-ice-500 pl-3.5 py-0.5">
-                                                    <span class="text-[10px] font-mono text-silver-400 font-bold">01</span>
+                                                    <span class="text-[10px] font-sans text-silver-400 font-bold">01</span>
                                                     <h4 class="text-xs font-bold text-steel-100">Scan Data Analysis</h4>
                                                     <p class="text-[11px] text-silver-300 leading-tight mt-0.5" data-i18n="products.tab_implant.workflow_analysis">
                                                         Implant position과 주변 조직 정보를 확인합니다.
@@ -1634,7 +1644,7 @@
 
                                                 <!-- Step 02 -->
                                                 <div class="border-l-2 border-ice-500 pl-3.5 py-0.5">
-                                                    <span class="text-[10px] font-mono text-silver-400 font-bold">02</span>
+                                                    <span class="text-[10px] font-sans text-silver-400 font-bold">02</span>
                                                     <h4 class="text-xs font-bold text-steel-100">Custom Design</h4>
                                                     <p class="text-[11px] text-silver-300 leading-tight mt-0.5" data-i18n="products.tab_implant.workflow_design">
                                                         emergence profile 및 보철 형태를 설계합니다.
@@ -1643,7 +1653,7 @@
 
                                                 <!-- Step 03 -->
                                                 <div class="border-l-2 border-ice-500 pl-3.5 py-0.5">
-                                                    <span class="text-[10px] font-mono text-silver-400 font-bold">03</span>
+                                                    <span class="text-[10px] font-sans text-silver-400 font-bold">03</span>
                                                     <h4 class="text-xs font-bold text-steel-100">Final Verification</h4>
                                                     <p class="text-[11px] text-silver-300 leading-tight mt-0.5" data-i18n="products.tab_implant.workflow_verification">
                                                         접합부와 보철 형태를 최종 확인합니다.
@@ -1656,7 +1666,7 @@
                                     <!-- SPECIFICATION TABLE -->
                                     <div class="table-scroll">
                                         <table class="w-full text-xs text-left">
-                                            <thead class="bg-navy-900/90 text-ice-500 uppercase font-mono border-b border-[rgba(145,205,224,0.12)]">
+                                            <thead class="bg-navy-900/90 text-ice-500 uppercase font-sans border-b border-[rgba(145,205,224,0.12)]">
                                                 <tr>
                                                     <th class="p-4 border-r border-[rgba(145,205,224,0.12)] font-semibold" data-i18n="products.table_headers.item">
                                                         세부 항목
@@ -1685,7 +1695,7 @@
                                                     <td class="p-4 text-silver-200">
                                                         Custom Emergence Profile
                                                     </td>
-                                                    <td class="p-4 font-mono font-semibold text-ice-500 whitespace-nowrap">
+                                                    <td class="p-4 font-sans font-semibold text-ice-500 whitespace-nowrap">
                                                         4 Days
                                                     </td>
                                                 </tr>
@@ -1701,7 +1711,7 @@
                                                     <td class="p-4 text-silver-200" data-i18n="products.tab_implant.aesthetic_case">
                                                         심미성 요구 케이스
                                                     </td>
-                                                    <td class="p-4 font-mono font-semibold text-ice-500 whitespace-nowrap">
+                                                    <td class="p-4 font-sans font-semibold text-ice-500 whitespace-nowrap">
                                                         4 ~ 5 Days
                                                     </td>
                                                 </tr>
@@ -1717,7 +1727,7 @@
                                                     <td class="p-4 text-silver-200" data-i18n="products.tab_implant.multi_case">
                                                         다수 임플란트 케이스
                                                     </td>
-                                                    <td class="p-4 font-mono font-semibold text-ice-500 whitespace-nowrap">
+                                                    <td class="p-4 font-sans font-semibold text-ice-500 whitespace-nowrap">
                                                         6 ~ 7 Days
                                                     </td>
                                                 </tr>
@@ -1755,40 +1765,40 @@
                                     <!-- Step 01 -->
                                     <div class="py-3.5 border-b border-[rgba(145,205,224,0.1)] flex items-center justify-between group">
                                         <div>
-                                            <span class="text-[9px] font-mono text-ice-500 font-semibold tracking-wider block">STEP 01</span>
+                                            <span class="text-[9px] font-sans text-ice-500 font-semibold tracking-wider block">STEP 01</span>
                                             <p class="text-xs font-bold text-steel-100 group-hover:text-ice-500 transition-colors">Shade Analysis</p>
                                         </div>
-                                        <span class="text-xs font-mono text-silver-400 font-bold">01</span>
+                                        <span class="text-xs font-sans text-silver-400 font-bold">01</span>
                                     </div>
 
                                     <!-- Step 02 -->
                                     <div class="py-3.5 border-b border-[rgba(145,205,224,0.1)] flex items-center justify-between group">
                                         <div>
-                                            <span class="text-[9px] font-mono text-ice-500 font-semibold tracking-wider block">STEP 02</span>
+                                            <span class="text-[9px] font-sans text-ice-500 font-semibold tracking-wider block">STEP 02</span>
                                             <p class="text-xs font-bold text-steel-100 group-hover:text-ice-500 transition-colors">Form & Texture</p>
                                         </div>
-                                        <span class="text-xs font-mono text-silver-400 font-bold">02</span>
+                                        <span class="text-xs font-sans text-silver-400 font-bold">02</span>
                                     </div>
 
                                     <!-- Step 03 -->
                                     <div class="py-3.5 border-b border-[rgba(145,205,224,0.1)] flex items-center justify-between group">
                                         <div>
-                                            <span class="text-[9px] font-mono text-ice-500 font-semibold tracking-wider block">STEP 03</span>
+                                            <span class="text-[9px] font-sans text-ice-500 font-semibold tracking-wider block">STEP 03</span>
                                             <p class="text-xs font-bold text-steel-100 group-hover:text-ice-500 transition-colors">Final Characterization</p>
                                         </div>
-                                        <span class="text-xs font-mono text-silver-400 font-bold">03</span>
+                                        <span class="text-xs font-sans text-silver-400 font-bold">03</span>
                                     </div>
                                 </div>
 
                                 <!-- Material Badges -->
                                 <div class="pt-1 flex flex-wrap gap-2">
-                                    <span class="px-3 py-1.5 bg-navy-900/90 border border-[rgba(145,205,224,0.2)] text-[10px] font-mono text-ice-500 font-semibold tracking-wider backdrop-blur-md">
+                                    <span class="px-3 py-1.5 bg-navy-900/90 border border-[rgba(145,205,224,0.2)] text-[10px] font-sans text-ice-500 font-semibold tracking-wider backdrop-blur-md">
                                         IPS e.max
                                     </span>
-                                    <span class="px-3 py-1.5 bg-navy-900/90 border border-[rgba(145,205,224,0.2)] text-[10px] font-mono text-ice-500 font-semibold tracking-wider backdrop-blur-md">
+                                    <span class="px-3 py-1.5 bg-navy-900/90 border border-[rgba(145,205,224,0.2)] text-[10px] font-sans text-ice-500 font-semibold tracking-wider backdrop-blur-md">
                                         CERAMIC
                                     </span>
-                                    <span class="px-3 py-1.5 bg-navy-900/90 border border-[rgba(145,205,224,0.2)] text-[10px] font-mono text-ice-500 font-semibold tracking-wider backdrop-blur-md">
+                                    <span class="px-3 py-1.5 bg-navy-900/90 border border-[rgba(145,205,224,0.2)] text-[10px] font-sans text-ice-500 font-semibold tracking-wider backdrop-blur-md">
                                         VENEER
                                     </span>
                                 </div>
@@ -1818,7 +1828,7 @@
                                                         <span class="text-2xl font-extrabold tracking-tight text-white block">
                                                             ESTHETIC
                                                         </span>
-                                                        <span class="block mt-2 text-[10px] font-mono tracking-[0.2em] text-ice-500 font-semibold">
+                                                        <span class="block mt-2 text-[10px] font-sans tracking-[0.2em] text-ice-500 font-semibold">
                                                             RESTORATION
                                                         </span>
                                                     </div>
@@ -1827,7 +1837,7 @@
 
                                             <!-- 라벨 -->
                                             <div class="p-5 sm:p-6 bg-navy-900/80 backdrop-blur-md border-t border-[rgba(145,205,224,0.12)]">
-                                                <span class="text-[9px] font-mono tracking-[0.2em] uppercase text-ice-500 font-semibold block">
+                                                <span class="text-[9px] font-sans tracking-[0.2em] uppercase text-ice-500 font-semibold block">
                                                     ESTHETIC RESTORATION
                                                 </span>
                                                 <p class="mt-1 text-sm font-bold text-steel-100">
@@ -1840,7 +1850,7 @@
                                         <!-- SPECIFICATION MODULE -->
                                         <div class="p-7 sm:p-8 bg-navy-900/40 flex flex-col justify-between">
                                             <div>
-                                                <span class="text-[9px] font-mono font-bold uppercase tracking-[0.2em] text-ice-500 block">
+                                                <span class="text-[9px] font-sans font-bold uppercase tracking-[0.2em] text-ice-500 block">
                                                     Technical Specification
                                                 </span>
                                                 <h4 class="mt-2 text-base font-bold text-steel-100" data-i18n="products.tab_esthetic.qa_title">
@@ -1856,7 +1866,7 @@
                                                     <div>
                                                         <div class="flex justify-between items-center text-[10px]">
                                                             <span class="text-silver-300 font-medium">Shade Match</span>
-                                                            <span class="font-mono font-bold text-ice-500">COLOR 92%</span>
+                                                            <span class="font-sans font-bold text-ice-500">COLOR 92%</span>
                                                         </div>
                                                         <div class="mt-1.5 h-1.5 bg-navy-950 rounded-full overflow-hidden border border-[rgba(145,205,224,0.1)]">
                                                             <div class="h-full w-[92%] bg-gradient-to-r from-ice-500/60 to-ice-500 rounded-full shadow-[0_0_8px_rgba(145,205,224,0.8)]"></div>
@@ -1867,7 +1877,7 @@
                                                     <div>
                                                         <div class="flex justify-between items-center text-[10px]">
                                                             <span class="text-silver-300 font-medium">Surface Texture</span>
-                                                            <span class="font-mono font-bold text-ice-500">FORM 88%</span>
+                                                            <span class="font-sans font-bold text-ice-500">FORM 88%</span>
                                                         </div>
                                                         <div class="mt-1.5 h-1.5 bg-navy-950 rounded-full overflow-hidden border border-[rgba(145,205,224,0.1)]">
                                                             <div class="h-full w-[88%] bg-gradient-to-r from-ice-500/60 to-ice-500 rounded-full shadow-[0_0_8px_rgba(145,205,224,0.8)]"></div>
@@ -1878,7 +1888,7 @@
                                                     <div>
                                                         <div class="flex justify-between items-center text-[10px]">
                                                             <span class="text-silver-300 font-medium">Translucency</span>
-                                                            <span class="font-mono font-bold text-ice-500">OPTICAL 95%</span>
+                                                            <span class="font-sans font-bold text-ice-500">OPTICAL 95%</span>
                                                         </div>
                                                         <div class="mt-1.5 h-1.5 bg-navy-950 rounded-full overflow-hidden border border-[rgba(145,205,224,0.1)]">
                                                             <div class="h-full w-[95%] bg-gradient-to-r from-ice-500/60 to-ice-500 rounded-full shadow-[0_0_8px_rgba(145,205,224,0.8)]"></div>
@@ -1889,8 +1899,8 @@
 
                                             <!-- Primary Material Tag Box -->
                                             <div class="mt-6 p-3.5 bg-navy-900/80 border border-[rgba(145,205,224,0.15)] flex justify-between items-center">
-                                                <span class="text-[9px] font-mono tracking-widest text-silver-400">MATERIAL</span>
-                                                <span class="text-xs font-bold text-steel-100 font-mono">e.max / Ceramic</span>
+                                                <span class="text-[9px] font-sans tracking-widest text-silver-400">MATERIAL</span>
+                                                <span class="text-xs font-bold text-steel-100 font-sans">e.max / Ceramic</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1898,23 +1908,23 @@
                                     <!-- BOTTOM INFORMATION GRID -->
                                     <div class="border-t border-[rgba(145,205,224,0.12)] grid grid-cols-2 sm:grid-cols-4 bg-navy-900/60">
                                         <div class="p-4 sm:p-5 border-b sm:border-b-0 border-r border-[rgba(145,205,224,0.12)]">
-                                            <span class="block text-[9px] font-mono text-ice-500 font-semibold tracking-wider uppercase">MATERIAL</span>
+                                            <span class="block text-[9px] font-sans text-ice-500 font-semibold tracking-wider uppercase">MATERIAL</span>
                                             <span class="block mt-1 text-xs font-bold text-steel-100">Ceramic</span>
                                         </div>
 
                                         <div class="p-4 sm:p-5 border-b sm:border-b-0 sm:border-r border-[rgba(145,205,224,0.12)]">
-                                            <span class="block text-[9px] font-mono text-ice-500 font-semibold tracking-wider uppercase">TYPE</span>
+                                            <span class="block text-[9px] font-sans text-ice-500 font-semibold tracking-wider uppercase">TYPE</span>
                                             <span class="block mt-1 text-xs font-bold text-steel-100">Veneer</span>
                                         </div>
 
                                         <div class="p-4 sm:p-5 border-r border-[rgba(145,205,224,0.12)]">
-                                            <span class="block text-[9px] font-mono text-ice-500 font-semibold tracking-wider uppercase">FINISH</span>
+                                            <span class="block text-[9px] font-sans text-ice-500 font-semibold tracking-wider uppercase">FINISH</span>
                                             <span class="block mt-1 text-xs font-bold text-steel-100">Hand Characterized</span>
                                         </div>
 
                                         <div class="p-4 sm:p-5">
-                                            <span class="block text-[9px] font-mono text-ice-500 font-semibold tracking-wider uppercase">LEAD TIME</span>
-                                            <span class="block mt-1 text-xs font-bold text-steel-100 font-mono">4–5 DAYS</span>
+                                            <span class="block text-[9px] font-sans text-ice-500 font-semibold tracking-wider uppercase">LEAD TIME</span>
+                                            <span class="block mt-1 text-xs font-bold text-steel-100 font-sans">4–5 DAYS</span>
                                         </div>
                                     </div>
 
@@ -1949,46 +1959,46 @@
                                 <div class="border-t border-[rgba(145,205,224,0.15)] pt-2 space-y-1">
                                     <div class="py-3 border-b border-[rgba(145,205,224,0.1)] flex items-center justify-between group">
                                         <div>
-                                            <span class="text-[9px] font-mono text-ice-500 font-semibold tracking-wider block">STEP 01</span>
+                                            <span class="text-[9px] font-sans text-ice-500 font-semibold tracking-wider block">STEP 01</span>
                                             <p class="text-xs font-bold text-steel-100 group-hover:text-ice-500 transition-colors">Digital Scan</p>
                                         </div>
-                                        <span class="text-xs font-mono text-silver-400 font-bold">01</span>
+                                        <span class="text-xs font-sans text-silver-400 font-bold">01</span>
                                     </div>
 
                                     <div class="py-3 border-b border-[rgba(145,205,224,0.1)] flex items-center justify-between group">
                                         <div>
-                                            <span class="text-[9px] font-mono text-ice-500 font-semibold tracking-wider block">STEP 02</span>
+                                            <span class="text-[9px] font-sans text-ice-500 font-semibold tracking-wider block">STEP 02</span>
                                             <p class="text-xs font-bold text-steel-100 group-hover:text-ice-500 transition-colors">CAD Setup</p>
                                         </div>
-                                        <span class="text-xs font-mono text-silver-400 font-bold">02</span>
+                                        <span class="text-xs font-sans text-silver-400 font-bold">02</span>
                                     </div>
 
                                     <div class="py-3 border-b border-[rgba(145,205,224,0.1)] flex items-center justify-between group">
                                         <div>
-                                            <span class="text-[9px] font-mono text-ice-500 font-semibold tracking-wider block">STEP 03</span>
+                                            <span class="text-[9px] font-sans text-ice-500 font-semibold tracking-wider block">STEP 03</span>
                                             <p class="text-xs font-bold text-steel-100 group-hover:text-ice-500 transition-colors">3D Printing</p>
                                         </div>
-                                        <span class="text-xs font-mono text-silver-400 font-bold">03</span>
+                                        <span class="text-xs font-sans text-silver-400 font-bold">03</span>
                                     </div>
 
                                     <div class="py-3 border-b border-[rgba(145,205,224,0.1)] flex items-center justify-between group">
                                         <div>
-                                            <span class="text-[9px] font-mono text-ice-500 font-semibold tracking-wider block">STEP 04</span>
+                                            <span class="text-[9px] font-sans text-ice-500 font-semibold tracking-wider block">STEP 04</span>
                                             <p class="text-xs font-bold text-steel-100 group-hover:text-ice-500 transition-colors">Thermoforming</p>
                                         </div>
-                                        <span class="text-xs font-mono text-silver-400 font-bold">04</span>
+                                        <span class="text-xs font-sans text-silver-400 font-bold">04</span>
                                     </div>
                                 </div>
 
                                 <!-- Material Badges -->
                                 <div class="pt-1 flex flex-wrap gap-2">
-                                    <span class="px-3 py-1.5 bg-navy-900/90 border border-[rgba(145,205,224,0.2)] text-[10px] font-mono text-ice-500 font-semibold tracking-wider backdrop-blur-md">
+                                    <span class="px-3 py-1.5 bg-navy-900/90 border border-[rgba(145,205,224,0.2)] text-[10px] font-sans text-ice-500 font-semibold tracking-wider backdrop-blur-md">
                                         DIGITAL SCAN
                                     </span>
-                                    <span class="px-3 py-1.5 bg-navy-900/90 border border-[rgba(145,205,224,0.2)] text-[10px] font-mono text-ice-500 font-semibold tracking-wider backdrop-blur-md">
+                                    <span class="px-3 py-1.5 bg-navy-900/90 border border-[rgba(145,205,224,0.2)] text-[10px] font-sans text-ice-500 font-semibold tracking-wider backdrop-blur-md">
                                         3D PRINT
                                     </span>
-                                    <span class="px-3 py-1.5 bg-navy-900/90 border border-[rgba(145,205,224,0.2)] text-[10px] font-mono text-ice-500 font-semibold tracking-wider backdrop-blur-md">
+                                    <span class="px-3 py-1.5 bg-navy-900/90 border border-[rgba(145,205,224,0.2)] text-[10px] font-sans text-ice-500 font-semibold tracking-wider backdrop-blur-md">
                                         THERMOFORMING
                                     </span>
                                 </div>
@@ -2014,7 +2024,7 @@
                                                     <span class="text-2xl font-extrabold tracking-tight text-white block">
                                                         3D MODEL
                                                     </span>
-                                                    <span class="block mt-2 text-[10px] font-mono tracking-[0.2em] text-ice-500 font-semibold">
+                                                    <span class="block mt-2 text-[10px] font-sans tracking-[0.2em] text-ice-500 font-semibold">
                                                         DIGITAL ORTHODONTICS
                                                     </span>
                                                 </div>
@@ -2025,7 +2035,7 @@
 
                                             <!-- Image Label -->
                                             <div class="absolute bottom-0 left-0 right-0 p-6 bg-navy-900/80 backdrop-blur-md border-t border-[rgba(145,205,224,0.12)]">
-                                                <span class="text-[9px] font-mono tracking-[0.2em] uppercase text-ice-500 font-semibold block">
+                                                <span class="text-[9px] font-sans tracking-[0.2em] uppercase text-ice-500 font-semibold block">
                                                     DIGITAL ORTHODONTICS
                                                 </span>
                                                 <p class="mt-1 text-sm font-bold text-steel-100">
@@ -2037,7 +2047,7 @@
                                         <!-- SPECIFICATION MODULE -->
                                         <div class="p-7 sm:p-8 bg-navy-900/40 flex flex-col justify-between">
                                             <div>
-                                                <span class="text-[9px] font-mono font-bold uppercase tracking-[0.2em] text-ice-500 block">
+                                                <span class="text-[9px] font-sans font-bold uppercase tracking-[0.2em] text-ice-500 block">
                                                     Technical Specification
                                                 </span>
                                                 <h4 class="mt-2 text-base font-bold text-steel-100" data-i18n="products.tab_aligner.spec.title">
@@ -2053,7 +2063,7 @@
                                                     <div>
                                                         <div class="flex justify-between items-center text-[10px]">
                                                             <span class="text-silver-300 font-medium">Digital Setup</span>
-                                                            <span class="font-mono font-bold text-ice-500">CAD 94%</span>
+                                                            <span class="font-sans font-bold text-ice-500">CAD 94%</span>
                                                         </div>
                                                         <div class="mt-1.5 h-1.5 bg-navy-950 rounded-full overflow-hidden border border-[rgba(145,205,224,0.1)]">
                                                             <div class="h-full w-[94%] bg-gradient-to-r from-ice-500/60 to-ice-500 rounded-full shadow-[0_0_8px_rgba(145,205,224,0.8)]"></div>
@@ -2064,7 +2074,7 @@
                                                     <div>
                                                         <div class="flex justify-between items-center text-[10px]">
                                                             <span class="text-silver-300 font-medium">Model Accuracy</span>
-                                                            <span class="font-mono font-bold text-ice-500">3D PRINT 91%</span>
+                                                            <span class="font-sans font-bold text-ice-500">3D PRINT 91%</span>
                                                         </div>
                                                         <div class="mt-1.5 h-1.5 bg-navy-950 rounded-full overflow-hidden border border-[rgba(145,205,224,0.1)]">
                                                             <div class="h-full w-[91%] bg-gradient-to-r from-ice-500/60 to-ice-500 rounded-full shadow-[0_0_8px_rgba(145,205,224,0.8)]"></div>
@@ -2075,7 +2085,7 @@
                                                     <div>
                                                         <div class="flex justify-between items-center text-[10px]">
                                                             <span class="text-silver-300 font-medium">Forming Quality</span>
-                                                            <span class="font-mono font-bold text-ice-500">THERMOFORM 95%</span>
+                                                            <span class="font-sans font-bold text-ice-500">THERMOFORM 95%</span>
                                                         </div>
                                                         <div class="mt-1.5 h-1.5 bg-navy-950 rounded-full overflow-hidden border border-[rgba(145,205,224,0.1)]">
                                                             <div class="h-full w-[95%] bg-gradient-to-r from-ice-500/60 to-ice-500 rounded-full shadow-[0_0_8px_rgba(145,205,224,0.8)]"></div>
@@ -2086,8 +2096,8 @@
 
                                             <!-- Primary Material Tag Box -->
                                             <div class="mt-5 p-3.5 bg-navy-900/80 border border-[rgba(145,205,224,0.15)] flex justify-between items-center">
-                                                <span class="text-[9px] font-mono tracking-widest text-silver-400">MATERIAL</span>
-                                                <span class="text-xs font-bold text-steel-100 font-mono">Multi-Layer Thermoforming Sheet</span>
+                                                <span class="text-[9px] font-sans tracking-widest text-silver-400">MATERIAL</span>
+                                                <span class="text-xs font-bold text-steel-100 font-sans">Multi-Layer Thermoforming Sheet</span>
                                             </div>
                                         </div>
                                     </div>
@@ -2095,23 +2105,226 @@
                                     <!-- BOTTOM INFORMATION GRID -->
                                     <div class="border-t border-[rgba(145,205,224,0.12)] grid grid-cols-2 sm:grid-cols-4 bg-navy-900/60">
                                         <div class="p-4 sm:p-5 border-b sm:border-b-0 border-r border-[rgba(145,205,224,0.12)]">
-                                            <span class="block text-[9px] font-mono text-ice-500 font-semibold tracking-wider uppercase">MATERIAL</span>
+                                            <span class="block text-[9px] font-sans text-ice-500 font-semibold tracking-wider uppercase">MATERIAL</span>
                                             <span class="block mt-1 text-xs font-bold text-steel-100">Multi-Layer Sheet</span>
                                         </div>
 
                                         <div class="p-4 sm:p-5 border-b sm:border-b-0 border-r border-[rgba(145,205,224,0.12)]">
-                                            <span class="block text-[9px] font-mono text-ice-500 font-semibold tracking-wider uppercase">TYPE</span>
+                                            <span class="block text-[9px] font-sans text-ice-500 font-semibold tracking-wider uppercase">TYPE</span>
                                             <span class="block mt-1 text-xs font-bold text-steel-100">Clear Aligner</span>
                                         </div>
 
                                         <div class="p-4 sm:p-5 border-r border-[rgba(145,205,224,0.12)]">
-                                            <span class="block text-[9px] font-mono text-ice-500 font-semibold tracking-wider uppercase">WORKFLOW</span>
+                                            <span class="block text-[9px] font-sans text-ice-500 font-semibold tracking-wider uppercase">WORKFLOW</span>
                                             <span class="block mt-1 text-xs font-bold text-steel-100">CAD / 3D Print</span>
                                         </div>
 
                                         <div class="p-4 sm:p-5">
-                                            <span class="block text-[9px] font-mono text-ice-500 font-semibold tracking-wider uppercase">LEAD TIME</span>
-                                            <span class="block mt-1 text-xs font-bold text-steel-100 font-mono">3–4 DAYS</span>
+                                            <span class="block text-[9px] font-sans text-ice-500 font-semibold tracking-wider uppercase">LEAD TIME</span>
+                                            <span class="block mt-1 text-xs font-bold text-steel-100 font-sans">3–4 DAYS</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- TAB 05 : SURGICAL -->
+                    <div id="tab-surgical" class="product-tab-content hidden pt-4">
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start mb-10">
+                            
+                            <!-- LEFT : DESCRIPTION & SURGICAL WORKFLOW STEPS -->
+                            <div class="lg:col-span-4 space-y-6">
+                                <div>
+                                    <span class="text-xs font-semibold tracking-[0.18em] text-ice-500 uppercase flex items-center gap-2 mb-2">
+                                        05 / Digital Implantology & Surgery
+                                    </span>
+                                    <h3 class="text-2xl font-extrabold text-steel-100 tracking-tight leading-snug"
+                                        data-i18n="products.tab_surgical.title">
+                                        디지털 임플란트<br>
+                                        <span class="text-ice-500 drop-shadow-[0_0_15px_rgba(145,205,224,0.2)]">서지컬 가이드 시스템</span>
+                                    </h3>
+                                    <p class="mt-4 text-sm text-silver-300 leading-relaxed font-normal"
+                                        data-i18n="products.tab_surgical.desc">
+                                        환자의 CBCT 방사선 데이터와 구강 스캔 데이터를 3차원 정합하여 최적의 픽스처 식립 경로를 계획하고, 오차를 줄이는 완전 유도 수술용 템플릿을 제작합니다.
+                                    </p>
+                                </div>
+
+                                <!-- Surgical Workflow Steps -->
+                                <div class="border-t border-[rgba(145,205,224,0.15)] pt-2 space-y-1">
+                                    <div class="py-3 border-b border-[rgba(145,205,224,0.1)] flex items-center justify-between group">
+                                        <div>
+                                            <span class="text-[9px] font-sans text-ice-500 font-semibold tracking-wider block">STEP 01</span>
+                                            <p class="text-xs font-bold text-steel-100 group-hover:text-ice-500 transition-colors">CBCT & Intraoral Data Fusion</p>
+                                        </div>
+                                        <span class="text-xs font-sans text-silver-400 font-bold">01</span>
+                                    </div>
+
+                                    <div class="py-3 border-b border-[rgba(145,205,224,0.1)] flex items-center justify-between group">
+                                        <div>
+                                            <span class="text-[9px] font-sans text-ice-500 font-semibold tracking-wider block">STEP 02</span>
+                                            <p class="text-xs font-bold text-steel-100 group-hover:text-ice-500 transition-colors">Top-Down Implant Planning</p>
+                                        </div>
+                                        <span class="text-xs font-sans text-silver-400 font-bold">02</span>
+                                    </div>
+
+                                    <div class="py-3 border-b border-[rgba(145,205,224,0.1)] flex items-center justify-between group">
+                                        <div>
+                                            <span class="text-[9px] font-sans text-ice-500 font-semibold tracking-wider block">STEP 03</span>
+                                            <p class="text-xs font-bold text-steel-100 group-hover:text-ice-500 transition-colors">Surgical Template CAD Design</p>
+                                        </div>
+                                        <span class="text-xs font-sans text-silver-400 font-bold">03</span>
+                                    </div>
+
+                                    <div class="py-3 border-b border-[rgba(145,205,224,0.1)] flex items-center justify-between group">
+                                        <div>
+                                            <span class="text-[9px] font-sans text-ice-500 font-semibold tracking-wider block">STEP 04</span>
+                                            <p class="text-xs font-bold text-steel-100 group-hover:text-ice-500 transition-colors">Biocompatible 3D Print & Sleeve Insertion</p>
+                                        </div>
+                                        <span class="text-xs font-sans text-silver-400 font-bold">04</span>
+                                    </div>
+                                </div>
+
+                                <!-- Material & System Badges -->
+                                <div class="pt-1 flex flex-wrap gap-2">
+                                    <span class="px-3 py-1.5 bg-navy-900/90 border border-[rgba(145,205,224,0.2)] text-[10px] font-sans text-ice-500 font-semibold tracking-wider backdrop-blur-md">
+                                        CLASS IIA BIO-RESIN
+                                    </span>
+                                    <span class="px-3 py-1.5 bg-navy-900/90 border border-[rgba(145,205,224,0.2)] text-[10px] font-sans text-ice-500 font-semibold tracking-wider backdrop-blur-md">
+                                        FULLY GUIDED
+                                    </span>
+                                    <span class="px-3 py-1.5 bg-navy-900/90 border border-[rgba(145,205,224,0.2)] text-[10px] font-sans text-ice-500 font-semibold tracking-wider backdrop-blur-md">
+                                        MULTI-KIT SLEEVE
+                                    </span>
+                                </div>
+                            </div>
+
+                            <!-- RIGHT : IMAGE & TECHNICAL SPECIFICATIONS -->
+                            <div class="lg:col-span-8">
+                                <div class="relative group bg-charcol-800/80 backdrop-blur-xl border border-[rgba(145,205,224,0.15)] shadow-[0_20px_50px_rgba(4,8,15,0.6)] overflow-hidden">
+                                    <div class="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-ice-500/40 to-transparent"></div>
+
+                                    <div class="grid grid-cols-1 sm:grid-cols-2">
+                                        <!-- IMAGE MODULE -->
+                                        <div class="relative bg-navy-900 overflow-hidden border-b sm:border-b-0 sm:border-r border-[rgba(145,205,224,0.12)] flex items-start justify-center">
+                                            <img src="https://images.unsplash.com/photo-1675516030465-e2ad117e870f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                                                alt="Precision Dental 3D Printed Surgical Guide"
+                                                class="w-full max-h-[500px] object-contain filter brightness-90 group-hover:scale-105 transition-all duration-700"
+                                                loading="lazy"
+                                                onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');">
+                                            
+                                            <!-- Fallback Placeholder -->
+                                            <div class="hidden absolute inset-0 bg-navy-900 items-center justify-center p-6 text-center">
+                                                <div>
+                                                    <span class="text-2xl font-extrabold tracking-tight text-white block">
+                                                        SURGICAL GUIDE
+                                                    </span>
+                                                    <span class="block mt-2 text-[10px] font-sans tracking-[0.2em] text-ice-500 font-semibold">
+                                                        PRECISION IMPLANTOLOGY
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                            <!-- Dark Overlay -->
+                                            <div class="absolute inset-0 bg-gradient-to-t from-navy-900/90 via-navy-900/20 to-transparent pointer-events-none"></div>
+
+                                            <!-- Image Label -->
+                                            <div class="absolute bottom-0 left-0 right-0 p-6 bg-navy-900/80 backdrop-blur-md border-t border-[rgba(145,205,224,0.12)]">
+                                                <span class="text-[9px] font-sans tracking-[0.2em] uppercase text-ice-500 font-semibold block">
+                                                    DIGITAL SURGERY
+                                                </span>
+                                                <p class="mt-1 text-sm font-bold text-steel-100">
+                                                    Guided Surgery Template & Anchor Pin
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <!-- SPECIFICATION MODULE -->
+                                        <div class="p-7 sm:p-8 bg-navy-900/40 flex flex-col justify-between">
+                                            <div>
+                                                <span class="text-[9px] font-sans font-bold uppercase text-ice-500 block">
+                                                    Clinical Specification
+                                                </span>
+                                                <h4 class="mt-2 text-base font-bold text-steel-100" data-i18n="products.tab_surgical.spec.title">
+                                                    정밀 유도 수술 템플릿 분석
+                                                </h4>
+                                                <p class="mt-2 text-xs text-silver-300 leading-relaxed font-normal" data-i18n="products.tab_surgical.spec.desc">
+                                                    신경관 및 상악동 해부학적 구조를 사전 계측하여 매크로 오차를 방지하고 주요 임플란트 제조사 키트의 메탈 슬리브와 호환됩니다.
+                                                </p>
+
+                                                <!-- Optical Gauges / Metrics -->
+                                                <div class="mt-5 border-t border-[rgba(145,205,224,0.12)] pt-2 space-y-3.5">
+                                                    <!-- Planning & Alignment Precision -->
+                                                    <div>
+                                                        <div class="flex justify-between items-center text-[10px]">
+                                                            <span class="text-silver-300 font-medium">3D Data Registration</span>
+                                                            <span class="font-sans font-bold text-ice-500">PRECISION 99.4%</span>
+                                                        </div>
+                                                        <div class="mt-1.5 h-1.5 bg-navy-950 rounded-full overflow-hidden border border-[rgba(145,205,224,0.1)]">
+                                                            <div class="h-full w-[99.4%] bg-gradient-to-r from-ice-500/60 to-ice-500 rounded-full shadow-[0_0_8px_rgba(145,205,224,0.8)]"></div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Fit Tolerance / Deviation -->
+                                                    <div>
+                                                        <div class="flex justify-between items-center text-[10px]">
+                                                            <span class="text-silver-300 font-medium">Mean Angular Deviation</span>
+                                                            <span class="font-sans font-bold text-ice-500">&lt; 1.2° TOLERANCE</span>
+                                                        </div>
+                                                        <div class="mt-1.5 h-1.5 bg-navy-950 rounded-full overflow-hidden border border-[rgba(145,205,224,0.1)]">
+                                                            <div class="h-full w-[96%] bg-gradient-to-r from-ice-500/60 to-ice-500 rounded-full shadow-[0_0_8px_rgba(145,205,224,0.8)]"></div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Biocompatibility & Autoclavable Rate -->
+                                                    <div>
+                                                        <div class="flex justify-between items-center text-[10px]">
+                                                            <span class="text-silver-300 font-medium">Biocompatibility & Sterilization</span>
+                                                            <span class="font-sans font-bold text-ice-500">CLASS IIA / 100%</span>
+                                                        </div>
+                                                        <div class="mt-1.5 h-1.5 bg-navy-950 rounded-full overflow-hidden border border-[rgba(145,205,224,0.1)]">
+                                                            <div class="h-full w-[100%] bg-gradient-to-r from-ice-500/60 to-ice-500 rounded-full shadow-[0_0_8px_rgba(145,205,224,0.8)]"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Kit Compatibility Box -->
+                                                <div class="mt-5 p-3.5 bg-navy-900/80 border border-[rgba(145,205,224,0.15)] flex justify-between items-center">
+                                                    <span class="text-[9px] font-sans tracking-widest text-silver-400">KIT COMPATIBILITY</span>
+                                                    <span class="text-xs font-bold text-steel-100 font-sans">Osstem / Dentium / Straumann Universal</span>
+                                                </div>
+                                            </div>
+
+                                            <!-- System Note -->
+                                            <div class="mt-4 pt-3 border-t border-[rgba(145,205,224,0.08)] flex items-center justify-between">
+                                                <span class="text-[9px] font-sans text-silver-400">SLEEVE OPTION</span>
+                                                <span class="text-[10px] font-sans font-semibold text-ice-500">Metal Sleeve / Sleeveless Choice</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- BOTTOM INFORMATION GRID -->
+                                    <div class="border-t border-[rgba(145,205,224,0.12)] grid grid-cols-2 sm:grid-cols-4 bg-navy-900/60">
+                                        <div class="p-4 sm:p-5 border-b sm:border-b-0 border-r border-[rgba(145,205,224,0.12)]">
+                                            <span class="block text-[9px] font-sans text-ice-500 font-semibold tracking-wider uppercase">MATERIAL</span>
+                                            <span class="block mt-1 text-xs font-bold text-steel-100">Medical Bio-Resin</span>
+                                        </div>
+
+                                        <div class="p-4 sm:p-5 border-b sm:border-b-0 border-r border-[rgba(145,205,224,0.12)]">
+                                            <span class="block text-[9px] font-sans text-ice-500 font-semibold tracking-wider uppercase">SUPPORT TYPE</span>
+                                            <span class="block mt-1 text-xs font-bold text-steel-100">Tooth / Mucosa / Bone</span>
+                                        </div>
+
+                                        <div class="p-4 sm:p-5 border-r border-[rgba(145,205,224,0.12)]">
+                                            <span class="block text-[9px] font-sans text-ice-500 font-semibold tracking-wider uppercase">WORKFLOW</span>
+                                            <span class="block mt-1 text-xs font-bold text-steel-100">Fusion CAD / SLA 3D</span>
+                                        </div>
+
+                                        <div class="p-4 sm:p-5">
+                                            <span class="block text-[9px] font-sans text-ice-500 font-semibold tracking-wider uppercase">LEAD TIME</span>
+                                            <span class="block mt-1 text-xs font-bold text-steel-100 font-sans">2–3 DAYS</span>
                                         </div>
                                     </div>
 
@@ -2147,7 +2360,7 @@
                                 <!-- QA 01 -->
                                 <div class="relative group bg-charcol-800/80 backdrop-blur-xl border border-[rgba(145,205,224,0.15)] p-6 hover:border-ice-500/40 transition-all shadow-[0_10px_30px_rgba(4,8,15,0.4)]">
                                     <div class="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-ice-500/40 to-transparent"></div>
-                                    <span class="text-[10px] font-mono text-ice-500 font-semibold tracking-wider block">
+                                    <span class="text-[10px] font-sans text-ice-500 font-semibold tracking-wider block">
                                         QC / 01
                                     </span>
                                     <h4 class="mt-3 text-sm font-bold text-steel-100">
@@ -2162,7 +2375,7 @@
                                 <!-- QA 02 -->
                                 <div class="relative group bg-charcol-800/80 backdrop-blur-xl border border-[rgba(145,205,224,0.15)] p-6 hover:border-ice-500/40 transition-all shadow-[0_10px_30px_rgba(4,8,15,0.4)]">
                                     <div class="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-ice-500/40 to-transparent"></div>
-                                    <span class="text-[10px] font-mono text-ice-500 font-semibold tracking-wider block">
+                                    <span class="text-[10px] font-sans text-ice-500 font-semibold tracking-wider block">
                                         QC / 02
                                     </span>
                                     <h4 class="mt-3 text-sm font-bold text-steel-100">
@@ -2177,7 +2390,7 @@
                                 <!-- QA 03 -->
                                 <div class="relative group bg-charcol-800/80 backdrop-blur-xl border border-[rgba(145,205,224,0.15)] p-6 hover:border-ice-500/40 transition-all shadow-[0_10px_30px_rgba(4,8,15,0.4)]">
                                     <div class="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-ice-500/40 to-transparent"></div>
-                                    <span class="text-[10px] font-mono text-ice-500 font-semibold tracking-wider block">
+                                    <span class="text-[10px] font-sans text-ice-500 font-semibold tracking-wider block">
                                         QC / 03
                                     </span>
                                     <h4 class="mt-3 text-sm font-bold text-steel-100">
@@ -2192,7 +2405,7 @@
                                 <!-- QA 04 -->
                                 <div class="relative group bg-charcol-800/80 backdrop-blur-xl border border-[rgba(145,205,224,0.15)] p-6 hover:border-ice-500/40 transition-all shadow-[0_10px_30px_rgba(4,8,15,0.4)]">
                                     <div class="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-ice-500/40 to-transparent"></div>
-                                    <span class="text-[10px] font-mono text-ice-500 font-semibold tracking-wider block">
+                                    <span class="text-[10px] font-sans text-ice-500 font-semibold tracking-wider block">
                                         QC / 04
                                     </span>
                                     <h4 class="mt-3 text-sm font-bold text-steel-100">
@@ -2214,7 +2427,7 @@
                                     
                                     <!-- Left Title & Desc -->
                                     <div class="lg:col-span-7">
-                                        <span class="text-[10px] font-mono uppercase tracking-[0.2em] text-ice-500 font-semibold block">
+                                        <span class="text-[10px] font-sans uppercase tracking-[0.2em] text-ice-500 font-semibold block">
                                             Material Standard
                                         </span>
                                         <h3 class="mt-3 text-xl sm:text-2xl font-extrabold text-steel-100 tracking-tight leading-snug"
@@ -2232,37 +2445,37 @@
                                     <div class="lg:col-span-5 grid grid-cols-2 gap-[1px] bg-[rgba(145,205,224,0.15)] border border-[rgba(145,205,224,0.15)] overflow-hidden">
                                         
                                         <div class="bg-navy-900/90 p-5 hover:bg-navy-900 transition-colors">
-                                            <span class="block text-lg font-extrabold text-steel-100 font-mono">
+                                            <span class="block text-lg font-extrabold text-steel-100 font-sans">
                                                 CAD
                                             </span>
-                                            <span class="text-[10px] font-mono text-ice-500 font-medium uppercase tracking-wider block mt-0.5">
+                                            <span class="text-[10px] font-sans text-ice-500 font-medium uppercase tracking-wider block mt-0.5">
                                                 Design
                                             </span>
                                         </div>
 
                                         <div class="bg-navy-900/90 p-5 hover:bg-navy-900 transition-colors">
-                                            <span class="block text-lg font-extrabold text-steel-100 font-mono">
+                                            <span class="block text-lg font-extrabold text-steel-100 font-sans">
                                                 CAM
                                             </span>
-                                            <span class="text-[10px] font-mono text-ice-500 font-medium uppercase tracking-wider block mt-0.5">
+                                            <span class="text-[10px] font-sans text-ice-500 font-medium uppercase tracking-wider block mt-0.5">
                                                 Manufacturing
                                             </span>
                                         </div>
 
                                         <div class="bg-navy-900/90 p-5 hover:bg-navy-900 transition-colors">
-                                            <span class="block text-lg font-extrabold text-steel-100 font-mono">
+                                            <span class="block text-lg font-extrabold text-steel-100 font-sans">
                                                 QC
                                             </span>
-                                            <span class="text-[10px] font-mono text-ice-500 font-medium uppercase tracking-wider block mt-0.5">
+                                            <span class="text-[10px] font-sans text-ice-500 font-medium uppercase tracking-wider block mt-0.5">
                                                 Inspection
                                             </span>
                                         </div>
 
                                         <div class="bg-navy-900/90 p-5 hover:bg-navy-900 transition-colors">
-                                            <span class="block text-lg font-extrabold text-steel-100 font-mono">
+                                            <span class="block text-lg font-extrabold text-steel-100 font-sans">
                                                 DATA
                                             </span>
-                                            <span class="text-[10px] font-mono text-ice-500 font-medium uppercase tracking-wider block mt-0.5">
+                                            <span class="text-[10px] font-sans text-ice-500 font-medium uppercase tracking-wider block mt-0.5">
                                                 Archive
                                             </span>
                                         </div>
@@ -2283,7 +2496,7 @@
             <!-- Header Banner -->
             <div class="relative -mt-[105px] pt-36 pb-16 bg-navy-900 text-white py-16">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <span class="text-xs font-mono uppercase tracking-widest text-silver-400 block mb-2">
+                    <span class="text-xs font-sans uppercase tracking-widest text-silver-400 block mb-2">
                         Digital Process
                     </span>
                     <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight"
@@ -2307,7 +2520,7 @@
                         
                         <!-- Left Header -->
                         <div class="lg:col-span-7">
-                            <span class="text-xs font-semibold uppercase text-ice-500 tracking-widest block mb-2 font-mono flex items-center gap-2">
+                            <span class="text-xs font-semibold uppercase text-ice-500 tracking-widest block mb-2 font-sans flex items-center gap-2">
                                 4-Step Digital Workflow
                             </span>
                             <h2 class="text-2xl sm:text-3xl font-extrabold text-steel-100 tracking-tight leading-snug">
@@ -2327,23 +2540,23 @@
                                 <div class="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-ice-500/40 to-transparent"></div>
                                 
                                 <div class="flex items-center justify-between">
-                                    <span class="text-[9px] font-mono uppercase tracking-widest text-ice-500 font-semibold">
+                                    <span class="text-[9px] font-sans uppercase tracking-widest text-ice-500 font-semibold">
                                         Digital Production Status
                                     </span>
                                 </div>
 
                                 <div class="mt-5 grid grid-cols-3 gap-3">
                                     <div class="border border-[rgba(145,205,224,0.15)] bg-navy-950/70 p-3 text-center">
-                                        <span class="block text-[8px] font-mono text-silver-400">INPUT</span>
-                                        <span class="block mt-1 text-xs font-bold text-ice-500 font-mono">3D SCAN</span>
+                                        <span class="block text-[8px] font-sans text-silver-400">INPUT</span>
+                                        <span class="block mt-1 text-xs font-bold text-ice-500 font-sans">3D SCAN</span>
                                     </div>
                                     <div class="border border-[rgba(145,205,224,0.15)] bg-navy-950/70 p-3 text-center">
-                                        <span class="block text-[8px] font-mono text-silver-400">DESIGN</span>
-                                        <span class="block mt-1 text-xs font-bold text-ice-500 font-mono">CAD</span>
+                                        <span class="block text-[8px] font-sans text-silver-400">DESIGN</span>
+                                        <span class="block mt-1 text-xs font-bold text-ice-500 font-sans">CAD</span>
                                     </div>
                                     <div class="border border-[rgba(145,205,224,0.15)] bg-navy-950/70 p-3 text-center">
-                                        <span class="block text-[8px] font-mono text-silver-400">OUTPUT</span>
-                                        <span class="block mt-1 text-xs font-bold text-ice-500 font-mono">QC</span>
+                                        <span class="block text-[8px] font-sans text-silver-400">OUTPUT</span>
+                                        <span class="block mt-1 text-xs font-bold text-ice-500 font-sans">QC</span>
                                     </div>
                                 </div>
                             </div>
@@ -2370,7 +2583,7 @@
                                         <span class="text-2xl font-extrabold tracking-tight text-white block">
                                             DIGITAL LAB
                                         </span>
-                                        <span class="block mt-2 text-[10px] font-mono tracking-[0.25em] text-ice-500 font-semibold">
+                                        <span class="block mt-2 text-[10px] font-sans tracking-[0.25em] text-ice-500 font-semibold">
                                             CAD / CAM PRODUCTION
                                         </span>
                                     </div>
@@ -2380,7 +2593,7 @@
                                 <div class="absolute inset-0 bg-gradient-to-t from-navy-900/90 via-navy-900/20 to-transparent pointer-events-none"></div>
 
                                 <div class="absolute bottom-0 left-0 right-0 p-7 bg-navy-900/80 backdrop-blur-md border-t border-[rgba(145,205,224,0.12)]">
-                                    <span class="text-[9px] font-mono tracking-[0.2em] text-ice-500 font-semibold block">
+                                    <span class="text-[9px] font-sans tracking-[0.2em] text-ice-500 font-semibold block">
                                         DIGITAL DENTAL LABORATORY
                                     </span>
                                     <p class="mt-1 text-base font-bold text-steel-100">
@@ -2395,14 +2608,14 @@
                                 <!-- Step 01 -->
                                 <div class="group p-6 sm:p-7 hover:bg-navy-900/80 transition-colors">
                                     <div class="flex gap-5 items-start">
-                                        <div class="w-10 h-10 shrink-0 bg-navy-950 border border-[rgba(145,205,224,0.2)] text-ice-500 flex items-center justify-center font-mono font-bold text-xs shadow-[0_0_10px_rgba(145,205,224,0.2)]">
+                                        <div class="w-10 h-10 shrink-0 bg-navy-950 border border-[rgba(145,205,224,0.2)] text-ice-500 flex items-center justify-center font-sans font-bold text-xs shadow-[0_0_10px_rgba(145,205,224,0.2)]">
                                             01
                                         </div>
                                         <div>
                                             <div class="flex items-center gap-3">
-                                                <span class="text-[9px] font-mono uppercase tracking-widest text-ice-500 font-semibold">INPUT</span>
+                                                <span class="text-[9px] font-sans uppercase tracking-widest text-ice-500 font-semibold">INPUT</span>
                                                 <span class="w-1 h-1 bg-silver-400 rounded-full"></span>
-                                                <span class="text-[9px] font-mono text-silver-400">SCAN DATA</span>
+                                                <span class="text-[9px] font-sans text-silver-400">SCAN DATA</span>
                                             </div>
                                             <h3 class="mt-2 text-base font-bold text-steel-100"
                                                 data-i18n="workflow.process_steps.receipt_title">
@@ -2419,14 +2632,14 @@
                                 <!-- Step 02 -->
                                 <div class="group p-6 sm:p-7 hover:bg-navy-900/80 transition-colors">
                                     <div class="flex gap-5 items-start">
-                                        <div class="w-10 h-10 shrink-0 bg-navy-950 border border-[rgba(145,205,224,0.2)] text-ice-500 flex items-center justify-center font-mono font-bold text-xs shadow-[0_0_10px_rgba(145,205,224,0.2)]">
+                                        <div class="w-10 h-10 shrink-0 bg-navy-950 border border-[rgba(145,205,224,0.2)] text-ice-500 flex items-center justify-center font-sans font-bold text-xs shadow-[0_0_10px_rgba(145,205,224,0.2)]">
                                             02
                                         </div>
                                         <div>
                                             <div class="flex items-center gap-3">
-                                                <span class="text-[9px] font-mono uppercase tracking-widest text-ice-500 font-semibold">DESIGN</span>
+                                                <span class="text-[9px] font-sans uppercase tracking-widest text-ice-500 font-semibold">DESIGN</span>
                                                 <span class="w-1 h-1 bg-silver-400 rounded-full"></span>
-                                                <span class="text-[9px] font-mono text-silver-400">CAD</span>
+                                                <span class="text-[9px] font-sans text-silver-400">CAD</span>
                                             </div>
                                             <h3 class="mt-2 text-base font-bold text-steel-100"
                                                 data-i18n="workflow.process_steps.design_title">
@@ -2443,14 +2656,14 @@
                                 <!-- Step 03 -->
                                 <div class="group p-6 sm:p-7 hover:bg-navy-900/80 transition-colors">
                                     <div class="flex gap-5 items-start">
-                                        <div class="w-10 h-10 shrink-0 bg-navy-950 border border-[rgba(145,205,224,0.2)] text-ice-500 flex items-center justify-center font-mono font-bold text-xs shadow-[0_0_10px_rgba(145,205,224,0.2)]">
+                                        <div class="w-10 h-10 shrink-0 bg-navy-950 border border-[rgba(145,205,224,0.2)] text-ice-500 flex items-center justify-center font-sans font-bold text-xs shadow-[0_0_10px_rgba(145,205,224,0.2)]">
                                             03
                                         </div>
                                         <div>
                                             <div class="flex items-center gap-3">
-                                                <span class="text-[9px] font-mono uppercase tracking-widest text-ice-500 font-semibold">MANUFACTURING</span>
+                                                <span class="text-[9px] font-sans uppercase tracking-widest text-ice-500 font-semibold">MANUFACTURING</span>
                                                 <span class="w-1 h-1 bg-silver-400 rounded-full"></span>
-                                                <span class="text-[9px] font-mono text-silver-400">CAM</span>
+                                                <span class="text-[9px] font-sans text-silver-400">CAM</span>
                                             </div>
                                             <h3 class="mt-2 text-base font-bold text-steel-100"
                                                 data-i18n="workflow.process_steps.milling_title">
@@ -2467,14 +2680,14 @@
                                 <!-- Step 04 -->
                                 <div class="group p-6 sm:p-7 hover:bg-navy-900/80 transition-colors">
                                     <div class="flex gap-5 items-start">
-                                        <div class="w-10 h-10 shrink-0 bg-navy-950 border border-[rgba(145,205,224,0.2)] text-ice-500 flex items-center justify-center font-mono font-bold text-xs shadow-[0_0_10px_rgba(145,205,224,0.2)]">
+                                        <div class="w-10 h-10 shrink-0 bg-navy-950 border border-[rgba(145,205,224,0.2)] text-ice-500 flex items-center justify-center font-sans font-bold text-xs shadow-[0_0_10px_rgba(145,205,224,0.2)]">
                                             04
                                         </div>
                                         <div>
                                             <div class="flex items-center gap-3">
-                                                <span class="text-[9px] font-mono uppercase tracking-widest text-ice-500 font-semibold">QUALITY</span>
+                                                <span class="text-[9px] font-sans uppercase tracking-widest text-ice-500 font-semibold">QUALITY</span>
                                                 <span class="w-1 h-1 bg-silver-400 rounded-full"></span>
-                                                <span class="text-[9px] font-mono text-silver-400">FINAL QC</span>
+                                                <span class="text-[9px] font-sans text-silver-400">FINAL QC</span>
                                             </div>
                                             <h3 class="mt-2 text-base font-bold text-steel-100"
                                                 data-i18n="workflow.process_steps.delivery_title">
@@ -2505,7 +2718,7 @@
                         
                         <!-- Left Info & Image -->
                         <div class="lg:col-span-5">
-                            <span class="text-xs font-semibold uppercase text-ice-500 tracking-widest block mb-2 font-mono flex items-center gap-2">
+                            <span class="text-xs font-semibold uppercase text-ice-500 tracking-widest block mb-2 font-sans flex items-center gap-2">
                                 Scan Data Protocol
                             </span>
                             <h2 class="text-2xl sm:text-3xl font-extrabold text-steel-100 tracking-tight leading-snug"
@@ -2533,7 +2746,7 @@
                                         <span class="text-xl font-extrabold text-white tracking-tight block">
                                             SCAN DATA
                                         </span>
-                                        <span class="block mt-2 text-[9px] font-mono tracking-widest text-ice-500 font-semibold">
+                                        <span class="block mt-2 text-[9px] font-sans tracking-widest text-ice-500 font-semibold">
                                             DATA QUALITY CONTROL
                                         </span>
                                     </div>
@@ -2549,11 +2762,11 @@
                                 <!-- Check 01 -->
                                 <div class="p-6 sm:p-7 hover:bg-navy-900/60 transition-colors">
                                     <div class="flex gap-5 items-start">
-                                        <span class="w-8 h-8 shrink-0 bg-navy-950 border border-[rgba(145,205,224,0.2)] text-ice-500 flex items-center justify-center text-[9px] font-mono font-bold shadow-[0_0_10px_rgba(145,205,224,0.2)]">
+                                        <span class="w-8 h-8 shrink-0 bg-navy-950 border border-[rgba(145,205,224,0.2)] text-ice-500 flex items-center justify-center text-[9px] font-sans font-bold shadow-[0_0_10px_rgba(145,205,224,0.2)]">
                                             01
                                         </span>
                                         <div>
-                                            <span class="text-[9px] font-mono uppercase tracking-widest text-ice-500 font-semibold block">
+                                            <span class="text-[9px] font-sans uppercase tracking-widest text-ice-500 font-semibold block">
                                                 MARGIN
                                             </span>
                                             <h3 class="mt-1 text-sm font-bold text-steel-100"
@@ -2571,11 +2784,11 @@
                                 <!-- Check 02 -->
                                 <div class="p-6 sm:p-7 hover:bg-navy-900/60 transition-colors">
                                     <div class="flex gap-5 items-start">
-                                        <span class="w-8 h-8 shrink-0 bg-navy-950 border border-[rgba(145,205,224,0.2)] text-ice-500 flex items-center justify-center text-[9px] font-mono font-bold shadow-[0_0_10px_rgba(145,205,224,0.2)]">
+                                        <span class="w-8 h-8 shrink-0 bg-navy-950 border border-[rgba(145,205,224,0.2)] text-ice-500 flex items-center justify-center text-[9px] font-sans font-bold shadow-[0_0_10px_rgba(145,205,224,0.2)]">
                                             02
                                         </span>
                                         <div>
-                                            <span class="text-[9px] font-mono uppercase tracking-widest text-ice-500 font-semibold block">
+                                            <span class="text-[9px] font-sans uppercase tracking-widest text-ice-500 font-semibold block">
                                                 BITE
                                             </span>
                                             <h3 class="mt-1 text-sm font-bold text-steel-100"
@@ -2593,11 +2806,11 @@
                                 <!-- Check 03 -->
                                 <div class="p-6 sm:p-7 hover:bg-navy-900/60 transition-colors">
                                     <div class="flex gap-5 items-start">
-                                        <span class="w-8 h-8 shrink-0 bg-navy-950 border border-[rgba(145,205,224,0.2)] text-ice-500 flex items-center justify-center text-[9px] font-mono font-bold shadow-[0_0_10px_rgba(145,205,224,0.2)]">
+                                        <span class="w-8 h-8 shrink-0 bg-navy-950 border border-[rgba(145,205,224,0.2)] text-ice-500 flex items-center justify-center text-[9px] font-sans font-bold shadow-[0_0_10px_rgba(145,205,224,0.2)]">
                                             03
                                         </span>
                                         <div>
-                                            <span class="text-[9px] font-mono uppercase tracking-widest text-ice-500 font-semibold block">
+                                            <span class="text-[9px] font-sans uppercase tracking-widest text-ice-500 font-semibold block">
                                                 IMPLANT
                                             </span>
                                             <h3 class="mt-1 text-sm font-bold text-steel-100"
@@ -2616,20 +2829,20 @@
                             <!-- File Specification Badges -->
                             <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
                                 <div class="p-4 bg-navy-900/80 border border-[rgba(145,205,224,0.15)] text-center">
-                                    <span class="block text-[8px] font-mono text-silver-400">FORMAT</span>
-                                    <span class="block mt-1 text-xs font-bold text-ice-500 font-mono">STL</span>
+                                    <span class="block text-[8px] font-sans text-silver-400">FORMAT</span>
+                                    <span class="block mt-1 text-xs font-bold text-ice-500 font-sans">STL</span>
                                 </div>
                                 <div class="p-4 bg-navy-900/80 border border-[rgba(145,205,224,0.15)] text-center">
-                                    <span class="block text-[8px] font-mono text-silver-400">OPTIONAL</span>
-                                    <span class="block mt-1 text-xs font-bold text-ice-500 font-mono">PLY</span>
+                                    <span class="block text-[8px] font-sans text-silver-400">OPTIONAL</span>
+                                    <span class="block mt-1 text-xs font-bold text-ice-500 font-sans">PLY</span>
                                 </div>
                                 <div class="p-4 bg-navy-900/80 border border-[rgba(145,205,224,0.15)] text-center">
-                                    <span class="block text-[8px] font-mono text-silver-400">INPUT</span>
-                                    <span class="block mt-1 text-xs font-bold text-ice-500 font-mono">3D SCAN</span>
+                                    <span class="block text-[8px] font-sans text-silver-400">INPUT</span>
+                                    <span class="block mt-1 text-xs font-bold text-ice-500 font-sans">3D SCAN</span>
                                 </div>
                                 <div class="p-4 bg-navy-900/80 border border-[rgba(145,205,224,0.15)] text-center">
-                                    <span class="block text-[8px] font-mono text-silver-400">CHECK</span>
-                                    <span class="block mt-1 text-xs font-bold text-ice-500 font-mono">QC</span>
+                                    <span class="block text-[8px] font-sans text-silver-400">CHECK</span>
+                                    <span class="block mt-1 text-xs font-bold text-ice-500 font-sans">QC</span>
                                 </div>
                             </div>
 
@@ -2646,7 +2859,7 @@
             <!-- Header Banner -->
             <div class="relative -mt-[105px] pt-36 pb-16 bg-navy-900 text-white py-16 border-b border-navy-800">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <span class="text-xs font-mono uppercase tracking-widest text-silver-400 block mb-2">
+                    <span class="text-xs font-sans uppercase tracking-widest text-silver-400 block mb-2">
                         Location & Contact
                     </span>
                     <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight"
@@ -2668,7 +2881,7 @@
                     
                     <!-- Section Header -->
                     <div class="mb-12">
-                        <span class="text-xs font-semibold uppercase text-ice-500 tracking-widest block mb-2 font-mono flex items-center gap-2">
+                        <span class="text-xs font-semibold uppercase text-ice-500 tracking-widest block mb-2 font-sans flex items-center gap-2">
                             Lab Location
                         </span>
                         <h2 class="text-2xl sm:text-3xl font-extrabold text-steel-100 tracking-tight leading-snug"
@@ -2689,7 +2902,7 @@
                                 loading="lazy">
                             <!-- Map Overlay Label -->
                             <div class="absolute top-3 left-3 sm:top-5 sm:left-5 bg-navy-900/90 backdrop-blur-md border border-[rgba(145,205,224,0.2)] px-3 py-2 sm:px-4 sm:py-3 shadow-[0_10px_25px_rgba(4,8,15,0.5)] z-10">
-                                <span class="block text-[8px] sm:text-[9px] font-mono font-bold tracking-wider sm:tracking-widest text-ice-500 uppercase">
+                                <span class="block text-[8px] sm:text-[9px] font-sans font-bold tracking-wider sm:tracking-widest text-ice-500 uppercase">
                                     CHAEUM DENTAL LAB
                                 </span>
                                 <span class="block mt-0.5 sm:mt-1 text-[11px] sm:text-xs font-bold text-steel-100">
@@ -2702,7 +2915,7 @@
                         <div class="p-8 sm:p-10 bg-navy-900/40 grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-10 items-start">
                             <div class="space-y-4">
                                 <div>
-                                    <span class="text-[10px] font-mono uppercase tracking-widest text-ice-500 font-semibold block">
+                                    <span class="text-[10px] font-sans uppercase tracking-widest text-ice-500 font-semibold block">
                                         Contact Information
                                     </span>
                                     <h3 class="mt-2 text-xl font-extrabold text-steel-100"
@@ -2712,7 +2925,7 @@
                                 </div>
                                 <div class="pt-2">
                                     <!-- Address -->
-                                    <span class="block text-[9px] font-mono font-bold tracking-widest text-silver-400">
+                                    <span class="block text-[9px] font-sans font-bold tracking-widest text-silver-400">
                                         ADDRESS
                                     </span>
                                     <p class="mt-2 text-sm font-bold text-steel-100 leading-relaxed"
@@ -2726,11 +2939,11 @@
                                 <!-- Direct Line -->
                                 <div class="space-y-6 md:border-l md:border-[rgba(145,205,224,0.12)] md:pl-8 lg:pl-10">
                                     <div>
-                                        <span class="block text-[9px] font-mono font-bold tracking-widest text-silver-400">
+                                        <span class="block text-[9px] font-sans font-bold tracking-widest text-silver-400">
                                             DIRECT LINE
                                         </span>
                                         <a href="tel:0221692977"
-                                            class="block mt-2 text-sm font-bold text-ice-500 hover:text-ice-400 transition-colors font-mono"
+                                            class="block mt-2 text-sm font-bold text-ice-500 hover:text-ice-400 transition-colors font-sans"
                                             data-i18n="contact.location.telephone">
                                             02-2169-2977
                                         </a>
@@ -2741,11 +2954,11 @@
 
                                     <!-- Digital Data Email -->
                                     <div>
-                                        <span class="block text-[9px] font-mono font-bold tracking-widest text-silver-400">
+                                        <span class="block text-[9px] font-sans font-bold tracking-widest text-silver-400">
                                             DIGITAL DATA
                                         </span>
                                         <a href="mailto:chaeum2016@hanmail.net"
-                                            class="block mt-2 text-xs font-mono font-bold text-ice-500 hover:text-ice-400 transition-colors break-all">
+                                            class="block mt-2 text-xs font-sans font-bold text-ice-500 hover:text-ice-400 transition-colors break-all">
                                             chaeum2016@hanmail.net
                                         </a>
                                         <p class="mt-1 text-[11px] text-silver-400">
@@ -2756,7 +2969,7 @@
 
                                 <!-- Business Hours -->
                                 <div class="md:border-l md:border-[rgba(145,205,224,0.12)] md:pl-8 lg:pl-10">
-                                    <span class="block text-[9px] font-mono font-bold tracking-widest text-silver-400">
+                                    <span class="block text-[9px] font-sans font-bold tracking-widest text-silver-400">
                                         BUSINESS HOURS
                                     </span>
                                     <div class="mt-3 space-y-2.5">
@@ -2765,7 +2978,7 @@
                                                 data-i18n="contact.hours.weekday_label">
                                                 평일
                                             </span>
-                                            <span class="text-xs font-mono font-bold text-steel-100">
+                                            <span class="text-xs font-sans font-bold text-steel-100">
                                                 08:30 — 19:00
                                             </span>
                                         </div>
@@ -2774,7 +2987,7 @@
                                                 data-i18n="contact.hours.saturday_label">
                                                 토요일
                                             </span>
-                                            <span class="text-xs font-mono font-bold text-steel-100">
+                                            <span class="text-xs font-sans font-bold text-steel-100">
                                                 08:30 — 13:00
                                             </span>
                                         </div>
@@ -2783,7 +2996,7 @@
                                                 data-i18n="contact.hours.sunday_holiday_label">
                                                 일요일 / 공휴일
                                             </span>
-                                            <span class="text-xs font-mono text-silver-500">
+                                            <span class="text-xs font-sans text-silver-500">
                                                 CLOSED
                                             </span>
                                         </div>
