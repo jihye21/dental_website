@@ -211,21 +211,21 @@
 
     <div class="sticky top-0 z-50 w-full">
         <!-- Top System Line -->
-        <div class="bg-slate-100 text-slate-700 text-xs py-2 border-b border-slate-200 font-sans">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+        <div class="bg-slate-100 text-slate-700 text-[11px] sm:text-xs py-2 border-b border-slate-200 font-sans">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center gap-2">
                 <!-- left -->
-                <div class="flex items-center space-x-4 text-xs font-semibold tracking-tight text-slate-800">
-                    <span class="flex items-center gap-1.5 text-blue-700">
-                        <img src="img/crown_logo.png" alt="crown_logo" class="w-4 h-4 object-contain">
+                <div class="flex items-center shrink-0 font-semibold tracking-tight text-slate-800">
+                    <span class="flex items-center gap-1 sm:gap-1.5 text-blue-700">
+                        <img src="img/crown_logo.png" alt="crown_logo" class="w-3.5 h-3.5 sn:w-4 sm:h-4object-contain">
                         <span data-i18n="top-line.title">디지털 치과기공 전문 랩</span>
                     </span>
                 </div>
 
                 <!-- right -->
-                <div class="flex items-center space-x-4 text-xs">
+                <div class="flex items-center shrink-0 space-x-2 sm:space-x-4">
                     <span class="text-slate-600 font-medium">
-                        <i class="fa-solid fa-phone text-blue-600 mr-1"></i> 
-                            <span data-i18n="top-line.contact_label">기공 의뢰 및 상담:</span> 
+                        <i class="fa-solid fa-phone text-blue-600 mr-0.5 sm:mr-1"></i> 
+                            <span class="hidden sm:inline"data-i18n="top-line.contact_label">기공 의뢰 및 상담:</span> 
                             <strong class="text-slate-900 font-bold" data-i18n="top-line.phone_number">02-2169-2977</strong>
                     </span>
 
@@ -1246,12 +1246,10 @@
                         </h1>
                         
                         <!-- 배너 이미지 영역 -->
-                        <div class="w-full overflow-hidden rounded-xl bg-navy-800 border border-steel-100/5 p-6 flex items-center justify-center">
-                            <img src="img/02_about_partner.png" 
+                        <img src="img/02_about_partner.png" 
                                  alt="협력사 배너" 
-                                 class="w-full h-auto object-cover max-w-5xl"
+                                 class="w-full h-auto object-cover max-w-5xl mx-auto block"
                                  data-i18n-alt="about.partners.banner_alt">
-                        </div>
                     </div>
 
                 </div>
@@ -2563,7 +2561,7 @@
                         </div>
 
                     </div>
-
+                    
                     <!-- Workflow Visual & Steps Grid -->
                     <div class="bg-charcol-800/80 backdrop-blur-xl border border-[rgba(145,205,224,0.15)] shadow-[0_20px_50px_rgba(4,8,15,0.6)] relative overflow-hidden">
                         <div class="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-ice-500/40 to-transparent"></div>
@@ -2571,11 +2569,11 @@
                         <div class="grid grid-cols-1 lg:grid-cols-2">
                             
                             <!-- Image Module -->
-                            <div class="relative min-h-[430px] lg:min-h-[460px] bg-[rgb(8,11,25)] overflow-hidden border-b lg:border-b-0 lg:border-r border-[rgba(145,205,224,0.15)]">
+                            <div class="relative min-h-0 lg:min-h-[460px] bg-[rgb(8,11,25)] overflow-hidden border-b lg:border-b-0 lg:border-r border-[rgba(145,205,224,0.15)] flex flex-col">
                                 <div class="relative w-full flex-1 flex items-center justify-center p-4">
                                     <img src="img/04_digitalWorkflow_1.png"
                                         alt="Digital dental laboratory workflow"
-                                        class="w-full max-h-[320px] lg:max-h-[350px] object-contain filter brightness-90 hover:scale-105 transition-all duration-700" 
+                                        class="w-full max-h-[260px] lg:max-h-[320px] object-contain filter brightness-90 hover:scale-105 transition-all duration-700" 
                                         onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
 
                                     <!-- Fallback -->
@@ -2607,13 +2605,12 @@
                                 <!-- Step 01 -->
                                 <div class="group p-6 sm:p-7 hover:bg-navy-900/80 transition-colors">
                                     <div class="flex gap-5 items-start">
-                                        <div class="w-10 h-10 shrink-0 bg-navy-950 border border-[rgba(145,205,224,0.2)] text-ice-500 flex items-center justify-center font-sans font-bold text-xs shadow-[0_0_10px_rgba(145,205,224,0.2)]">
+                                        <div class="w-10 h-10 shrink-0 bg-navy-950 text-ice-500 flex items-center justify-center font-sans font-bold text-xs">
                                             01
                                         </div>
                                         <div>
                                             <div class="flex items-center gap-3">
                                                 <span class="text-[9px] font-sans uppercase tracking-widest text-ice-500 font-semibold">INPUT</span>
-                                                <span class="w-1 h-1 bg-silver-400 rounded-full"></span>
                                                 <span class="text-[9px] font-sans text-silver-400">SCAN DATA</span>
                                             </div>
                                             <h3 class="mt-2 text-base font-bold text-steel-100"
@@ -2631,13 +2628,12 @@
                                 <!-- Step 02 -->
                                 <div class="group p-6 sm:p-7 hover:bg-navy-900/80 transition-colors">
                                     <div class="flex gap-5 items-start">
-                                        <div class="w-10 h-10 shrink-0 bg-navy-950 border border-[rgba(145,205,224,0.2)] text-ice-500 flex items-center justify-center font-sans font-bold text-xs shadow-[0_0_10px_rgba(145,205,224,0.2)]">
+                                        <div class="w-10 h-10 shrink-0 bg-navy-950 text-ice-500 flex items-center justify-center font-sans font-bold text-xs">
                                             02
                                         </div>
                                         <div>
                                             <div class="flex items-center gap-3">
                                                 <span class="text-[9px] font-sans uppercase tracking-widest text-ice-500 font-semibold">DESIGN</span>
-                                                <span class="w-1 h-1 bg-silver-400 rounded-full"></span>
                                                 <span class="text-[9px] font-sans text-silver-400">CAD</span>
                                             </div>
                                             <h3 class="mt-2 text-base font-bold text-steel-100"
@@ -2655,13 +2651,12 @@
                                 <!-- Step 03 -->
                                 <div class="group p-6 sm:p-7 hover:bg-navy-900/80 transition-colors">
                                     <div class="flex gap-5 items-start">
-                                        <div class="w-10 h-10 shrink-0 bg-navy-950 border border-[rgba(145,205,224,0.2)] text-ice-500 flex items-center justify-center font-sans font-bold text-xs shadow-[0_0_10px_rgba(145,205,224,0.2)]">
+                                        <div class="w-10 h-10 shrink-0 bg-navy-950 text-ice-500 flex items-center justify-center font-sans font-bold text-xs">
                                             03
                                         </div>
                                         <div>
                                             <div class="flex items-center gap-3">
                                                 <span class="text-[9px] font-sans uppercase tracking-widest text-ice-500 font-semibold">MANUFACTURING</span>
-                                                <span class="w-1 h-1 bg-silver-400 rounded-full"></span>
                                                 <span class="text-[9px] font-sans text-silver-400">CAM</span>
                                             </div>
                                             <h3 class="mt-2 text-base font-bold text-steel-100"
@@ -2679,13 +2674,12 @@
                                 <!-- Step 04 -->
                                 <div class="group p-6 sm:p-7 hover:bg-navy-900/80 transition-colors">
                                     <div class="flex gap-5 items-start">
-                                        <div class="w-10 h-10 shrink-0 bg-navy-950 border border-[rgba(145,205,224,0.2)] text-ice-500 flex items-center justify-center font-sans font-bold text-xs shadow-[0_0_10px_rgba(145,205,224,0.2)]">
+                                        <div class="w-10 h-10 shrink-0 bg-navy-950 text-ice-500 flex items-center justify-center font-sans font-bold text-xs">
                                             04
                                         </div>
                                         <div>
                                             <div class="flex items-center gap-3">
                                                 <span class="text-[9px] font-sans uppercase tracking-widest text-ice-500 font-semibold">QUALITY</span>
-                                                <span class="w-1 h-1 bg-silver-400 rounded-full"></span>
                                                 <span class="text-[9px] font-sans text-silver-400">FINAL QC</span>
                                             </div>
                                             <h3 class="mt-2 text-base font-bold text-steel-100"
@@ -2762,7 +2756,7 @@
                                 <!-- Check 01 -->
                                 <div class="p-6 sm:p-7 hover:bg-navy-900/60 transition-colors">
                                     <div class="flex gap-5 items-start">
-                                        <span class="w-8 h-8 shrink-0 bg-navy-950 border border-[rgba(145,205,224,0.2)] text-ice-500 flex items-center justify-center text-[9px] font-sans font-bold shadow-[0_0_10px_rgba(145,205,224,0.2)]">
+                                        <span class="w-8 h-8 shrink-0 bg-navy-950 text-ice-500 flex items-center justify-center text-[9px] font-sans font-bold">
                                             01
                                         </span>
                                         <div>
@@ -2784,7 +2778,7 @@
                                 <!-- Check 02 -->
                                 <div class="p-6 sm:p-7 hover:bg-navy-900/60 transition-colors">
                                     <div class="flex gap-5 items-start">
-                                        <span class="w-8 h-8 shrink-0 bg-navy-950 border border-[rgba(145,205,224,0.2)] text-ice-500 flex items-center justify-center text-[9px] font-sans font-bold shadow-[0_0_10px_rgba(145,205,224,0.2)]">
+                                        <span class="w-8 h-8 shrink-0 bg-navy-950 text-ice-500 flex items-center justify-center text-[9px] font-sans font-bold">
                                             02
                                         </span>
                                         <div>
@@ -2806,7 +2800,7 @@
                                 <!-- Check 03 -->
                                 <div class="p-6 sm:p-7 hover:bg-navy-900/60 transition-colors">
                                     <div class="flex gap-5 items-start">
-                                        <span class="w-8 h-8 shrink-0 bg-navy-950 border border-[rgba(145,205,224,0.2)] text-ice-500 flex items-center justify-center text-[9px] font-sans font-bold shadow-[0_0_10px_rgba(145,205,224,0.2)]">
+                                        <span class="w-8 h-8 shrink-0 bg-navy-950 text-ice-500 flex items-center justify-center text-[9px] font-sans font-bold shadow-[0_0_10px_rgba(145,205,224,0.2)]">
                                             03
                                         </span>
                                         <div>
@@ -2900,8 +2894,8 @@
                                 alt="채움 덴탈 랩 위치 지도"
                                 class="absolute inset-0 w-full h-full object-cover filter brightness-90 group-hover:scale-[1.01] transition-all duration-700"
                                 loading="lazy">
-                            <!-- Map Overlay Label -->
-                            <div class="absolute top-3 left-3 sm:top-5 sm:left-5 bg-navy-900/90 backdrop-blur-md border border-[rgba(145,205,224,0.2)] px-3 py-2 sm:px-4 sm:py-3 shadow-[0_10px_25px_rgba(4,8,15,0.5)] z-10">
+                            <!-- Map Overlay Label
+                            <div class="hidden sm:block absolute top-3 left-3 sm:top-5 sm:left-5 bg-navy-900/90 backdrop-blur-md border border-[rgba(145,205,224,0.2)] px-3 py-2 sm:px-4 sm:py-3 shadow-[0_10px_25px_rgba(4,8,15,0.5)] z-10">
                                 <span class="block text-[8px] sm:text-[9px] font-sans font-bold tracking-wider sm:tracking-widest text-ice-500 uppercase">
                                     CHAEUM DENTAL LAB
                                 </span>
@@ -2909,6 +2903,7 @@
                                     LAB LOCATION
                                 </span>
                             </div>
+                             -->
                         </div>
 
                         <!-- Right: Contact Information -->
