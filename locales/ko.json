@@ -36,7 +36,7 @@
       "communication_title": "정확한 커뮤니케이션"
     },
 		"competencies": {
-      "section_title": "채움 덴탈 랩의 3대 핵심 경쟁력",
+      "section_title": "채움 치과기공소의 3대 핵심 경쟁력",
       "section_desc": "디지털 기술의 정밀함과 사람의 섬세한 기술을 하나의 제작 프로세스로 연결합니다.",
      
       "cadcam_title": "최신 디지털 CAD/CAM 시스템",
@@ -45,30 +45,30 @@
       "handmade_title": "숙련된 기공사의 핸드메이드 마감",
       "handmade_desc": "기계 가공만으로 완성하기 어려운 미세한 표면 질감과 자연치 인접면 컨투어링, 개별 쉐이드 표현을 숙련된 테크니션의 손으로 완성합니다.",
       
-      "quality_title": "철저한 품질 관리 및 정품 재료",
-      "quality_desc": "검증된 글로벌 정품 소재를 사용하고, 출고 전 정밀 검수 과정을 거쳐 완성도 높은 보철물만 치과에 공급합니다."
+      "quality_title": "품질 관리 및 정품 재료",
+      "quality_desc": "검증된 정품 소재를 사용하고, 출고 전 검수 과정을 거쳐 완성도 높은 보철물만 치과에 공급합니다."
     },
 	  "products_preview": {
       "section_title": "주요 전문 보철 품목",
       "section_desc": "임상 목적과 케이스에 맞춘 다양한 보철 제작 서비스를 제공합니다.",
-      "btn_view_all": "전체 품목 및 규격 상세 보기",
+      "btn_view_all": "전체 품목 상세 보기",
       "duration_label": "제작 기간",
       
       "zirconia_title": "지르코니아 보철",
-      "zirconia_desc": "고투명 멀티레이어 블록을 활용하여 강도와 심미성을 함께 고려한 전비추 및 구치부 지르코니아.",
-      "zirconia_duration": "3-4일",
+      "zirconia_desc": "고투명 멀티레이어 블록을 활용하여 강도와 심미성을 함께 고려한 전치부 및 구치부 지르코니아.",
+      "zirconia_duration": "4-5일",
       
       "implant_title": "임플란트 맞춤 보철",
       "implant_desc": "Custom Abutment 밀링 및 Screw-Retained 타입의 단일·전악 임플란트 보철물",
       "implant_duration": "4-5일",
       
       "laminate_title": "최소 삭제 라미네이트",
-      "laminate_desc": "초박막 세라믹을 활용하여 자연스러운 형태와 색감을 고려한 심미 보철을 제작합니다.",
-      "laminate_duration": "4일",
+      "laminate_desc": "세라믹을 활용하여 자연스러운 형태와 색감을 고려한 심미 보철을 제작합니다.",
+      "laminate_duration": "4-5일",
      
       "aligner_title": "디지털 투명교정",
       "aligner_desc": "디지털 Setup을 기반으로 단계별 치아 이동을 설계하고 맞춤형 투명교정 장치를 제작합니다.",
-      "aligner_duration": "3일"
+      "aligner_duration": "4-5일"
     }
    },
    
@@ -79,8 +79,8 @@
     },
    "philosophy": {
       "title": "원장님의 진료 철학을 완벽하게 이해하는 보철 파트",
-      "desc_highlight": "치과기공물은 단순한 인공 구조물이 아니라 환자의 구강 내에서 수년 이상 기능해야 하는 정밀 의료 기기입니다.",
-      "desc_main": "채움 덴탈 랩은 각 치과마다 상이한 프렙 마진 스타일, 교합 조정 선호도, 콘택 타이트니스 취향을 데이터베이스화하여 체어타임(Chair Time)을 단축시키고 일관된 보철 결과를 구현합니다."
+      "desc_highlight": "치과기공물은 단순한 인공 구조물이 아니라 환자의 구강 내에서 수년 이상 기능해야 하는 맞춤형 치과 보철물입니다.",
+      "desc_main": "채움 치과 기공소는 각 치과마다 상이한 프렙 마진 스타일, 교합 조정 선호도, 콘택 타이트니스 취향을 데이터베이스화하여 체어타임(Chair Time)을 단축시키고 일관된 보철 결과를 구현합니다."
     },
     "trust": {
       "dedicated_title": "1:1 치과 전담 기공사제",
@@ -102,10 +102,10 @@
       
       "cad_desc": "디지털 스캔 데이터를 기반으로 보철물의 형태와 교합 관계를 설계하고, 풀아치 및 맞춤형 어버트먼트 작업에 대응합니다.",
       
-      "milling_title": "vhf & Roland 5축 동시 밀링",
+      "milling_title": "ARUM · TRUMILL · MAXX 5축 동시 밀링",
       "milling_desc": "5축 건·습식 밀링 시스템을 활용하여 지르코니아, 티타늄, 하이브리드 세라믹 등 다양한 소재의 정밀 가공에 대응합니다.",
       
-      "printing_desc": "SLA/DLP 기반의 디지털 출력 시스템을 활용하여 서지컬 가이드, 덴쳐 베이스, 임시 보철물 등 다양한 제작 프로토콜에 대응합니다."
+      "printing_desc": "LCD/DLP 기반의 디지털 출력 시스템을 활용하여 서지컬 가이드, 덴쳐 베이스, 임시 보철물 등 다양한 제작 프로토콜에 대응합니다."
     },
    "workflow": {
       "data_title": "구강 스캔 및 임상 데이터 확인",
@@ -128,7 +128,7 @@
     },
     "intro": {
       "title": "케이스의 목적에 따라 소재와 제작 방식을 설계합니다.",
-      "desc": "채움 덴탈 랩은 단순히 보철물을 제작하는 것이 아니라 치과에서 전달되는 스캔 데이터와 임상 정보를 기반으로 케이스별 제작 조건을 검토합니다."
+      "desc": "채움 치과기공소는 단순히 보철물을 제작하는 것이 아니라 치과에서 전달되는 스캔 데이터와 임상 정보를 기반으로 케이스별 제작 조건을 검토합니다."
     },
     "tabs": {
       "zirconia": "지르코니아",
@@ -219,7 +219,7 @@
     },
 	  "process_steps": {
       "receipt_title": "스캔 데이터 접수",
-      "receipt_desc": "iTero, TRIOS, Medit 등 구강 스캐너에서 추출된 STL / PLY 데이터를 접수하고 파일 상태 및 스캔 범위를 1차 확인합니다.",
+      "receipt_desc": "iTero, TRIOS, PRIME SCAN 등 구강 스캐너에서 추출된 STL / PLY 데이터를 접수하고 파일 상태 및 스캔 범위를 1차 확인합니다.",
       
       "design_title": "CAD 정밀 디자인",
       "design_desc": "마진라인, 인접면, 교합 관계와 대합치 공간을 분석하고 케이스 특성에 맞는 3D CAD 디자인을 진행합니다.",
@@ -248,25 +248,24 @@
    "contact": {
     "hero": {
       "title_ko": "케이스 상담",
-      "subtitle": "채움 덴탈 랩의 위치"
+      "subtitle": "채움 치과기공소 위치"
     },
     "location": {
       "section_title": "기공소 위치 및 방문 안내",
-      "studio_name": "채움 덴탈 랩",
+      "studio_name": "채움 치과기공소",
       "address": "서울특별시 금천구 두산로 70, 현대지식산업센터 B동 12층 1206호",
       "telephone": "02-2169-2977"
     },
     "hours": {
       "weekday_label": "평일",
-      "saturday_label": "토요일",
-      "sunday_holiday_label": "일요일 / 공휴일",
+      "holiday_label": "토요일 /일요일 / 공휴일",
       "closed_label": "휴무"
     }
     },
 	 
 	 "footer": {
-      "corporate_info": "상호: 채움 덴탈 랩 (Chaeum Dental Lab) | 대표: 김병주",
-      "registration_info": "사업자등록번호: 220-88-12345 | 치과기공소 등록번호: 제 2025-강남-0412호",
+      "corporate_info": "상호: 채움 치과 기공소 (Chaeum Dental Lab) | 대표: 김병주",
+      "registration_info": "사업자등록번호: 608-96-10213 | 치과기공소 등록번호: 제 2016-3170035-00007호",
       "address_info": "주소: 서울특별시 금천구 두산로 70, 현대지식산업센터 B동 12층 1206호"
     }
  }

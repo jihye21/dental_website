@@ -45,30 +45,30 @@
       "handmade_title": "Artisanal Handmade Finish by Skilled Technicians",
       "handmade_desc": "Delicate surface textures, natural proximal contouring, and individualized shade matching—details difficult to achieve through machine processing alone—are perfected by the hands of our experienced technicians.",
       
-      "quality_title": "Rigorous Quality Control & Authentic Materials",
-      "quality_desc": "We exclusively use proven, genuine certified global materials and deliver only high-quality, flawless prosthetics to clinics through an exhaustive pre-shipping precision inspection process."
+      "quality_title": "Quality Control & Authentic Materials",
+      "quality_desc": "We exclusively use proven, genuine certified materials and deliver only high-quality, flawless prosthetics to clinics through a pre-shipping inspection process."
     },
     "products_preview": {
       "section_title": "Premium Specialized Prosthetics",
       "section_desc": "We offer a wide range of custom prosthetic fabrication services tailored to specific clinical objectives and individual cases.",
-      "btn_view_all": "View All Products & Detailed Specifications",
+      "btn_view_all": "View All Products Specifications",
       "duration_label": "Turnaround Time",
       
       "zirconia_title": "Zirconia Prosthetics",
       "zirconia_desc": "Anterior and posterior zirconia restorations utilizing highly translucent multi-layer blocks to deliver both exceptional strength and natural esthetics.",
-      "zirconia_duration": "3-4 Days",
+      "zirconia_duration": "4-5 Days",
       
       "implant_title": "Custom Implant Prosthetics",
       "implant_desc": "Single and full-arch implant restorations including custom milled abutments and screw-retained type prosthetic frameworks.",
       "implant_duration": "4-5 Days",
       
       "laminate_title": "Minimal-Prep Laminate Veneers",
-      "laminate_desc": "Ultra-thin ceramic veneers engineered to capture natural tooth anatomy, optical properties, and seamless shade harmony for advanced esthetic restorations.",
-      "laminate_duration": "4 Days",
+      "laminate_desc": "ceramic veneers engineered to capture natural tooth anatomy, optical properties, and seamless shade harmony for advanced esthetic restorations.",
+      "laminate_duration": "4-5 Days",
      
       "aligner_title": "Digital Clear Aligners",
       "aligner_desc": "Designing step-by-step tooth movement sequences via digital setup software to fabricate customized, high-precision clear aligner systems.",
-      "aligner_duration": "3 Days"
+      "aligner_duration": "4-5 Days"
     }
   },
   
@@ -79,7 +79,7 @@
     },
     "philosophy": {
       "title": "A Prosthetic Partner That Perfectly Understands Your Clinical Philosophy",
-      "desc_highlight": "Dental prosthetics are not just simple artificial structures, but high-precision medical devices that must function inside a patient's oral cavity for years.",
+      "desc_highlight": "Dental prosthetics are not just simple artificial structures, but custom-made dental prostheses that must function inside a patient's oral cavity for years.",
       "desc_main": "Chaeum Dental Lab databases each clinic's unique preparation margin styles, occlusal adjustment preferences, and proximal contact tightness trends. This targeted synchronization minimizes chair time and guarantees consistently predictable prosthetic outcomes."
     },
     "trust": {
@@ -102,10 +102,10 @@
       
       "cad_desc": "Based on digital intraoral scan data, we engineer accurate prosthetic anatomy and occlusal relationships, accommodating complex cases such as full-arch restorations and customized abutments.",
       
-      "milling_title": "vhf & Roland 5-Axis Simultaneous Milling",
+      "milling_title": "ARUM · TRUMILL · MAXX 5-Axis Simultaneous Milling",
       "milling_desc": "Utilizing 5-axis dry and wet milling systems, we offer high-precision processing for diverse materials including zirconia, titanium, and hybrid ceramics.",
       
-      "printing_desc": "Leveraging SLA/DLP-based digital printing systems, we support various therapeutic protocols including surgical guides, denture bases, and temporary restorations."
+      "printing_desc": "Leveraging LCD/DLP-based digital printing systems, we support various therapeutic protocols including surgical guides, denture bases, and temporary restorations."
     },
     "workflow": {
       "data_title": "Intraoral Scan & Clinical Data Verification",
@@ -216,7 +216,7 @@
     },
     "process_steps": {
       "receipt_title": "Scan Data Receipt",
-      "receipt_desc": "We receive STL and PLY data captured from intraoral scanners such as iTero, TRIOS, and Medit, performing a primary validation of file integrity and scan boundary adequacy.",
+      "receipt_desc": "We receive STL and PLY data captured from intraoral scanners such as iTero, TRIOS, and PRIME SCAN, performing a primary validation of file integrity and scan boundary adequacy.",
       "design_title": "High-Precision CAD Design",
       "design_desc": "We analyze preparation margins, proximal boundaries, occlusal relationships, and antagonist space availability to engineer a custom 3D CAD design tailored to case specifics.",
       "milling_title": "5-Axis Milling & Hand-Finishing",
@@ -249,15 +249,14 @@
       },
       "hours": {
         "weekday_label": "Weekdays",
-        "saturday_label": "Saturdays",
-        "sunday_holiday_label": "Sundays / Public Holidays",
+        "holiday_label": "Saturdays / Sundays / Public Holidays",
         "closed_label": "Closed"
       }
     },
     
     "footer": {
       "corporate_info": "Company: Chaeum Dental Lab | CEO: Kim Chaeum",
-      "registration_info": "Business Registration No: 220-88-12345 | Dental Laboratory License No: No. 2025-Gangnam-0412",
+      "registration_info": "Business Registration No: 608-96-10213 | Dental Laboratory License No: No. 2016-3170035-00007",
       "address_info": "Address: B-1206, 70 Dusan-ro, Geumcheon-gu, Seoul, 08584, Republic of Korea"
     }
 }
