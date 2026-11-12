@@ -135,7 +135,9 @@
       "esthetic": "Esthetic", 
       "esthetic_sub": "",
       "aligner": "Aligner",
-      "aligner_sub": ""
+      "aligner_sub": "",
+      "surgical": "Surgical Guide",
+      "surgical_sub": ""
     },
  "table_headers": {
     "item": "Item Details",
@@ -189,6 +191,14 @@
         "desc": "Step-by-step setups are designed based on digital dentition data, with 3D-printed models integrated into the thermoforming process to manufacture customized clear aligners."
     }  
   },
+  "tab_surgical": {
+	    "title": "Surgical Guide",
+	    "desc": "By 3D superimposing the patient’s CBCT data with intraoral scan data, we plan the optimal fixture placement path and fabricate fully guided surgical templates to minimize clinical errors.",
+	    "spec": {
+		    "title": "Guided Surgical Template Analysis",
+		    "desc": "We pre-measure the nerve canal and maxillary sinus anatomy to prevent macro-errors, ensuring seamless compatibility with metal sleeves across major implant surgical kits."
+	    }  
+	},
   "quality_system": {
     "section_title": "Consistent Quality Management Matters More Than Just Final Output.",
     "section_desc": "From the initial digital design to precision milling, fit adaptation, external anatomy, and final glaze, we verify every single stage of the fabrication workflow.",
