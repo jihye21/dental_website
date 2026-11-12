@@ -15,10 +15,10 @@
   "home": {
     "hero": {
       "badge": "Precision Prosthetics Driven by Digital Data",
-      "target_entity": "Prosthetics",
-      "process_context": "\u00A0do not start",
-      "core_concept": "with",
-      "negation_predicate": "\u00A0fabrication.",
+      "target_entity": "Dental Restorations",
+      "process_context": "\u00A0Don't",
+      "core_concept": "Begin",
+      "negation_predicate": "\u00A0With Fabrication.",
       "description": {
         "tech_combination": "It all starts where ideas meet and possibilities unfold."
       },
@@ -152,11 +152,11 @@
     "desc": "We select and apply the ideal zirconia materials and manufacturing protocols customized for each case, carefully balancing the high esthetic demands of the anterior zone and the functional requirements of the posterior zone.",
     
     "anterior_title": "Anterior Esthetic Cases",
-    "anterior_duration": "3 ~ 4 Days",
+    "anterior_duration": "4 ~ 5 Days",
     "posterior_title": "Posterior & Functional Cases",
-    "posterior_duration": "3 Days",
+    "posterior_duration": "4 ~ 5 Days",
     "shade_title": "Customized Characterization & Morphology",
-    "shade_duration": "4 ~ 5 Days",
+    "shade_duration": "5 ~ 6 Days",
     
     "quality_note": "Zirconia restorations are prescribed after a comprehensive review of the anatomical location, occlusal conditions, required translucency, and intrinsic material properties."
   },
