@@ -3328,6 +3328,9 @@
                 if (!response.ok) throw new Error(`언어 파일을 찾을 수 없습니다: ${lang}`);
                 currentTranslations = await response.json();
                 localStorage.setItem('lang', lang);
+
+                document.documentElement.lang = lang;
+                
                 applyTranslations();
             } catch (error) {
                 console.error('다국어 로드 실패:', error);
