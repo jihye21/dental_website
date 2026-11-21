@@ -257,7 +257,9 @@
    
    "contact": {
     "hero": {
-      "title_ko": "케이스 상담"
+      "title_ko": "케이스 상담",
+      "kakao": "카카오톡 상담하기",
+      "email": "이메일 문의"
     },
     "location": {
       "section_title": "기공소 위치 및 방문 안내",
